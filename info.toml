@@ -191,7 +191,7 @@ de valeur. Assurez-vous que le type est cohérent entre tous les bras."""
 name = "quiz1"
 path = "exercises/quiz1.rs"
 mode = "test"
-hint = "No hints this time ;)"
+hint = "Pas d'indice cette fois ;)"
 
 # PRIMITIVE TYPES
 
