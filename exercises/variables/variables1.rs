@@ -1,9 +1,9 @@
 // variables1.rs
 //
-// Make me compile!
+// Faites-moi compiler !
 //
-// Execute `rustlings hint variables1` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint variables1` ou utilisez la sous-commande `hint` watch pour un
+// pour un indice.
 
 // I AM NOT DONE
 

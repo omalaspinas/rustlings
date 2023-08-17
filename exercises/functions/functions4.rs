@@ -1,12 +1,14 @@
 // functions4.rs
 //
-// This store is having a sale where if the price is an even number, you get 10
-// Rustbucks off, but if it's an odd number, it's 3 Rustbucks off. (Don't worry
-// about the function bodies themselves, we're only interested in the signatures
-// for now. If anything, this is a good way to peek ahead to future exercises!)
+// Ce magasin fait des soldes où si le prix est un nombre pair, vous obtenez 
+// un rabais de 10 Rustbucks, mais si c'est un nombre impair, c'est 3 
+// Rustbucks de réduction. 
+// (Ne vous inquiétez pas du corps des fonctions, seules les signatures nous 
+// intéressent pour l'instant. C'est un bon moyen d'anticiper les exercices à 
+// venir).
 //
-// Execute `rustlings hint functions4` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint functions4` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 

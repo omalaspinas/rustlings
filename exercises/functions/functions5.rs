@@ -1,7 +1,7 @@
 // functions5.rs
 //
-// Execute `rustlings hint functions5` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint functions5` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
