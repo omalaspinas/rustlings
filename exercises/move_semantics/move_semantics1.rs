@@ -1,7 +1,7 @@
 // move_semantics1.rs
 //
-// Execute `rustlings hint move_semantics1` or use the `hint` watch subcommand
-// for a hint.
+// Exécutez `rustlings hint move_semantics1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 

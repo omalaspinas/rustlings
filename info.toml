@@ -296,32 +296,37 @@ name = "move_semantics1"
 path = "exercises/move_semantics/move_semantics1.rs"
 mode = "compile"
 hint = """
-So you've got the "cannot borrow immutable local variable `vec1` as mutable" error on line 13,
-right? The fix for this is going to be adding one keyword, and the addition is NOT on line 13
-where the error is.
+Vous avez donc l'erreur "cannot borrow immutable local variable `vec1` as mutable" à la ligne 13,
+n'est-ce pas ? La solution va être d'ajouter un mot-clé, et l'ajout ne se fait PAS à la ligne 13
+où se trouve l'erreur.
 
-Also: Try accessing `vec0` after having called `fill_vec()`. See what happens!"""
+De plus, essayez d'accéder à `vec0` après avoir appelé `fill_vec()`. Voyez ce qui se passe !"""
 
 [[exercises]]
 name = "move_semantics2"
 path = "exercises/move_semantics/move_semantics2.rs"
 mode = "compile"
 hint = """
-When running this exercise for the first time, you'll notice an error about
-"borrow of moved value". In Rust, when an argument is passed to a function and
-it's not explicitly returned, you can't use the original variable anymore.
-We call this "moving" a variable. When we pass `vec0` into `fill_vec`, it's being
-"moved" into `vec1`, meaning we can't access `vec0` anymore after the fact.
-Rust provides a couple of different ways to mitigate this issue, feel free to try them all:
-1. You could make another, separate version of the data that's in `vec0` and pass that
-   to `fill_vec` instead.
-2. Make `fill_vec` borrow its argument instead of taking ownership of it,
-   and then copy the data within the function (`vec.clone()`) in order to return an owned
-   `Vec<i32>`.
-3. Or, you could make `fill_vec` *mutably* borrow a reference to its argument (which will need to be
-   mutable), modify it directly, then not return anything. This means that `vec0` will change over the
-   course of the function, and makes `vec1` redundant (make sure to change the parameters of the `println!`
-   statements if you go this route)
+Lorsque vous exécutez cet exercice pour la première fois, vous remarquerez 
+une erreur "borrow of moved value". En Rust, lorsqu'un argument est passé 
+à une fonction et qu'il n'est pas explicitement retourné, vous ne pouvez plus
+utiliser la variable d'origine.
+Nous appelons cela "déplacer" (move) une variable. Lorsque nous passons 
+`vec0` dans `fill_vec`, il est "déplacé" dans `vec1`, ce qui signifie 
+que nous ne pouvons plus accéder à `vec0` après.
+Rust propose plusieurs façons d'atténuer ce problème, n'hésitez pas à les 
+essayer toutes:
+1. Vous pouvez créer une autre version des données contenues dans `vec0` 
+   et la passer à `fill_vec`.
+2. Faire en sorte que `fill_vec` emprunte son argument au lieu d'en prendre 
+   possession, et ensuite copier les données dans la fonction (`vec.clone()`)
+   afin de retourner un `Vec<i32>`.
+3. Ou bien, vous pourriez faire en sorte que `fill_vec` emprunte de façon 
+   *mutable* une référence à son argument (qui devra être mutable), 
+   le modifier, et ne rien retourner. Cela signifie que `vec0` changera 
+   au cours de la fonction, et rend `vec1` redondant (assurez-vous de 
+   changer les paramètres de l'instruction `println!` si vous choisissez 
+   cette solution).
 """
 
 [[exercises]]
@@ -329,34 +334,36 @@ name = "move_semantics3"
 path = "exercises/move_semantics/move_semantics3.rs"
 mode = "compile"
 hint = """
-The difference between this one and the previous ones is that the first line
-of `fn fill_vec` that had `let mut vec = vec;` is no longer there. You can,
-instead of adding that line back, add `mut` in one place that will change
-an existing binding to be a mutable binding instead of an immutable one :)"""
+La différence entre cet exercice et les précédents est que la première ligne
+de `fn fill_vec` qui contenait `let mut vec = vec;` n'est plus là. Vous pouvez,
+au lieu d'ajouter cette ligne, ajouter `mut` à un endroit qui changera 
+un binding existant en un binding mutable au lieu d'un binding immuatble :)"""
 
 [[exercises]]
 name = "move_semantics4"
 path = "exercises/move_semantics/move_semantics4.rs"
 mode = "compile"
 hint = """
-Stop reading whenever you feel like you have enough direction :) Or try
-doing one step and then fixing the compiler errors that result!
-So the end goal is to:
-   - get rid of the first line in main that creates the new vector
-   - so then `vec0` doesn't exist, so we can't pass it to `fill_vec`
-   - `fill_vec` has had its signature changed, which our call should reflect
-   - since we're not creating a new vec in `main` anymore, we need to create
-     a new vec in `fill_vec`, similarly to the way we did in `main`"""
+Arrêtez de lire quand vous sentez que vous avez suffisamment d'indications :) 
+Ou essayez de faire une étape et de corriger les erreurs de compilation 
+qui en résultent !
+L'objectif final est donc de :
+   - se débarrasser de la première ligne du `main` qui crée le nouveau vecteur
+   - comme `vec0` n'existe plus, on ne peut pas le passer à `fill_vec`
+   - la signature de `fill_vec` a changé, ce que notre appel devrait refléter
+   - puisque nous ne créons plus de nouveau vec dans `main`, nous devons créer
+     un nouveau vec dans `fill_vec`, de la même manière que nous l'avons fait 
+     dans `main`"""
 
 [[exercises]]
 name = "move_semantics5"
 path = "exercises/move_semantics/move_semantics5.rs"
 mode = "compile"
 hint = """
-Carefully reason about the range in which each mutable reference is in
-scope. Does it help to update the value of referent (x) immediately after
-the mutable reference is taken? Read more about 'Mutable References'
-in the book's section References and Borrowing':
+Raisonnez soigneusement sur l'étendue de la portée de chaque référence mutable.
+Est-il utile de mettre à jour la valeur du référent (x) immédiatement après 
+que la référence mutable est prise? En savoir plus sur les 
+"références mutables" dans la section "References and Borrowing" du livre :
 https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html#mutable-references.
 """
 
@@ -365,15 +372,17 @@ name = "move_semantics6"
 path = "exercises/move_semantics/move_semantics6.rs"
 mode = "compile"
 hint = """
-To find the answer, you can consult the book section "References and Borrowing":
+Pour trouver la réponse, vous pouvez consulter la section 
+"References and Borrowing" du livre :
 https://doc.rust-lang.org/stable/book/ch04-02-references-and-borrowing.html
-The first problem is that `get_char` is taking ownership of the string.
-So `data` is moved and can't be used for `string_uppercase`
-`data` is moved to `get_char` first, meaning that `string_uppercase` cannot manipulate the data.
-Once you've fixed that, `string_uppercase`'s function signature will also need to be adjusted.
-Can you figure out how?
+Le premier problème est que `get_char` prend la propriété de la chaîne de 
+caractères. Donc `data` est déplacé et ne peut pas être utilisé pour 
+`string_uppercase`. `data` étant déplacé vers `get_char` en premier, 
+cela qui signifie que `string_uppercase` ne peut pas manipuler les données.
+Une fois que vous aurez corrigé cela, la signature de la fonction 
+`string_uppercase` devra également être ajustée. Pouvez-vous trouver comment ?
 
-Another hint: it has to do with the `&` character."""
+Un autre indice : cela a à voir avec le caractère `&`."""
 
 # STRUCTS
 

@@ -1,9 +1,9 @@
 // move_semantics6.rs
 //
-// You can't change anything except adding or removing references.
+// Vous ne pouvez rien changer, sauf ajouter ou supprimer des références.
 //
-// Execute `rustlings hint move_semantics6` or use the `hint` watch subcommand
-// for a hint.
+// Exécutez `rustlings hint move_semantics6` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 

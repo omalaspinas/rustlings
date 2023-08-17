@@ -1,11 +1,11 @@
 // move_semantics4.rs
 //
-// Refactor this code so that instead of passing `vec0` into the `fill_vec`
-// function, the Vector gets created in the function itself and passed back to
-// the main function.
+// Refasctorisez ce code pour qu'au lieu de passer `vec0` dans la fonction
+// `fill_vec` le vecteur est créé dans la fonction elle-même et renvoyé à la
+// fonction principale.
 //
-// Execute `rustlings hint move_semantics4` or use the `hint` watch subcommand
-// for a hint.
+// Exécutez `rustlings hint move_semantics4` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
