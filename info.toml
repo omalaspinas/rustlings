@@ -264,13 +264,13 @@ name = "vecs1"
 path = "exercises/vecs/vecs1.rs"
 mode = "test"
 hint = """
-In Rust, there are two ways to define a Vector.
-1. One way is to use the `Vec::new()` function to create a new vector
-  and fill it with the `push()` method.
-2. The second way, which is simpler is to use the `vec![]` macro and
-  define your elements inside the square brackets.
-Check this chapter: https://doc.rust-lang.org/stable/book/ch08-01-vectors.html
-of the Rust book to learn more.
+En Rust, il y a deux façons de définir un vecteur.
+1. La première consiste à utiliser la fonction `Vec::new()` pour créer un nouveau 
+  vecteur et le remplir avec la méthode `push()`.
+2. La seconde façon, plus simple, est d'utiliser la macro `vec ![]` et de
+  et de définir vos éléments à l'intérieur des crochets.
+Consultez ce chapitre : https://doc.rust-lang.org/stable/book/ch08-01-vectors.html
+du livre Rust pour en savoir plus.
 """
 
 [[exercises]]
@@ -278,15 +278,15 @@ name = "vecs2"
 path = "exercises/vecs/vecs2.rs"
 mode = "test"
 hint = """
-Hint 1: In the code, the variable `element` represents an item from the Vec as it is being iterated.
-Can you try multiplying this?
+Indice 1: Dans le code, la variable `element` représente un élément du Vec lorsqu'on itère dessus.
+Pouvez-vous essayer de la multiplier?
 
-Hint 2: For the first function, there's a way to directly access the numbers stored
-in the Vec, using the * dereference operator. You can both access and write to the
-number that way.
+Indice 2 : Pour la première fonction, il existe un moyen d'accéder directement
+aux nombres stockés dans le Vec, en utilisant l'opérateur de déréférencement *. 
+Vous pouvez à la fois accéder et écrire sur le nombre de cette façon.
 
-After you've completed both functions, decide for yourself which approach you like
-better. What do you think is the more commonly used pattern under Rust developers?
+Après avoir exécuté les deux fonctions, décidez vous-même de l'approche que vous préférez.
+Selon vous, quel est le modèle le plus couramment utilisé par les développeurs de Rust?
 """
 
 # MOVE SEMANTICS
