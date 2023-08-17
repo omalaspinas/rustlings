@@ -158,30 +158,32 @@ name = "if1"
 path = "exercises/if/if1.rs"
 mode = "test"
 hint = """
-It's possible to do this in one line if you would like!
-Some similar examples from other languages:
-- In C(++) this would be: `a > b ? a : b`
-- In Python this would be:  `a if a > b else b`
-Remember in Rust that:
-- the `if` condition does not need to be surrounded by parentheses
-- `if`/`else` conditionals are expressions
-- Each condition is followed by a `{}` block."""
+Il est possible de le faire en une seule ligne si vous le souhaitez !
+Quelques exemples similaires dans d'autres langages :
+- En C(++) ce serait : `a > b ? a : b`
+- En Python, ce serait : `a if a > b ? a : b` :  `a if a > b else b`
+Rappelez-vous qu'en Rust :
+- la condition `if` n'a pas besoin d'être entourée de parenthèses
+- Les `if`/`else` sont des expressions conditionnelles
+- Chaque condition est suivie d'un bloc `{}`."""
 
 [[exercises]]
 name = "if2"
 path = "exercises/if/if2.rs"
 mode = "test"
 hint = """
-For that first compiler error, it's important in Rust that each conditional
-block returns the same type! To get the tests passing, you will need a couple
-conditions checking different input values."""
+Pour cette première erreur du compilateur, il est important en Rust que 
+chaque bloc conditionnel renvoie le même type !
+Pour que les tests passent, vous aurez besoin de quelques
+conditions vérifiant différentes valeurs d'entrée."""
 
 [[exercises]]
 name = "if3"
 path = "exercises/if/if3.rs"
 mode = "test"
 hint = """
-In Rust, every arm of an `if` expression has to return the same type of value. Make sure the type is consistent across all arms."""
+En Rust, chaque branche d'une expression `if` doit retourner le même type 
+de valeur. Assurez-vous que le type est cohérent entre tous les bras."""
 
 # QUIZ 1
 

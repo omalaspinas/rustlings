@@ -1,6 +1,7 @@
 // if3.rs
 //
-// Execute `rustlings hint if3` or use the `hint` watch subcommand for a hint.
+// Exécutez `rustlings hint if3` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
@@ -15,7 +16,7 @@ pub fn animal_habitat(animal: &str) -> &'static str {
         "Unknown"
     };
 
-    // DO NOT CHANGE THIS STATEMENT BELOW
+    // NE PAS MODIFIER L'INSTRUCTION CI-DESSOUS
     let habitat = if identifier == 1 {
         "Beach"
     } else if identifier == 2 {
