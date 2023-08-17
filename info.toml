@@ -13,7 +13,7 @@ name = "intro2"
 path = "exercises/intro/intro2.rs"
 mode = "compile"
 hint = """
-Ajouter un argument après la chaîne de format."""
+Ajoutez un argument après la chaîne de format."""
 
 # VARIABLES
 
@@ -149,7 +149,7 @@ Nous voulons retourner une valeur de type `i32` à partir de la fonction
 `square`, mais elle retourne un type `()`...
 Ce n'est pas la même chose. Il y a deux solutions :
 1. Ajouter un `return` avant `num * num;`
-2. supprimer `;`, et faire en sorte que ce soit `num * num`"""
+2. Supprimer `;`, et faire en sorte que ce soit `num * num`"""
 
 # IF
 

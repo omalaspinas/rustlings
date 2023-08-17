@@ -14,8 +14,6 @@
 // Exécutez `rustlings hint intro1` ou utilisez la sous-commande `hint` watch pour un
 // pour un indice.
 
-// I AM NOT DONE
-
 fn main() {
     println!("Bonjour et");
     println!(r#"       Bienvenue à...                      "#);
