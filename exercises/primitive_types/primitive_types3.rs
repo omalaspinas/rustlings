@@ -1,9 +1,9 @@
 // primitive_types3.rs
 //
-// Create an array with at least 100 elements in it where the ??? is.
+// Créez un tableau d'au moins 100 éléments à l'endroit où se trouve le ???.
 //
-// Execute `rustlings hint primitive_types3` or use the `hint` watch subcommand
-// for a hint.
+// Exécutez `rustlings hint primitive_types3` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 

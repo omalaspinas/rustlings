@@ -1,10 +1,10 @@
 // primitive_types1.rs
 //
-// Fill in the rest of the line that has code missing! No hints, there's no
-// tricks, just get used to typing these :)
+// Complétez le reste de la ligne où le code est manquant ! Pas d'indices, 
+// il n'y a pas d'astuces, il faut juste s'habituer à les taper :)
 //
-// Execute `rustlings hint primitive_types1` or use the `hint` watch subcommand
-// for a hint.
+// Exécutez `rustlings hint primitive_types1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
@@ -16,7 +16,7 @@ fn main() {
         println!("Good morning!");
     }
 
-    let // Finish the rest of this line like the example! Or make it be false!
+    let // Terminez le reste de la ligne comme dans l'exemple ! Ou faites en sorte qu'elle soit fausse !
     if is_evening {
         println!("Good evening!");
     }

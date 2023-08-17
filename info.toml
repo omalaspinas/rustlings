@@ -199,40 +199,40 @@ hint = "Pas d'indice cette fois ;)"
 name = "primitive_types1"
 path = "exercises/primitive_types/primitive_types1.rs"
 mode = "compile"
-hint = "No hints this time ;)"
+hint = "Pas d'indice cette fois ;)"
 
 [[exercises]]
 name = "primitive_types2"
 path = "exercises/primitive_types/primitive_types2.rs"
 mode = "compile"
-hint = "No hints this time ;)"
+hint = "Pas d'indice cette fois ;)"
 
 [[exercises]]
 name = "primitive_types3"
 path = "exercises/primitive_types/primitive_types3.rs"
 mode = "compile"
 hint = """
-There's a shorthand to initialize Arrays with a certain size that does not
-require you to type in 100 items (but you certainly can if you want!).
-For example, you can do:
-let array = ["Are we there yet?"; 10];
+Il existe un raccourci pour initialiser les tableaux avec une certaine taille 
+qui ne nécessite pas de saisir 100 éléments (mais vous pouvez certainement le faire si vous le souhaitez !).
+Par exemple, vous pouvez faire :
+let array = ["Are we there yet ?"; 10] ;
 
-Bonus: what are some other things you could have that would return true
-for `a.len() >= 100`?"""
+Bonus : quelles sont les autres choses que vous pourriez faire et qui 
+retourneraient `true` pour `a.len() >= 100` ?"""
 
 [[exercises]]
 name = "primitive_types4"
 path = "exercises/primitive_types/primitive_types4.rs"
 mode = "test"
 hint = """
-Take a look at the Understanding Ownership -> Slices -> Other Slices section of the book:
+Consultez la section "Understanding Ownership -> Slices -> Other Slices" du livre :
 https://doc.rust-lang.org/book/ch04-03-slices.html
-and use the starting and ending indices of the items in the Array
-that you want to end up in the slice.
+et utilisez les indices de début et de fin des éléments du tableau
+que vous voulez retrouver dans le "slice".
 
-If you're curious why the first argument of `assert_eq!` does not
-have an ampersand for a reference since the second argument is a
-reference, take a look at the coercion chapter of the nomicon:
+Si vous êtes curieux·ses de savoir pourquoi le premier argument de `assert_eq!`
+n'a pas d'esperluette pour une référence alors que le second argument est une 
+référence, jetez un coup d'oeil au chapitre sur la coercion du nomicon :
 https://doc.rust-lang.org/nomicon/coercions.html"""
 
 [[exercises]]
@@ -240,22 +240,22 @@ name = "primitive_types5"
 path = "exercises/primitive_types/primitive_types5.rs"
 mode = "compile"
 hint = """
-Take a look at the Data Types -> The Tuple Type section of the book:
+Consultez la section "Data Types -> The Tuple Type" du livre :
 https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type
-Particularly the part about destructuring (second to last example in the section).
-You'll need to make a pattern to bind `name` and `age` to the appropriate parts
-of the tuple. You can do it!!"""
+En particulier la partie sur la déstructuration (avant-dernier exemple de la section).
+Vous devrez créer un motif pour lier `name` et `age` aux parties appropriées du tuple.
+Vous pouvez le faire !"""
 
 [[exercises]]
 name = "primitive_types6"
 path = "exercises/primitive_types/primitive_types6.rs"
 mode = "test"
 hint = """
-While you could use a destructuring `let` for the tuple here, try
-indexing into it instead, as explained in the last example of the
-Data Types -> The Tuple Type section of the book:
+Bien que vous puissiez utiliser une déstructuration `let` pour le tuple, 
+essayez plutôt de l'indexer, comme expliqué dans le dernier exemple
+de la section "Data Types -> The Tuple Type" du livre :
 https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type
-Now you have another tool in your toolbox!"""
+Vous avez maintenant un nouvel outil dans votre boîte à outils !"""
 
 # VECS
 
