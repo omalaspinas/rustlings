@@ -1,9 +1,9 @@
 // structs2.rs
 //
-// Address all the TODOs to make the tests pass!
+// Adresser tous les TODO pour que les tests passent !
 //
-// Execute `rustlings hint structs2` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint structs2` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
