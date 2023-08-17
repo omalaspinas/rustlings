@@ -493,29 +493,31 @@ name = "modules1"
 path = "exercises/modules/modules1.rs"
 mode = "compile"
 hint = """
-Everything is private in Rust by default-- but there's a keyword we can use
-to make something public! The compiler error should point to the thing that
-needs to be public."""
+Tout est privé en Rust par défaut - mais il y a un mot-clé que nous pouvons utiliser
+pour rendre quelque chose public ! L'erreur du compilateur devrait pointer vers la chose qui
+doit être publique."""
 
 [[exercises]]
 name = "modules2"
 path = "exercises/modules/modules2.rs"
 mode = "compile"
 hint = """
-The delicious_snacks module is trying to present an external interface that is
-different than its internal structure (the `fruits` and `veggies` modules and
-associated constants). Complete the `use` statements to fit the uses in main and
-find the one keyword missing for both constants.
-Learn more at https://doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html#re-exporting-names-with-pub-use"""
+Le module delicious_snacks essaye de présenter une interface externe qui est
+différente de sa structure interne (les modules `fruits` et `veggies` et les 
+constantes associées). Complétez les déclarations `use` pour qu'elles 
+correspondent aux utilisations dans `main` et trouvez le mot-clé manquant pour 
+les deux constantes.
+Pour en savoir plus, consultez le site https://doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html#re-exporting-names-with-pub-use"""
 
 [[exercises]]
 name = "modules3"
 path = "exercises/modules/modules3.rs"
 mode = "compile"
 hint = """
-UNIX_EPOCH and SystemTime are declared in the std::time module. Add a use statement
-for these two to bring them into scope. You can use nested paths or the glob
-operator to bring these two in using only one line."""
+UNIX_EPOCH et SystemTime sont déclarés dans le module std::time. Ajoutez une 
+déclaration d'utilisation pour ces deux éléments afin de les inclure dans le 
+champ d'application. Vous pouvez utiliser des chemins imbriqués ou l'opérateur 
+`glob` pour intégrer ces deux éléments en une seule ligne."""
 
 # HASHMAPS
 
