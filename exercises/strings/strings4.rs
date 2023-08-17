@@ -1,11 +1,14 @@
 // strings4.rs
 //
-// Ok, here are a bunch of values-- some are `String`s, some are `&str`s. Your
-// task is to call one of these two functions on each value depending on what
-// you think each value is. That is, add either `string_slice` or `string`
-// before the parentheses on each line. If you're right, it will compile!
+// Ok, voici un tas de valeurs - certaines sont des `String`, d'autres des `&str`. Votre
+// tâche est d'appeler l'une de ces deux fonctions sur chaque valeur en fonction de ce que
+// vous pensez que chaque valeur est. En d'autres termes, ajoutez soit `string_slice` soit `string`
+// avant les parenthèses sur chaque ligne. Si vous avez raison, le code sera compilé !
 //
-// No hints this time!
+// Pas d'indices cette fois-ci!
+//
+// Exécutez `rustlings hint strings4` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 

@@ -397,7 +397,7 @@ Les structures Tuple sont essentiellement des tuples nommés.
 Enfin, les structs de type Unit. Elles n'ont pas de champs et sont utiles pour les génériques.
 
 Dans cet exercice, vous devez compléter et implémenter une structure de chaque type.
-Pour en savoir plus sur les structures, consultez le livre : https://doc.rust-lang.org/book/ch05-01-defining-structs.html""""
+Pour en savoir plus sur les structures, consultez le livre : https://doc.rust-lang.org/book/ch05-01-defining-structs.html"""
 
 [[exercises]]
 name = "structs2"
@@ -452,40 +452,39 @@ name = "strings1"
 path = "exercises/strings/strings1.rs"
 mode = "compile"
 hint = """
-The `current_favorite_color` function is currently returning a string slice with the `'static`
-lifetime. We know this because the data of the string lives in our code itself -- it doesn't
-come from a file or user input or another program -- so it will live as long as our program
-lives. But it is still a string slice. There's one way to create a `String` by converting a
-string slice covered in the Strings chapter of the book, and another way that uses the `From`
-trait."""
+La fonction `current_favorite_color` retourne actuellement un "slice" de chaîne de caractère avec la durée de vie `'static''. 
+Nous savons cela parce que les données de la chaîne de caractères vivent dans notre code lui-même - elles ne proviennent pas d'un fichier, d'une entrée utilisateur ou d'un autre programme - donc elles vivront aussi longtemps que notre programme.
+Mais il s'agit toujours d'un slice de chaîne de caractères. Il y a une façon de créer une `String` en convertissant un slice de
+chaîne de caractères qui est abordée dans le chapitre sur les chaînes de caractères, et une autre façon qui utilise.
+le trait `From`."""
 
 [[exercises]]
 name = "strings2"
 path = "exercises/strings/strings2.rs"
 mode = "compile"
 hint = """
-Yes, it would be really easy to fix this by just changing the value bound to `word` to be a
-string slice instead of a `String`, wouldn't it?? There is a way to add one character to line
-12, though, that will coerce the `String` into a string slice.
+Oui, il serait vraiment facile de corriger cela en changeant simplement la valeur liée à `word` pour qu'elle soit
+un slice de chaîne de caractères au lieu d'une `String`, n'est-ce pas ? Il y a un moyen d'ajouter un caractère à la ligne
+12, cependant, qu'est-ce qui forcera la `String` à devenir un slice de chaîne.
 
-Side note: If you're interested in learning about how this kind of reference conversion works, you can jump ahead in the book and read this part in the smart pointers chapter: https://doc.rust-lang.org/stable/book/ch15-02-deref.html#implicit-deref-coercions-with-functions-and-methods"""
+Note complémentaire : si vous souhaitez savoir comment fonctionne ce type de conversion de référence, vous pouvez avancer dans le livre et lire cette partie dans le chapitre sur les pointeurs intelligents : https://doc.rust-lang.org/stable/book/ch15-02-deref.html#implicit-deref-coercions-with-functions-and-methods."""
 
 [[exercises]]
 name = "strings3"
 path = "exercises/strings/strings3.rs"
 mode = "test"
 hint = """
-There's tons of useful standard library functions for strings. Let's try and use some of
-them: <https://doc.rust-lang.org/std/string/struct.String.html#method.trim>!
+Il existe des tonnes de fonctions utiles de la bibliothèque standard pour les chaînes de caractères. Essayons d'en utiliser
+quelques-unes d'entre elles : <https://doc.rust-lang.org/std/string/struct.String.html#method.trim> !
 
-For the compose_me method: You can either use the `format!` macro, or convert the string
-slice into an owned string, which you can then freely extend."""
+Pour la méthode compose_me : Vous pouvez soit utiliser la macro `format!`, soit convertir le slice de chaîne
+de caractère en une chaîne possédée (owned), que vous pouvez ensuite étendre librement."""
 
 [[exercises]]
 name = "strings4"
 path = "exercises/strings/strings4.rs"
 mode = "compile"
-hint = "No hints this time ;)"
+hint = "Pas d'indices cette fois ;)"
 
 # MODULES
 

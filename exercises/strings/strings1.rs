@@ -1,9 +1,9 @@
 // strings1.rs
 //
-// Make me compile without changing the function signature!
+// Faites-moi compiler sans changer la signature de la fonction !
 //
-// Execute `rustlings hint strings1` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint strings1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
