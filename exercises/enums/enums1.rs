@@ -1,12 +1,15 @@
 // enums1.rs
 //
-// No hints this time! ;)
+// Pas d'indices cette fois ! ;)
+//
+// Exécutez `rustlings hint enums1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
 #[derive(Debug)]
 enum Message {
-    // TODO: define a few types of messages as used below
+    // TODO: définir quelques types de messages, comme indiqué ci-dessous
 }
 
 fn main() {

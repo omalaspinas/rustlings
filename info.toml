@@ -425,25 +425,25 @@ Pour en savoir plus sur les implémentations de méthodes, jetez un coup d'œil 
 name = "enums1"
 path = "exercises/enums/enums1.rs"
 mode = "compile"
-hint = "No hints this time ;)"
+hint = "Pas d'indices cette fois ;)"
 
 [[exercises]]
 name = "enums2"
 path = "exercises/enums/enums2.rs"
 mode = "compile"
 hint = """
-You can create enumerations that have different variants with different types
-such as no data, anonymous structs, a single string, tuples, ...etc"""
+Vous pouvez créer des énumérations qui ont différentes variantes avec différents types
+comme: sans données, les structures anonymes, une chaîne de caractères, les tuples, ...etc."""
 
 [[exercises]]
 name = "enums3"
 path = "exercises/enums/enums3.rs"
 mode = "test"
 hint = """
-As a first step, you can define enums to compile this code without errors.
-and then create a match expression in `process()`.
-Note that you need to deconstruct some message variants
-in the match expression to get value in the variant."""
+Dans un premier temps, vous pouvez définir des enums pour compiler ce code sans erreur,
+puis créer une expression `match` dans `process()`.
+Notez que vous devez déconstruire certaines variantes de message
+dans l'expression match pour obtenir la valeur de la variante."""
 
 # STRINGS
 

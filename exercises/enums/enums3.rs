@@ -1,14 +1,14 @@
 // enums3.rs
 //
-// Address all the TODOs to make the tests pass!
+// Adresser tous les TODO pour que les tests passent !
 //
-// Execute `rustlings hint enums3` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint enums3` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
 enum Message {
-    // TODO: implement the message variant types based on their usage below
+    // TODO: implémentez les types de variantes de messages en fonction de leur utilisation ci-dessous
 }
 
 struct Point {
@@ -20,7 +20,7 @@ struct State {
     color: (u8, u8, u8),
     position: Point,
     quit: bool,
-    message: String
+    message: String,
 }
 
 impl State {
@@ -32,17 +32,20 @@ impl State {
         self.quit = true;
     }
 
-    fn echo(&mut self, s: String) { self.message = s }
+    fn echo(&mut self, s: String) {
+        self.message = s
+    }
 
     fn move_position(&mut self, p: Point) {
         self.position = p;
     }
 
     fn process(&mut self, message: Message) {
-        // TODO: create a match expression to process the different message
-        // variants
-        // Remember: When passing a tuple as a function argument, you'll need
-        // extra parentheses: fn function((t, u, p, l, e))
+        // TODO: créer une expression match pour traiter les différentes
+        // variantes de messages
+        // Rappelez-vous : Lorsque vous passez un tuple en tant qu'argument
+        // de fonction, vous aurez besoin de sparenthèses supplémentaires :
+        // fn function((t, u, p, l, e))
     }
 }
 
