@@ -603,70 +603,72 @@ name = "errors1"
 path = "exercises/error_handling/errors1.rs"
 mode = "test"
 hint = """
-`Ok` and `Err` are one of the variants of `Result`, so what the tests are saying
-is that `generate_nametag_text` should return a `Result` instead of an
+`Ok` et `Err` sont des variantes de `Result`, donc les tests disent
+que `generate_nametag_text` devrait retourner un `Result` au lieu d'une
 `Option`.
 
-To make this change, you'll need to:
-   - update the return type in the function signature to be a Result<String, String> that
-     could be the variants `Ok(String)` and `Err(String)`
-   - change the body of the function to return `Ok(stuff)` where it currently
-     returns `Some(stuff)`
-   - change the body of the function to return `Err(error message)` where it
-     currently returns `None`"""
+Pour faire ce changement, vous devez :
+   - mettre à jour le type de retour dans la signature de la fonction 
+     pour qu'il soit un Resultat<String, String> qui
+     qui pourrait être les variantes `Ok(String)` et `Err(String)`
+   - modifier le corps de la fonction pour qu'elle retourne `Ok(stuff)` 
+     alors qu'elle retourne actuellement `Some(stuff)`
+   - changer le corps de la fonction pour qu'elle retourne 
+    `Err(message d'erreur)` là où elle retourne renvoie actuellement `None`"""
 
 [[exercises]]
 name = "errors2"
 path = "exercises/error_handling/errors2.rs"
 mode = "test"
 hint = """
-One way to handle this is using a `match` statement on
-`item_quantity.parse::<i32>()` where the cases are `Ok(something)` and
-`Err(something)`. This pattern is very common in Rust, though, so there's
-a `?` operator that does pretty much what you would make that match statement
-do for you! Take a look at this section of the Error Handling chapter:
+Une façon de gérer cela est d'utiliser une expression `match` sur
+`item_quantity.parse::<i32>()` où les variantes sont `Ok(something)` et
+`Err(something)`. Ce schéma est très courant en Rust, donc il existe
+un opérateur `?` qui fait à peu près ce que vous voudriez que l'expression match
+pour vous ! Jetez un coup d'œil à cette section du chapitre sur la gestion des erreurs :
 https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator
-and give it a try!"""
+et essayez-le !"""
 
 [[exercises]]
 name = "errors3"
 path = "exercises/error_handling/errors3.rs"
 mode = "compile"
 hint = """
-If other functions can return a `Result`, why shouldn't `main`? It's a fairly common
-convention to return something like Result<(), ErrorType> from your main function.
-The unit (`()`) type is there because nothing is really needed in terms of positive
-results."""
+Si d'autres fonctions peuvent retourner un `Result`, pourquoi `main` ne le pourrait-il pas ? 
+C'est une convention assez commune de retourner un Result<(), ErrorType> à partir de votre fonction main.
+L'unité (`()`) est là parce que rien n'est vraiment nécessaire en termes de résultats
+positifs."""
 
 [[exercises]]
 name = "errors4"
 path = "exercises/error_handling/errors4.rs"
 mode = "test"
 hint = """
-`PositiveNonzeroInteger::new` is always creating a new instance and returning an `Ok` result.
-It should be doing some checking, returning an `Err` result if those checks fail, and only
-returning an `Ok` result if those checks determine that everything is... okay :)"""
+`PositiveNonzeroInteger::new` crée toujours une nouvelle instance et retourne un résultat `Ok`.
+Il devrait faire des vérifications, retourner un résultat `Err` si ces vérifications échouent, 
+et seulement retourner un `Ok` si ces vérifications déterminent que tout est... ok :)"""
 
 [[exercises]]
 name = "errors5"
 path = "exercises/error_handling/errors5.rs"
 mode = "compile"
 hint = """
-There are two different possible `Result` types produced within `main()`, which are
-propagated using `?` operators. How do we declare a return type from `main()` that allows both?
+Il y a deux types de `Result` possibles produits par `main()`, qui sont propagés
+propagés à l'aide de l'opérateur `?`. Comment déclarer un type de retour de `main()` qui autorise les deux ?
 
-Under the hood, the `?` operator calls `From::from` on the error value to convert it to a boxed
-trait object, a `Box<dyn error::Error>`. This boxed trait object is polymorphic, and since all
-errors implement the `error::Error` trait, we can capture lots of different errors in one "Box"
-object.
 
-Check out this section of the book:
+L'opérateur `?` appelle en fait le trait `From::from` sur la valeur de l'erreur pour la convertir
+en un "boxed trait object", un `Box<dyn error::Error>`. Cet trait object est polymorphe, et puisque toutes les
+erreurs implémentent le trait `error::Error`, nous pouvons capturer beaucoup d'erreurs différentes
+dans un seul objet "Box".
+
+Consultez cette section du livre :
 https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator
 
-Read more about boxing errors:
+En savoir plus sur les erreurs et sur sa mise en ... Box :
 https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/boxing_errors.html
 
-Read more about using the `?` operator with boxed errors:
+En savoir plus sur l'utilisation de l'opérateur `?` avec des "boxed errors" :
 https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/reenter_question_mark.html
 """
 
@@ -675,19 +677,19 @@ name = "errors6"
 path = "exercises/error_handling/errors6.rs"
 mode = "test"
 hint = """
-This exercise uses a completed version of `PositiveNonzeroInteger` from
+Cet exercice utilise une version complétée de `PositiveNonzeroInteger` provenant de
 errors4.
 
-Below the line that TODO asks you to change, there is an example of using
-the `map_err()` method on a `Result` to transform one type of error into
-another. Try using something similar on the `Result` from `parse()`. You
-might use the `?` operator to return early from the function, or you might
-use a `match` expression, or maybe there's another way!
+Sous la ligne que TODO vous demande de changer, il y a un exemple d'utilisation de
+la méthode `map_err()` sur un `Result` pour transformer un type d'erreur en
+un autre. Essayez d'utiliser quelque chose de similaire sur le `Result` de `parse()`.
+Vous pouvez utiliser l'opérateur `?` pour retourner de la fonction au début, 
+ou vous pouvez utiliser une expression `match`, ou peut-être qu'il y a un autre moyen !
 
-You can create another function inside `impl ParsePosNonzeroError` to use
-with `map_err()`.
+Vous pouvez créer une autre fonction dans `impl ParsePosNonzeroError` pour l'utiliser
+avec `map_err()`.
 
-Read more about `map_err()` in the `std::result` documentation:
+Pour en savoir plus sur `map_err()`, lisez la documentation de `std::result` :
 https://doc.rust-lang.org/std/result/enum.Result.html#method.map_err"""
 
 # Generics

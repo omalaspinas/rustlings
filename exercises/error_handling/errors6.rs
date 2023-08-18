@@ -1,13 +1,13 @@
 // errors6.rs
 //
-// Using catch-all error types like `Box<dyn error::Error>` isn't recommended
-// for library code, where callers might want to make decisions based on the
-// error content, instead of printing it out or propagating it further. Here, we
-// define a custom error type to make it possible for callers to decide what to
-// do next when our function returns an error.
+// L'utilisation de types d'erreurs fourre-tout comme `Box<dyn error::Error>` n'est pas recommandée
+// pour le code de la bibliothèque, où les appelants pourraient vouloir prendre des décisions basées
+// sur le contenu de l'erreur, au lieu de l'imprimer ou de la propager plus loin. Ici, nous
+// définissons un type d'erreur personnalisé pour permettre aux appelants de
+// décider de ce qu'il faut faire lorsque notre fonction renvoie une erreur.
 //
-// Execute `rustlings hint errors6` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint errors6` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 

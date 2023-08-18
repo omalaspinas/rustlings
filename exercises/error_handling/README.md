@@ -1,12 +1,14 @@
-# Error handling
+# Gestion des erreurs
 
-Most errors aren’t serious enough to require the program to stop entirely.
-Sometimes, when a function fails, it’s for a reason that you can easily interpret and respond to.
-For example, if you try to open a file and that operation fails because the file doesn’t exist, you might want to create the file instead of terminating the process.
+La plupart des erreurs ne sont pas suffisamment graves pour nécessiter l'arrêt complet d'un programme.
+Parfois, lorsqu'une fonction échoue, c'est pour une raison que vous pouvez facilement interpréter
+et à laquelle vous pouvez réagir.
+Par exemple, si vous essayez d'ouvrir un fichier et que cette opération échoue parce que le fichier n'existe pas, 
+vous voudrez peut-être créer le fichier au lieu de mettre fin au processus.
 
-## Further information
+## Plus d'informations
 
-- [Error Handling](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)
-- [Generics](https://doc.rust-lang.org/book/ch10-01-syntax.html)
+- [Gestion des erreurs](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)
+- [Génériques](https://doc.rust-lang.org/book/ch10-01-syntax.html)
 - [Result](https://doc.rust-lang.org/rust-by-example/error/result.html)
 - [Boxing errors](https://doc.rust-lang.org/rust-by-example/error/multiple_error_types/boxing_errors.html)

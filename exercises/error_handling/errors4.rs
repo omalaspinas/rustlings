@@ -1,7 +1,7 @@
 // errors4.rs
 //
-// Execute `rustlings hint errors4` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint errors4` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
