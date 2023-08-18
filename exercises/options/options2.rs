@@ -1,7 +1,7 @@
 // options2.rs
 //
-// Execute `rustlings hint options2` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint options2` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
@@ -12,7 +12,7 @@ mod tests {
         let target = "rustlings";
         let optional_target = Some(target);
 
-        // TODO: Make this an if let statement whose value is "Some" type
+        // TODO: Transformez ça en une instruction `if let` dona la valeur est un "Some" type
         word = optional_target {
             assert_eq!(word, target);
         }
@@ -29,9 +29,9 @@ mod tests {
 
         let mut cursor = range;
 
-        // TODO: make this a while let statement - remember that vector.pop also
-        // adds another layer of Option<T>. You can stack `Option<T>`s into
-        // while let and if let.
+        // TODO: faites une instruction while let - se rappeler que vector.pop aussi
+        // ajoute une couche d'Option<T>. Vous pouvez empiler des `Option<T> dans des
+        // while let et if let.
         integer = optional_integers.pop() {
             assert_eq!(integer, cursor);
             cursor -= 1;
