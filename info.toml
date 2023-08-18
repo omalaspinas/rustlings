@@ -559,7 +559,7 @@ Pour en savoir plus, consultez le site https://doc.rust-lang.org/book/ch08-03-ha
 name = "quiz2"
 path = "exercises/quiz2.rs"
 mode = "test"
-hint = "No hints this time ;)"
+hint = "Pas d'indices cette fois ;)"
 
 # OPTIONS
 
