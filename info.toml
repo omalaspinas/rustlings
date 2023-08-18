@@ -817,41 +817,45 @@ name = "tests1"
 path = "exercises/tests/tests1.rs"
 mode = "test"
 hint = """
-You don't even need to write any code to test -- you can just test values and run that, even
-though you wouldn't do that in real life :) `assert!` is a macro that needs an argument.
-Depending on the value of the argument, `assert!` will do nothing (in which case the test will
-pass) or `assert!` will panic (in which case the test will fail). So try giving different values
-to `assert!` and see which ones compile, which ones pass, and which ones fail :)"""
+Vous n'avez même pas besoin d'écrire du code pour faire des tests 
+- vous pouvez simplement tester des valeurs exécuter et exécuter le code,
+même si vous ne le feriez prrobablement pas dans la vraie vie :) 
+`assert!` est une macro qui a besoin d'un argument.
+En fonction de la valeur de l'argument, `assert!` ne fera rien (dans ce cas, 
+le test passera) ou `assert!` paniquera (auquel cas le test échouera). 
+Essayez donc de donner différentes valeurs
+à `assert!` et voyez lesquelles compilent, lesquelles passent, et lesquelles échouent :)"""
 
 [[exercises]]
 name = "tests2"
 path = "exercises/tests/tests2.rs"
 mode = "test"
 hint = """
-Like the previous exercise, you don't need to write any code to get this test to compile and
-run. `assert_eq!` is a macro that takes two arguments and compares them. Try giving it two
-values that are equal! Try giving it two arguments that are different! Try giving it two values
-that are of different types! Try switching which argument comes first and which comes second!"""
+Comme pour l'exercice précédent, vous n'avez pas besoin d'écrire de code pour compiler et exécuter ce test. 
+`assert_eq!` est une macro qui prend deux arguments et les compare. Essayez de lui donner deux valeurs
+qui sont égales ! Essayez de lui donner deux arguments différents ! Essayez de lui donner deux valeurs
+qui sont de types différents ! Essayez d'intervertir l'argument qui vient en premier et celui qui vient en second !"""
 
 [[exercises]]
 name = "tests3"
 path = "exercises/tests/tests3.rs"
 mode = "test"
 hint = """
-You can call a function right where you're passing arguments to `assert!` -- so you could do
-something like `assert!(having_fun())`. If you want to check that you indeed get false, you
-can negate the result of what you're doing using `!`, like `assert!(!having_fun())`."""
+Vous pouvez appeler une fonction à l'endroit même où vous passez des arguments à `assert!` 
+-- vous pouvez donc faire quelque chose comme `assert!(having_fun())`. 
+Si vous voulez vérifier que vous obtenez bien `false`, vous pouvez 
+prendre la négative du résultat de ce que vous avez fait en utilisant `!`, 
+comme dans `assert!(!having_fun())`."""
 
 [[exercises]]
 name = "tests4"
 path = "exercises/tests/tests4.rs"
 mode = "test"
 hint = """
-We expect method `Rectangle::new()` to panic for negative values.
-To handle that you need to add a special attribute to the test function.
-You can refer to the docs:
+Nous nous attendons à ce que la méthode `Rectangle::new()` panique pour les valeurs négatives.
+Pour gérer cela, vous devez ajouter un attribut spécial à la fonction de test.
+Vous pouvez vous référer à la documentation :
 https://doc.rust-lang.org/stable/book/ch11-01-writing-tests.html#checking-for-panics-with-should_panic"""
-
 
 # STANDARD LIBRARY TYPES
 

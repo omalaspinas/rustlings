@@ -1,14 +1,14 @@
 // tests1.rs
 //
-// Tests are important to ensure that your code does what you think it should
-// do. Tests can be run on this file with the following command: rustlings run
-// tests1
+// Les tests sont importants pour s'assurer que votre code fait ce que vous pensez
+// qu'il devrait faire. Les tests peuvent être exécutés sur ce fichier avec la commande suivante :
+// rustlings run tests1
 //
-// This test has a problem with it -- make the test compile! Make the test pass!
-// Make the test fail!
+// Ce test a un problème -- faites-le compiler ! Faites passer le test !
+// Faites échouer le test !
 //
-// Execute `rustlings hint tests1` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint tests1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 

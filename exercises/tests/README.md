@@ -1,7 +1,7 @@
-# Tests
+# Les tests
 
-Going out of order from the book to cover tests -- many of the following exercises will ask you to make tests pass!
+Changer l'ordre par rapport au livre pour couvrir les tests -- plusieurs des exercices suivants vous demanderont de faire passer des tests !
 
 ## Further information
 
-- [Writing Tests](https://doc.rust-lang.org/book/ch11-01-writing-tests.html)
+- [Écrire des tests](https://doc.rust-lang.org/book/ch11-01-writing-tests.html)
