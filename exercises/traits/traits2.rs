@@ -1,12 +1,13 @@
 // traits2.rs
 //
-// Your task is to implement the trait `AppendBar` for a vector of strings. To
-// implement this trait, consider for a moment what it means to 'append "Bar"'
-// to a vector of strings.
+// Votre tâche est d'implémenter le trait `AppendBar` pour un vecteur de chaînes de caractères. Pour
+// Pour implémenter ce trait, considérez un instant ce que signifie "ajouter "Bar"
+// à un vecteur de chaînes de caractères.
 //
-// No boiler plate code this time, you can do this!
+// Pas de code de base cette fois-ci, vous pouvez le faire !
 //
-// Execute `rustlings hint traits2` or use the `hint` watch subcommand for a hint.
+// Exécutez `rustlings hint traits2` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
@@ -14,7 +15,7 @@ trait AppendBar {
     fn append_bar(self) -> Self;
 }
 
-// TODO: Implement trait `AppendBar` for a vector of strings.
+// TODO: Implémentez le trait `AppendBar` pour un vecteur de chaînes de caractères.
 
 #[cfg(test)]
 mod tests {

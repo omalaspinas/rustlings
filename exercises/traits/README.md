@@ -1,19 +1,22 @@
 # Traits
 
-A trait is a collection of methods.
+Un trait est un ensemble de méthodes.
 
-Data types can implement traits. To do so, the methods making up the trait are defined for the data type. For example, the `String` data type implements the `From<&str>` trait. This allows a user to write `String::from("hello")`.
+Les types peuvent implémenter des traits.
+Pour ce faire, les méthodes qui composent les traits sont définies pour le type de données. 
+Par exemple, le type de données `String` implémente le trait `From<&str>`. 
+Cela permet à un utilisateur d'écrire `String::from("hello")`.
 
-In this way, traits are somewhat similar to Java interfaces and C++ abstract classes.
+De cette manière, les traits sont quelque peu similaires aux interfaces Java et aux classes abstraites C++.
 
-Some additional common Rust traits include:
+Parmi les traits Rust les plus courants, on peut citer
 
-- `Clone` (the `clone` method)
-- `Display` (which allows formatted display via `{}`)
-- `Debug` (which allows formatted display via `{:?}`)
+- `Clone` (la méthode `clone`)
+- `Display` (qui permet l'affichage formaté via `{}`)
+- `Debug` (qui permet l'affichage formaté via `{:?}`)
 
-Because traits indicate shared behavior between data types, they are useful when writing generics.
+Parce que les traits indiquent un comportement partagé entre les types de données, ils sont utiles lors de l'écriture de génériques.
 
-## Further information
+## Plus d'informations
 
 - [Traits](https://doc.rust-lang.org/book/ch10-02-traits.html)

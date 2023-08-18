@@ -1,11 +1,11 @@
 // traits1.rs
 //
-// Time to implement some traits! Your task is to implement the trait
-// `AppendBar` for the type `String`. The trait AppendBar has only one function,
-// which appends "Bar" to any object implementing this trait.
+// Il est temps d'implémenter quelques traits ! Votre tâche est d'implémenter le trait
+// `AppendBar` pour le type `String`. Le trait AppendBar n'a qu'une seule fonction,
+// qui ajoute "Bar" à tout objet implémentant ce trait.
 //
-// Execute `rustlings hint traits1` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint traits1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
@@ -14,7 +14,7 @@ trait AppendBar {
 }
 
 impl AppendBar for String {
-    // TODO: Implement `AppendBar` for type `String`.
+    // TODO: Implémentez `AppendBar` pour le type `String`.
 }
 
 fn main() {
