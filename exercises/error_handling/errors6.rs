@@ -13,7 +13,7 @@
 
 use std::num::ParseIntError;
 
-// This is a custom error type that we will be using in `parse_pos_nonzero()`.
+// C'est un type d'erreur personnalisé que nous utiliserons dans `parse_pos_nonzero()`.
 #[derive(PartialEq, Debug)]
 enum ParsePosNonzeroError {
     Creation(CreationError),
@@ -24,18 +24,18 @@ impl ParsePosNonzeroError {
     fn from_creation(err: CreationError) -> ParsePosNonzeroError {
         ParsePosNonzeroError::Creation(err)
     }
-    // TODO: add another error conversion function here.
+    // TODO: ajoutez une autre fonction de conversion d'erreur ici.
     // fn from_parseint...
 }
 
 fn parse_pos_nonzero(s: &str) -> Result<PositiveNonzeroInteger, ParsePosNonzeroError> {
-    // TODO: change this to return an appropriate error instead of panicking
-    // when `parse()` returns an error.
+    // TODO: changez ceci pour retourner une erreur appropriée au lieu de paniquer
+    // lorsque `parse()` renvoie une erreur.
     let x: i64 = s.parse().unwrap();
     PositiveNonzeroInteger::new(x).map_err(ParsePosNonzeroError::from_creation)
 }
 
-// Don't change anything below this line.
+// Ne modifiez rien en dessous de cette ligne.
 
 #[derive(PartialEq, Debug)]
 struct PositiveNonzeroInteger(u64);
@@ -62,7 +62,7 @@ mod test {
 
     #[test]
     fn test_parse_error() {
-        // We can't construct a ParseIntError, so we have to pattern match.
+        // Nous ne pouvons pas construire une erreur de type ParseIntError, donc nous devons pattern matcher.
         assert!(matches!(
             parse_pos_nonzero("not a number"),
             Err(ParsePosNonzeroError::ParseInt(_))

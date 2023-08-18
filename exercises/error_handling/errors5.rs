@@ -28,7 +28,7 @@ use std::error;
 use std::fmt;
 use std::num::ParseIntError;
 
-// TODO: update the return type of `main()` to make this compile.
+// TODO: mettre à jour le type de retour de `main()` pour que cela compile.
 fn main() -> Result<(), Box<dyn ???>> {
     let pretend_user_input = "42";
     let x: i64 = pretend_user_input.parse()?;
@@ -36,7 +36,7 @@ fn main() -> Result<(), Box<dyn ???>> {
     Ok(())
 }
 
-// Don't change anything below this line.
+// Ne modifiez rien en dessous de cette ligne.
 
 #[derive(PartialEq, Debug)]
 struct PositiveNonzeroInteger(u64);
