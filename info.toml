@@ -778,8 +778,9 @@ name = "quiz3"
 path = "exercises/quiz3.rs"
 mode = "test"
 hint = """
-To find the best solution to this challenge you're going to need to think back to your
-knowledge of traits, specifically Trait Bound Syntax -  you may also need this: `use std::fmt::Display;`."""
+Pour trouver la meilleure solution à ce défi, vous allez devoir vous référer à vos
+connaissance des traits, en particulier de la syntaxe liée aux 
+traits - vous pouvez aussi avoir besoin de ceci : `use std::fmt::Display;`."""
 
 # LIFETIMES
 
