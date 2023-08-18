@@ -1,27 +1,27 @@
 // hashmaps1.rs
 //
-// A basket of fruits in the form of a hash map needs to be defined. The key
-// represents the name of the fruit and the value represents how many of that
-// particular fruit is in the basket. You have to put at least three different
-// types of fruits (e.g apple, banana, mango) in the basket and the total count
-// of all the fruits should be at least five.
+// Il faut définir une corbeille de fruits sous la forme d'une table de hachage. La clé
+// représente le nom du fruit et la valeur représente le nombre de ce fruit
+// dans la corbeille. Vous devez mettre au moins trois types de fruits différents
+// (par exemple, pomme, banane, mangue) dans la corbeille et le compte total
+// de tous les fruits doit être d'au moins cinq.
 //
-// Make me compile and pass the tests!
+// Faites-moi compiler et passer les tests !
 //
-// Execute `rustlings hint hashmaps1` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint hashmaps1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
 use std::collections::HashMap;
 
 fn fruit_basket() -> HashMap<String, u32> {
-    let mut basket = // TODO: declare your hash map here.
+    let mut basket = // TODO: déclarez votre table de hachage ici.
 
-    // Two bananas are already given for you :)
+    // Deux bananes sont déjà données :)
     basket.insert(String::from("banana"), 2);
 
-    // TODO: Put more fruits in your basket here.
+    // TODO: Mettez plus de fruits dans votre panier ici.
 
     basket
 }

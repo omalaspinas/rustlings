@@ -1,12 +1,12 @@
-# Hashmaps
+# Tables de hachage
 
-A *hash map* allows you to associate a value with a particular key.
-You may also know this by the names [*unordered map* in C++](https://en.cppreference.com/w/cpp/container/unordered_map),
-[*dictionary* in Python](https://docs.python.org/3/tutorial/datastructures.html#dictionaries) or an *associative array* in other languages.
+Une *table de hachage* permet d'associer une valeur à une clé particulière.
+Vous pouvez également la connaître sous les noms de [*table non ordonnée* en C++](https://en.cppreference.com/w/cpp/container/unordered_map),
+[*dictionnaire* en Python](https://docs.python.org/3/tutorial/datastructures.html#dictionaries) ou un *tableau associatif* dans d'autres langages.
 
-This is the other data structure that we've been talking about before, when
-talking about Vecs.
+Il s'agit de l'autre structure de données dont nous avons parlé précédemment,
+lorsque nous avons parlé des "Vecs".
 
 ## Further information
 
-- [Storing Keys with Associated Values in Hash Maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)
+- [Stockage des clés et des valeurs dans les tables de hachage](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)

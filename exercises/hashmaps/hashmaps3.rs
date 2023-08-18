@@ -1,31 +1,31 @@
 // hashmaps3.rs
 //
-// A list of scores (one per line) of a soccer match is given. Each line is of
-// the form : "<team_1_name>,<team_2_name>,<team_1_goals>,<team_2_goals>"
-// Example: England,France,4,2 (England scored 4 goals, France 2).
+// Une liste de scores (un par ligne) d'un match de football est donnée. Chaque ligne est de la
+// de la forme : "<nom_de_l'équipe_1>,<nom_de_l'équipe_2>,<objectifs_de_l'équipe_1>,<objectifs_de_l'équipe_2>"
+// Exemple : Angleterre,France,4,2 (l'Angleterre a marqué 4 buts, la France 2).
 //
-// You have to build a scores table containing the name of the team, goals the
-// team scored, and goals the team conceded. One approach to build the scores
-// table is to use a Hashmap. The solution is partially written to use a
-// Hashmap, complete it to pass the test.
+// Vous devez construire un tableau de scores contenant le nom de l'équipe, les
+// buts marqués par l'équipe et les buts encaissés par l'équipe. Une approche pour construire le tableau de
+// est d'utiliser une Hashmap. La solution est partiellement écrite pour utiliser une
+// Hashmap, complétez-la pour qu'elle passe le test.
 //
-// Make me pass the tests!
+// Faites-moi passer les tests !
 //
-// Execute `rustlings hint hashmaps3` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint hashmaps3` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
 use std::collections::HashMap;
 
-// A structure to store the goal details of a team.
+// Une structure pour stocker les détails des buts d'une équipe.
 struct Team {
     goals_scored: u8,
     goals_conceded: u8,
 }
 
 fn build_scores_table(results: String) -> HashMap<String, Team> {
-    // The name of the team is the key and its associated struct is the value.
+    // Le nom de l'équipe est la clé et sa structure associée est la valeur.
     let mut scores: HashMap<String, Team> = HashMap::new();
 
     for r in results.lines() {
@@ -34,11 +34,11 @@ fn build_scores_table(results: String) -> HashMap<String, Team> {
         let team_1_score: u8 = v[2].parse().unwrap();
         let team_2_name = v[1].to_string();
         let team_2_score: u8 = v[3].parse().unwrap();
-        // TODO: Populate the scores table with details extracted from the
-        // current line. Keep in mind that goals scored by team_1
-        // will be the number of goals conceded from team_2, and similarly
-        // goals scored by team_2 will be the number of goals conceded by
-        // team_1.
+        // TODO : Remplir le tableau des scores avec les détails extraits de la
+        // ligne en cours. Gardez à l'esprit que les buts marqués par l'équipe_1
+        // seront le nombre de buts encaissés par l'équipe_2, et de la même manière
+        // les buts marqués par l'équipe_2 seront le nombre de buts encaissés par
+        // l'équipe_1.
     }
     scores
 }

@@ -526,10 +526,10 @@ name = "hashmaps1"
 path = "exercises/hashmaps/hashmaps1.rs"
 mode = "test"
 hint = """
-Hint 1: Take a look at the return type of the function to figure out
-  the type for the `basket`.
-Hint 2: Number of fruits should be at least 5. And you have to put
-  at least three different types of fruits.
+Indice 1 : Regardez le type de retour de la fonction pour déterminer le type de la
+  variable `basket`.
+Indice 2 : Le nombre de fruits doit être d'au moins 5. Et vous devez mettre
+  au moins trois types de fruits différents.
 """
 
 [[exercises]]
@@ -537,8 +537,8 @@ name = "hashmaps2"
 path = "exercises/hashmaps/hashmaps2.rs"
 mode = "test"
 hint = """
-Use the `entry()` and `or_insert()` methods of `HashMap` to achieve this.
-Learn more at https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#only-inserting-a-value-if-the-key-has-no-value
+Utilisez les méthodes `entry()` et `or_insert()` de `HashMap` pour y parvenir.
+Pour en savoir plus, consultez le site https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#only-inserting-a-value-if-the-key-has-no-value
 """
 
 [[exercises]]
@@ -546,10 +546,11 @@ name = "hashmaps3"
 path = "exercises/hashmaps/hashmaps3.rs"
 mode = "test"
 hint = """
-Hint 1: Use the `entry()` and `or_insert()` methods of `HashMap` to insert entries corresponding to each team in the scores table.
-Learn more at https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#only-inserting-a-value-if-the-key-has-no-value
-Hint 2: If there is already an entry for a given key, the value returned by `entry()` can be updated based on the existing value.
-Learn more at https://doc.rust-lang.org/book/ch08-03-hash-maps.html#updating-a-value-based-on-the-old-value
+Indice 1 : Utilisez les méthodes `entry()` et `or_insert()` de `HashMap` pour insérer 
+les entrées correspondant à chaque équipe dans le tableau des scores.
+Pour en savoir plus, consultez le site https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#only-inserting-a-value-if-the-key-has-no-value
+Indice 2 : S'il existe déjà une entrée pour une clé donnée, la valeur retournée par `entry()` peut être mise à jour en fonction de la valeur existante.
+Pour en savoir plus, consultez le site https://doc.rust-lang.org/book/ch08-03-hash-maps.html#updating-a-value-based-on-the-old-value
 """
 
 # QUIZ 2
