@@ -789,7 +789,7 @@ name = "lifetimes1"
 path = "exercises/lifetimes/lifetimes1.rs"
 mode = "compile"
 hint = """
-Let the compiler guide you. Also take a look at the book if you need help:
+Laissez-vous guider par le compilateur. Jetez également un coup d'œil au livre si vous avez besoin d'aide :
 https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html"""
 
 [[exercises]]
@@ -797,17 +797,18 @@ name = "lifetimes2"
 path = "exercises/lifetimes/lifetimes2.rs"
 mode = "compile"
 hint = """
-Remember that the generic lifetime 'a will get the concrete lifetime that is equal to the smaller of the lifetimes of x and y.
-You can take at least two paths to achieve the desired result while keeping the inner block:
-1. Move the string2 declaration to make it live as long as string1 (how is result declared?)
-2. Move println! into the inner block"""
+Rappelez-vous que la durée de vie générique 'a obtiendra la durée de vie concrète 
+qui est égale à la plus petite des durées de vie de x et de y.
+Vous pouvez emprunter au moins deux chemins pour obtenir le résultat souhaité tout en conservant le bloc intérieur :
+1. Déplacer la déclaration de string2 pour qu'elle ait la même durée de vie que string1 (comment result est-il déclaré ?)
+2. Déplacer println! dans le bloc interne"""
 
 [[exercises]]
 name = "lifetimes3"
 path = "exercises/lifetimes/lifetimes3.rs"
 mode = "compile"
 hint = """
-If you use a lifetime annotation in a struct's fields, where else does it need to be added?"""
+Si vous utilisez une annotation de durée de vie dans les champs d'une structure, où doit-elle être ajoutée ?"""
 
 # TESTS
 
