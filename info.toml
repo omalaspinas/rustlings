@@ -577,13 +577,13 @@ name = "options2"
 path = "exercises/options/options2.rs"
 mode = "test"
 hint = """
-check out:
+jetez un œil à:
 https://doc.rust-lang.org/rust-by-example/flow_control/if_let.html
 https://doc.rust-lang.org/rust-by-example/flow_control/while_let.html
 
-Remember that Options can be stacked in if let and while let.
-For example: Some(Some(variable)) = variable2
-Also see Option::flatten
+N'oubliez pas que les options peuvent être empilées dans les if let et while let.
+Par exemple : Some(Some(variable)) = variable2
+Voir aussi Option::flatten
 """
 
 [[exercises]]
@@ -591,10 +591,10 @@ name = "options3"
 path = "exercises/options/options3.rs"
 mode = "compile"
 hint = """
-The compiler says a partial move happened in the `match`
-statement. How can this be avoided? The compiler shows the correction
-needed. After making the correction as suggested by the compiler, do
-read: https://doc.rust-lang.org/std/keyword.ref.html"""
+Le compilateur indique qu'un move partiel s'est produit
+dans l'instruction `match`. Comment éviter cela ? Le compilateur montre la correction
+nécessaire. Après avoir effectué la correction suggérée par le compilateur,
+lisez : https://doc.rust-lang.org/std/keyword.ref.html"""
 
 # ERROR HANDLING
 
