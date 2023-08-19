@@ -1,12 +1,12 @@
 // threads1.rs
 //
-// This program spawns multiple threads that each run for at least 250ms, and
-// each thread returns how much time they took to complete. The program should
-// wait until all the spawned threads have finished and should collect their
-// return values into a vector.
+// Ce programme crée plusieurs threads qui s'exécutent chacun pendant au moins 250 ms, et
+// chaque thread renvoie le temps qu'il a mis à s'exécuter. Le programme doit
+// attendre que tous les threads créés soient terminés et collecter leurs
+// valeurs de retour dans un vecteur.
 //
-// Execute `rustlings hint threads1` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint threads1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
@@ -26,7 +26,7 @@ fn main() {
 
     let mut results: Vec<u128> = vec![];
     for handle in handles {
-        // TODO: a struct is returned from thread::spawn, can you use it?
+        // TODO: une structure est renvoyée par thread::spawn, pouvez-vous l'utiliser?
     }
 
     if results.len() != 10 {

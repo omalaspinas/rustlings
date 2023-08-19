@@ -54,7 +54,7 @@ name = "variables4"
 path = "exercises/variables/variables4.rs"
 mode = "compile"
 hint = """
-En Rust, les variables sont immuables par défaut. Mais ici, nous essayons
+En Rust, les variables sont immutables par défaut. Mais ici, nous essayons
 de réassigner une valeur différente à x ! Il y a un mot-clé que nous pouvons utiliser pour rendre
 une liaison de variable mutable."""
 
@@ -1015,14 +1015,14 @@ name = "threads1"
 path = "exercises/threads/threads1.rs"
 mode = "compile"
 hint = """
-`JoinHandle` is a struct that is returned from a spawned thread:
+`JoinHandle` est une structure qui est retournée par un thread créé :
 https://doc.rust-lang.org/std/thread/fn.spawn.html
 
-A challenge with multi-threaded applications is that the main thread can
-finish before the spawned threads are completed.
+L'un des défis des applications multithreadées est que le thread principal peut 
+se terminer avant que les threads créés ne soient terminés
 https://doc.rust-lang.org/book/ch16-01-threads.html#waiting-for-all-threads-to-finish-using-join-handles
 
-Use the JoinHandles to wait for each thread to finish and collect their results.
+Utilisez les JoinHandles pour attendre la fin de chaque thread et collecter leurs résultats.
 https://doc.rust-lang.org/std/thread/struct.JoinHandle.html
 """
 
@@ -1031,42 +1031,40 @@ name = "threads2"
 path = "exercises/threads/threads2.rs"
 mode = "compile"
 hint = """
-`Arc` is an Atomic Reference Counted pointer that allows safe, shared access
-to **immutable** data. But we want to *change* the number of `jobs_completed`
-so we'll need to also use another type that will only allow one thread to
-mutate the data at a time. Take a look at this section of the book:
+`Arc` (Atomic Reference Counted) est un pointeur qui permet un accès sûr et partagé à des données **immutables**
+à des données **immutables**. Mais nous voulons *changer* le nombre de `jobs_completed`,
+nous devrons donc utiliser un autre type qui n'autorisera qu'un seul thread à la fois
+à modifier les données. Jetez un coup d'œil à cette section du livre :
 https://doc.rust-lang.org/book/ch16-03-shared-state.html#atomic-reference-counting-with-arct
-and keep reading if you'd like more hints :)
+et continuez à lire si vous voulez plus de conseils :)
 
+Avez-vous maintenant un `Arc` `Mutex` `JobStatus` au début de main? Comme par exemple :
+`let status = Arc::new(Mutex::new(JobStatus { jobs_completed : 0 }));`
+Comme le code de l'exemple dans le livre qui se trouve après le texte
+qui dit "We can use Arc<T> to fix this.". Si ce n'est pas le cas, essayez!
+Si c'est le cas et que vous voulez d'autres conseils, continuez à lire!
 
-Do you now have an `Arc` `Mutex` `JobStatus` at the beginning of main? Like:
-`let status = Arc::new(Mutex::new(JobStatus { jobs_completed: 0 }));`
-Similar to the code in the example in the book that happens after the text
-that says "We can use Arc<T> to fix this.". If not, give that a try! If you
-do and would like more hints, keep reading!!
+Assurez-vous qu'aucun de vos threads ne retient le verrou du mutex
+pendant qu'ils dorment, car cela empêchera l'autre thread
+d'obtenir le verrou. Les verrous sont automatiquement libérés
+lorsqu'ils sortent de la portée.
 
-
-Make sure neither of your threads are holding onto the lock of the mutex
-while they are sleeping, since this will prevent the other thread from
-being allowed to get the lock. Locks are automatically released when
-they go out of scope.
-
-If you've learned from the sample solutions, I encourage you to come
-back to this exercise and try it again in a few days to reinforce
-what you've learned :)"""
+Si vous avez appris des exemples de solutions, je vous encourage à revenir 
+sur cet exercice et à le refaire dans quelques jours pour le renforcer
+ce que vous avez appris :)"""
 
 [[exercises]]
 name = "threads3"
 path = "exercises/threads/threads3.rs"
 mode = "compile"
 hint = """
-An alternate way to handle concurrency between threads is to use
-a mpsc (multiple producer, single consumer) channel to communicate.
-With both a sending end and a receiving end, it's possible to
-send values in one thread and receive them in another.
-Multiple producers are possible by using clone() to create a duplicate
-of the original sending end.
-See https://doc.rust-lang.org/book/ch16-02-message-passing.html for more info.
+Une autre façon de gérer la concurrence entre les threads est d'utiliser un canal mpsc 
+(multiple producer, single consumer) pour communiquer.
+Avec un émetteur et un receveur, il est possible d'envoyer des valeurs dans un 
+thread et de les recevoir dans un autre.
+Les producteurs multiples sont possibles en utilisant clone() pour créer un duplicata
+de l'émetteur original.
+Voir https://doc.rust-lang.org/book/ch16-02-message-passing.html pour plus d'informations.
 """
 
 # MACROS
