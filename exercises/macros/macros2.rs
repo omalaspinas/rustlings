@@ -1,7 +1,7 @@
 // macros2.rs
 //
-// Execute `rustlings hint macros2` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint macros2` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 

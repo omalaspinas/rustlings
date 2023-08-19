@@ -1074,8 +1074,8 @@ name = "macros1"
 path = "exercises/macros/macros1.rs"
 mode = "compile"
 hint = """
-When you call a macro, you need to add something special compared to a
-regular function call. If you're stuck, take a look at what's inside
+Lorsque vous appelez une macro, vous devez ajouter quelque chose de spécial par rapport à
+l'appel d'une fonction normale. Si vous êtes bloqué, regardez ce qu'il y a à l'intérieur de
 `my_macro`."""
 
 [[exercises]]
@@ -1083,36 +1083,38 @@ name = "macros2"
 path = "exercises/macros/macros2.rs"
 mode = "compile"
 hint = """
-Macros don't quite play by the same rules as the rest of Rust, in terms of
-what's available where.
+Les macros ne suivent pas tout à fait les mêmes règles que le reste de Rust, en termes de
+ce qui est disponible et où ça l'est.
 
-Unlike other things in Rust, the order of "where you define a macro" versus
-"where you use it" actually matters."""
+Contrairement à d'autres choses en Rust, l'ordre "où vous définissez une macro" par rapport 
+à "où vous l'utilisez" a de l'importance."""
 
 [[exercises]]
 name = "macros3"
 path = "exercises/macros/macros3.rs"
 mode = "compile"
 hint = """
-In order to use a macro outside of its module, you need to do something
-special to the module to lift the macro out into its parent.
+Pour pouvoir utiliser une macro en dehors de son module, 
+il faut faire quelque chose de spécial au module pour faire sortir 
+la macro dans son parent.
 
-The same trick also works on "extern crate" statements for crates that have
-exported macros, if you've seen any of those around."""
+La même astuce fonctionne également avec les déclarations "extern crate" 
+pour les crates qui ont des macros exportées, si vous en avez déjà vu."""
 
 [[exercises]]
 name = "macros4"
 path = "exercises/macros/macros4.rs"
 mode = "compile"
 hint = """
-You only need to add a single character to make this compile.
-The way macros are written, it wants to see something between each
-"macro arm", so it can separate them.
+Il suffit d'ajouter un seul caractère pour que cela compile.
+De la manière dont les macros sont écrites, le compilateur veut 
+voir quelque chose entre chaque "bras de macro", afin de pouvoir les distinguer.
 
-That's all the macro exercises we have in here, but it's barely even
-scratching the surface of what you can do with Rust's macros. For a more
-thorough introduction, you can have a read through the little book of Rust
-macros: https://veykril.github.io/tlborm/"""
+C'est tout ce que nous avons à faire avec les macros, 
+mais cela ne fait qu'effleurer la surface de ce que vous pouvez 
+faire avec les macros de Rust. Pour une
+une introduction plus complète, vous pouvez lire le petit livre des macros de Rust
+macros : https://veykril.github.io/tlborm/"""
 
 #  CLIPPY
 
