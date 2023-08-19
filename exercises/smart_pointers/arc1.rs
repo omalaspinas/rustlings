@@ -1,29 +1,30 @@
 // arc1.rs
 //
-// In this exercise, we are given a Vec of u32 called "numbers" with values
-// ranging from 0 to 99 -- [ 0, 1, 2, ..., 98, 99 ] We would like to use this
-// set of numbers within 8 different threads simultaneously. Each thread is
-// going to get the sum of every eighth value, with an offset.
+// Dans cet exercice, on nous donne un Vec de u32 appelé "numbers" avec des valeurs
+// allant de 0 à 99 -- [ 0, 1, 2, ..., 98, 99 ] Nous aimerions utiliser ce
+// cet ensemble de nombres dans 8 threads différents simultanément. Chaque thread
+// va obtenir la somme de chaque huitième valeur, avec un décalage.
 //
-// The first thread (offset 0), will sum 0, 8, 16, ...
-// The second thread (offset 1), will sum 1, 9, 17, ...
-// The third thread (offset 2), will sum 2, 10, 18, ...
+// Le premier thread (offset 0) fera la somme de 0, 8, 16, ...
+// Le deuxième thread (offset 1), fera la somme de 1, 9, 17, ...
+// Le troisième thread (offset 2), additionnera 2, 10, 18, ...
 // ...
-// The eighth thread (offset 7), will sum 7, 15, 23, ...
+// Le huitième thread (offset 7), additionnera 7, 15, 23, ...
 //
-// Because we are using threads, our values need to be thread-safe.  Therefore,
-// we are using Arc.  We need to make a change in each of the two TODOs.
+// Comme nous utilisons des threads, nos valeurs doivent être thread-safe. C'est pourquoi,
+// nous utilisons Arc. Nous devons faire un changement dans chacun des deux TODOs.
 //
-// Make this code compile by filling in a value for `shared_numbers` where the
-// first TODO comment is, and create an initial binding for `child_numbers`
-// where the second TODO comment is. Try not to create any copies of the
-// `numbers` Vec!
+// Faites compiler ce code en remplissant une valeur pour `shared_numbers` à l'endroit où se trouve 
+// le premier commentaire TODO, et en créant un binding initial pour `child_numbers`
+// là où se trouve le second commentaire TODO. Essayez de ne pas créer de copies du Vec
+// `numbers`!
 //
-// Execute `rustlings hint arc1` or use the `hint` watch subcommand for a hint.
+// Exécutez `rustlings hint arc1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
-#![forbid(unused_imports)] // Do not change this, (or the next) line.
+#![forbid(unused_imports)] // Ne modifiez pas cette ligne (ni la suivante).
 use std::sync::Arc;
 use std::thread;
 

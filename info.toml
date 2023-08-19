@@ -953,17 +953,17 @@ name = "box1"
 path = "exercises/smart_pointers/box1.rs"
 mode = "test"
 hint = """
-Step 1
-The compiler's message should help: since we cannot store the value of the actual type
-when working with recursive types, we need to store a reference (pointer) to its value.
-We should, therefore, place our `List` inside a `Box`. More details in the book here:
+Étape 1
+Le message du compilateur devrait vous aider: puisque nous ne pouvons pas stocker la valeur du type
+lorsqu'on travaille avec des types récursifs, nous devons stocker une référence (pointeur) à sa valeur.
+Nous devons donc placer notre `List` à l'intérieur d'un `Box`. Plus de détails dans le livre ici :
 https://doc.rust-lang.org/book/ch15-01-box.html#enabling-recursive-types-with-boxes
 
-Step 2
-Creating an empty list should be fairly straightforward (hint: peek at the assertions).
-For a non-empty list keep in mind that we want to use our Cons "list builder".
-Although the current list is one of integers (i32), feel free to change the definition
-and try other types!
+Étape 2
+Créer une liste vide devrait être assez simple (indice: regardez les assertions).
+Pour une liste non vide, gardez à l'esprit que nous voulons utiliser notre Cons "constructeur de liste".
+Bien que la liste actuelle soit une liste d'entiers (i32), n'hésitez pas à modifier la définition
+et d'essayer d'autres types !
 """
 
 [[exercises]]
@@ -971,13 +971,13 @@ name = "rc1"
 path = "exercises/smart_pointers/rc1.rs"
 mode = "compile"
 hint = """
-This is a straightforward exercise to use the Rc<T> type. Each Planet has
-ownership of the Sun, and uses Rc::clone() to increment the reference count of the Sun.
-After using drop() to move the Planets out of scope individually, the reference count goes down.
-In the end the sun only has one reference again, to itself. See more at:
+Il s'agit d'un exercice d'utilisation du type Rc<T>. 
+Chaque Planète est propriétaire du Soleil et utilise Rc::clone() pour augmenter le nombre de références du Soleil.
+Après avoir utilisé drop() pour sortir les planètes de la portée individuellement, le nombre de références diminue.
+Au final, le soleil n'a plus qu'une seule référence, à lui-même. Pour en savoir plus, consultez le site suivant
 https://doc.rust-lang.org/book/ch15-04-rc.html
 
-* Unfortunately Pluto is no longer considered a planet :(
+* Malheureusement, Pluton n'est plus considéré comme une planète :(
 """
 
 [[exercises]]
@@ -985,15 +985,15 @@ name = "arc1"
 path = "exercises/smart_pointers/arc1.rs"
 mode = "compile"
 hint = """
-Make `shared_numbers` be an `Arc` from the numbers vector. Then, in order
-to avoid creating a copy of `numbers`, you'll need to create `child_numbers`
-inside the loop but still in the main thread.
+Faites en sorte que `shared_numbers` soit un `Arc` du vecteur de nombres. 
+Ensuite, pour éviter de créer une copie de `numbers`, vous devrez créer `child_numbers`
+à l'intérieur de la boucle, mais toujours dans le thread principal.
 
-`child_numbers` should be a clone of the Arc of the numbers instead of a
-thread-local copy of the numbers.
+`child_numbers` devrait être un clone de l'Arc des nombres au lieu d'une
+copie locale des nombres dans le thread.
 
-This is a simple exercise if you understand the underlying concepts, but if this
-is too much of a struggle, consider reading through all of Chapter 16 in the book:
+C'est un exercice simple si vous comprenez les concepts sous-jacents
+si c'est trop difficile, envisagez de lire tout le chapitre 16 du livre :
 https://doc.rust-lang.org/stable/book/ch16-00-concurrency.html
 """
 
@@ -1002,10 +1002,10 @@ name = "cow1"
 path = "exercises/smart_pointers/cow1.rs"
 mode = "test"
 hint = """
-If Cow already owns the data it doesn't need to clone it when to_mut() is called.
+Si Cow possède les données, il n'a pas besoin de les cloner lorsque to_mut() est appelé.
 
-Check out https://doc.rust-lang.org/std/borrow/enum.Cow.html for documentation
-on the `Cow` type.
+Consultez https://doc.rust-lang.org/std/borrow/enum.Cow.html pour de la documentation sur le type `Cow`
+sur le type `Cow`.
 """
 
 # THREADS
