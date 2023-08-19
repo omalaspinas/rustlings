@@ -68,8 +68,8 @@ Malheureusement, cela ne nous aide pas beaucoup dans cet exercice
 car nous voulons assigner une valeur de type différent à une variable existante. Parfois
 on peut également réutiliser des noms de variables existants parce qu'on ne fait que convertir des
 dans des types différents, comme dans cet exercice.
-Heureusement, Rust dispose d'une solution puissante à ce problème : le " Shadowing " !
-Vous pouvez en savoir plus sur le "Shadowing" dans la section "Variables et mutabilité" du livre :
+Heureusement, Rust dispose d'une solution puissante à ce problème: le " Shadowing " !
+Vous pouvez en savoir plus sur le "Shadowing" dans la section "Variables et mutabilité" du livre:
 https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#shadowing
 Essayez de résoudre cet exercice après avoir utilisé cette technique."""
 
@@ -79,12 +79,12 @@ path = "exercises/variables/variables6.rs"
 mode = "compile"
 hint = """
 Nous connaissons les variables et la mutabilité, mais il existe un autre
-type de variable : les constantes.
+type de variable: les constantes.
 Les constantes sont toujours immutables et sont déclarées avec le mot-clé "const"
 plutôt qu'avec le mot-clé "let".
 Les types des constantes doivent également toujours être annotés.
 
-Pour en savoir plus sur les constantes et les différences entre les variables et les constantes, consultez la rubrique "Constantes" dans la section "Variables et mutabilité" du livre :
+Pour en savoir plus sur les constantes et les différences entre les variables et les constantes, consultez la rubrique "Constantes" dans la section "Variables et mutabilité" du livre:
 https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#constants
 """
 
@@ -141,13 +141,13 @@ mode = "compile"
 hint = """
 Il s'agit d'une erreur très courante qui peut être corrigée en supprimant
 un caractère. Elle se produit parce que Rust fait la distinction entre les 
-expressions et les instructions : les expressions retournent une valeur 
+expressions et les instructions: les expressions retournent une valeur 
 basée sur leur(s) opérande(s), et les instructions retournent simplement 
 un type () qui se comporte exactement comme `void` dans le langage C/C++.
 
 Nous voulons retourner une valeur de type `i32` à partir de la fonction 
 `square`, mais elle retourne un type `()`...
-Ce n'est pas la même chose. Il y a deux solutions :
+Ce n'est pas la même chose. Il y a deux solutions:
 1. Ajouter un `return` avant `num * num;`
 2. Supprimer `;`, et faire en sorte que ce soit `num * num`"""
 
@@ -159,10 +159,10 @@ path = "exercises/if/if1.rs"
 mode = "test"
 hint = """
 Il est possible de le faire en une seule ligne si vous le souhaitez !
-Quelques exemples similaires dans d'autres langages :
-- En C(++) ce serait : `a > b ? a : b`
-- En Python, ce serait : `a if a > b ? a : b` :  `a if a > b else b`
-Rappelez-vous qu'en Rust :
+Quelques exemples similaires dans d'autres langages:
+- En C(++) ce serait: `a > b ? a : b`
+- En Python, ce serait: `a if a > b ? a : b` :  `a if a > b else b`
+Rappelez-vous qu'en Rust:
 - la condition `if` n'a pas besoin d'être entourée de parenthèses
 - Les `if`/`else` sont des expressions conditionnelles
 - Chaque condition est suivie d'un bloc `{}`."""
@@ -214,10 +214,10 @@ mode = "compile"
 hint = """
 Il existe un raccourci pour initialiser les tableaux avec une certaine taille 
 qui ne nécessite pas de saisir 100 éléments (mais vous pouvez certainement le faire si vous le souhaitez !).
-Par exemple, vous pouvez faire :
+Par exemple, vous pouvez faire:
 let array = ["Are we there yet ?"; 10] ;
 
-Bonus : quelles sont les autres choses que vous pourriez faire et qui 
+Bonus: quelles sont les autres choses que vous pourriez faire et qui 
 retourneraient `true` pour `a.len() >= 100` ?"""
 
 [[exercises]]
@@ -225,14 +225,14 @@ name = "primitive_types4"
 path = "exercises/primitive_types/primitive_types4.rs"
 mode = "test"
 hint = """
-Consultez la section "Understanding Ownership -> Slices -> Other Slices" du livre :
+Consultez la section "Understanding Ownership -> Slices -> Other Slices" du livre:
 https://doc.rust-lang.org/book/ch04-03-slices.html
 et utilisez les indices de début et de fin des éléments du tableau
 que vous voulez retrouver dans le "slice".
 
 Si vous êtes curieux·ses de savoir pourquoi le premier argument de `assert_eq!`
 n'a pas d'esperluette pour une référence alors que le second argument est une 
-référence, jetez un coup d'oeil au chapitre sur la coercion du nomicon :
+référence, jetez un coup d'oeil au chapitre sur la coercion du nomicon:
 https://doc.rust-lang.org/nomicon/coercions.html"""
 
 [[exercises]]
@@ -240,7 +240,7 @@ name = "primitive_types5"
 path = "exercises/primitive_types/primitive_types5.rs"
 mode = "compile"
 hint = """
-Consultez la section "Data Types -> The Tuple Type" du livre :
+Consultez la section "Data Types -> The Tuple Type" du livre:
 https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type
 En particulier la partie sur la déstructuration (avant-dernier exemple de la section).
 Vous devrez créer un motif pour lier `name` et `age` aux parties appropriées du tuple.
@@ -253,7 +253,7 @@ mode = "test"
 hint = """
 Bien que vous puissiez utiliser une déstructuration `let` pour le tuple, 
 essayez plutôt de l'indexer, comme expliqué dans le dernier exemple
-de la section "Data Types -> The Tuple Type" du livre :
+de la section "Data Types -> The Tuple Type" du livre:
 https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type
 Vous avez maintenant un nouvel outil dans votre boîte à outils !"""
 
@@ -269,7 +269,7 @@ En Rust, il y a deux façons de définir un vecteur.
   vecteur et le remplir avec la méthode `push()`.
 2. La seconde façon, plus simple, est d'utiliser la macro `vec ![]` et de
   et de définir vos éléments à l'intérieur des crochets.
-Consultez ce chapitre : https://doc.rust-lang.org/stable/book/ch08-01-vectors.html
+Consultez ce chapitre: https://doc.rust-lang.org/stable/book/ch08-01-vectors.html
 du livre Rust pour en savoir plus.
 """
 
@@ -281,7 +281,7 @@ hint = """
 Indice 1: Dans le code, la variable `element` représente un élément du Vec lorsqu'on itère dessus.
 Pouvez-vous essayer de la multiplier?
 
-Indice 2 : Pour la première fonction, il existe un moyen d'accéder directement
+Indice 2: Pour la première fonction, il existe un moyen d'accéder directement
 aux nombres stockés dans le Vec, en utilisant l'opérateur de déréférencement *. 
 Vous pouvez à la fois accéder et écrire sur le nombre de cette façon.
 
@@ -347,7 +347,7 @@ hint = """
 Arrêtez de lire quand vous sentez que vous avez suffisamment d'indications :) 
 Ou essayez de faire une étape et de corriger les erreurs de compilation 
 qui en résultent !
-L'objectif final est donc de :
+L'objectif final est donc de:
    - se débarrasser de la première ligne du `main` qui crée le nouveau vecteur
    - comme `vec0` n'existe plus, on ne peut pas le passer à `fill_vec`
    - la signature de `fill_vec` a changé, ce que notre appel devrait refléter
@@ -363,7 +363,7 @@ hint = """
 Raisonnez soigneusement sur l'étendue de la portée de chaque référence mutable.
 Est-il utile de mettre à jour la valeur du référent (x) immédiatement après 
 que la référence mutable est prise? En savoir plus sur les 
-"références mutables" dans la section "References and Borrowing" du livre :
+"références mutables" dans la section "References and Borrowing" du livre:
 https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html#mutable-references.
 """
 
@@ -373,7 +373,7 @@ path = "exercises/move_semantics/move_semantics6.rs"
 mode = "compile"
 hint = """
 Pour trouver la réponse, vous pouvez consulter la section 
-"References and Borrowing" du livre :
+"References and Borrowing" du livre:
 https://doc.rust-lang.org/stable/book/ch04-02-references-and-borrowing.html
 Le premier problème est que `get_char` prend la propriété de la chaîne de 
 caractères. Donc `data` est déplacé et ne peut pas être utilisé pour 
@@ -382,7 +382,7 @@ cela qui signifie que `string_uppercase` ne peut pas manipuler les données.
 Une fois que vous aurez corrigé cela, la signature de la fonction 
 `string_uppercase` devra également être ajustée. Pouvez-vous trouver comment ?
 
-Un autre indice : cela a à voir avec le caractère `&`."""
+Un autre indice: cela a à voir avec le caractère `&`."""
 
 # STRUCTS
 
@@ -397,7 +397,7 @@ Les structures Tuple sont essentiellement des tuples nommés.
 Enfin, les structs de type Unit. Elles n'ont pas de champs et sont utiles pour les génériques.
 
 Dans cet exercice, vous devez compléter et implémenter une structure de chaque type.
-Pour en savoir plus sur les structures, consultez le livre : https://doc.rust-lang.org/book/ch05-01-defining-structs.html"""
+Pour en savoir plus sur les structures, consultez le livre: https://doc.rust-lang.org/book/ch05-01-defining-structs.html"""
 
 [[exercises]]
 name = "structs2"
@@ -406,7 +406,7 @@ mode = "test"
 hint = """
 Il est facile de créer des instances de structures, il suffit d'attribuer des valeurs à leurs champs.
 Il existe cependant des raccourcis qui peuvent être pris lors de l'instanciation des structures.
-Pour en savoir plus, consultez le livre : https://doc.rust-lang.org/stable/book/ch05-01-defining-structs.html#creating-instances-from-other-instances-with-struct-update-syntax"""
+Pour en savoir plus, consultez le livre: https://doc.rust-lang.org/stable/book/ch05-01-defining-structs.html#creating-instances-from-other-instances-with-struct-update-syntax"""
 
 [[exercises]]
 name = "structs3"
@@ -417,7 +417,7 @@ Pour is_international: Qu'est-ce qui fait qu'un colis est international? Cela se
 
 Pour get_fees: Cette méthode prend un argument supplémentaire, existe-t-il un champ dans la structure Package auquel elle se rapporte ?
 
-Pour en savoir plus sur les implémentations de méthodes, jetez un coup d'œil au Livre : https://doc.rust-lang.org/book/ch05-03-method-syntax.html"""
+Pour en savoir plus sur les implémentations de méthodes, jetez un coup d'œil au Livre: https://doc.rust-lang.org/book/ch05-03-method-syntax.html"""
 
 # ENUMS
 
@@ -467,7 +467,7 @@ Oui, il serait vraiment facile de corriger cela en changeant simplement la valeu
 un slice de chaîne de caractères au lieu d'une `String`, n'est-ce pas ? Il y a un moyen d'ajouter un caractère à la ligne
 12, cependant, qu'est-ce qui forcera la `String` à devenir un slice de chaîne.
 
-Note complémentaire : si vous souhaitez savoir comment fonctionne ce type de conversion de référence, vous pouvez avancer dans le livre et lire cette partie dans le chapitre sur les pointeurs intelligents : https://doc.rust-lang.org/stable/book/ch15-02-deref.html#implicit-deref-coercions-with-functions-and-methods."""
+Note complémentaire: si vous souhaitez savoir comment fonctionne ce type de conversion de référence, vous pouvez avancer dans le livre et lire cette partie dans le chapitre sur les pointeurs intelligents: https://doc.rust-lang.org/stable/book/ch15-02-deref.html#implicit-deref-coercions-with-functions-and-methods."""
 
 [[exercises]]
 name = "strings3"
@@ -475,9 +475,9 @@ path = "exercises/strings/strings3.rs"
 mode = "test"
 hint = """
 Il existe des tonnes de fonctions utiles de la bibliothèque standard pour les chaînes de caractères. Essayons d'en utiliser
-quelques-unes d'entre elles : <https://doc.rust-lang.org/std/string/struct.String.html#method.trim> !
+quelques-unes d'entre elles: <https://doc.rust-lang.org/std/string/struct.String.html#method.trim> !
 
-Pour la méthode compose_me : Vous pouvez soit utiliser la macro `format!`, soit convertir le slice de chaîne
+Pour la méthode compose_me: Vous pouvez soit utiliser la macro `format!`, soit convertir le slice de chaîne
 de caractère en une chaîne possédée (owned), que vous pouvez ensuite étendre librement."""
 
 [[exercises]]
@@ -526,9 +526,9 @@ name = "hashmaps1"
 path = "exercises/hashmaps/hashmaps1.rs"
 mode = "test"
 hint = """
-Indice 1 : Regardez le type de retour de la fonction pour déterminer le type de la
+Indice 1: Regardez le type de retour de la fonction pour déterminer le type de la
   variable `basket`.
-Indice 2 : Le nombre de fruits doit être d'au moins 5. Et vous devez mettre
+Indice 2: Le nombre de fruits doit être d'au moins 5. Et vous devez mettre
   au moins trois types de fruits différents.
 """
 
@@ -546,10 +546,10 @@ name = "hashmaps3"
 path = "exercises/hashmaps/hashmaps3.rs"
 mode = "test"
 hint = """
-Indice 1 : Utilisez les méthodes `entry()` et `or_insert()` de `HashMap` pour insérer 
+Indice 1: Utilisez les méthodes `entry()` et `or_insert()` de `HashMap` pour insérer 
 les entrées correspondant à chaque équipe dans le tableau des scores.
 Pour en savoir plus, consultez le site https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#only-inserting-a-value-if-the-key-has-no-value
-Indice 2 : S'il existe déjà une entrée pour une clé donnée, la valeur retournée par `entry()` peut être mise à jour en fonction de la valeur existante.
+Indice 2: S'il existe déjà une entrée pour une clé donnée, la valeur retournée par `entry()` peut être mise à jour en fonction de la valeur existante.
 Pour en savoir plus, consultez le site https://doc.rust-lang.org/book/ch08-03-hash-maps.html#updating-a-value-based-on-the-old-value
 """
 
@@ -582,7 +582,7 @@ https://doc.rust-lang.org/rust-by-example/flow_control/if_let.html
 https://doc.rust-lang.org/rust-by-example/flow_control/while_let.html
 
 N'oubliez pas que les options peuvent être empilées dans les if let et while let.
-Par exemple : Some(Some(variable)) = variable2
+Par exemple: Some(Some(variable)) = variable2
 Voir aussi Option::flatten
 """
 
@@ -594,7 +594,7 @@ hint = """
 Le compilateur indique qu'un move partiel s'est produit
 dans l'instruction `match`. Comment éviter cela ? Le compilateur montre la correction
 nécessaire. Après avoir effectué la correction suggérée par le compilateur,
-lisez : https://doc.rust-lang.org/std/keyword.ref.html"""
+lisez: https://doc.rust-lang.org/std/keyword.ref.html"""
 
 # ERROR HANDLING
 
@@ -607,7 +607,7 @@ hint = """
 que `generate_nametag_text` devrait retourner un `Result` au lieu d'une
 `Option`.
 
-Pour faire ce changement, vous devez :
+Pour faire ce changement, vous devez:
    - mettre à jour le type de retour dans la signature de la fonction 
      pour qu'il soit un Resultat<String, String> qui
      qui pourrait être les variantes `Ok(String)` et `Err(String)`
@@ -625,7 +625,7 @@ Une façon de gérer cela est d'utiliser une expression `match` sur
 `item_quantity.parse::<i32>()` où les variantes sont `Ok(something)` et
 `Err(something)`. Ce schéma est très courant en Rust, donc il existe
 un opérateur `?` qui fait à peu près ce que vous voudriez que l'expression match
-pour vous ! Jetez un coup d'œil à cette section du chapitre sur la gestion des erreurs :
+pour vous ! Jetez un coup d'œil à cette section du chapitre sur la gestion des erreurs:
 https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator
 et essayez-le !"""
 
@@ -662,13 +662,13 @@ en un "boxed trait object", un `Box<dyn error::Error>`. Cet trait object est pol
 erreurs implémentent le trait `error::Error`, nous pouvons capturer beaucoup d'erreurs différentes
 dans un seul objet "Box".
 
-Consultez cette section du livre :
+Consultez cette section du livre:
 https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator
 
-En savoir plus sur les erreurs et sur sa mise en ... Box :
+En savoir plus sur les erreurs et sur sa mise en ... Box:
 https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/boxing_errors.html
 
-En savoir plus sur l'utilisation de l'opérateur `?` avec des "boxed errors" :
+En savoir plus sur l'utilisation de l'opérateur `?` avec des "boxed errors":
 https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/reenter_question_mark.html
 """
 
@@ -689,7 +689,7 @@ ou vous pouvez utiliser une expression `match`, ou peut-être qu'il y a un autre
 Vous pouvez créer une autre fonction dans `impl ParsePosNonzeroError` pour l'utiliser
 avec `map_err()`.
 
-Pour en savoir plus sur `map_err()`, lisez la documentation de `std::result` :
+Pour en savoir plus sur `map_err()`, lisez la documentation de `std::result`:
 https://doc.rust-lang.org/std/result/enum.Result.html#method.map_err"""
 
 # Generics
@@ -720,7 +720,7 @@ name = "traits1"
 path = "exercises/traits/traits1.rs"
 mode = "test"
 hint = """
-Une discussion sur les Traits en Rust peut être trouvée à l'adresse :
+Une discussion sur les Traits en Rust peut être trouvée à l'adresse:
 https://doc.rust-lang.org/book/ch10-02-traits.html
 """
 
@@ -735,7 +735,7 @@ Jetez un coup d'œil aux tests pour voir
 ce à quoi le résultat devrait ressembler !
 
 Les vecteurs fournissent des méthodes appropriées pour ajouter un élément à la fin. Voir
-la documentation à l'adresse : https://doc.rust-lang.org/std/vec/struct.Vec.html"""
+la documentation à l'adresse: https://doc.rust-lang.org/std/vec/struct.Vec.html"""
 
 [[exercises]]
 name = "traits3"
@@ -746,7 +746,7 @@ Les traits peuvent avoir une implémentation par défaut pour les fonctions. Les
 le trait peuvent alors utiliser la version par défaut de ces fonctions si elles choisissent de ne pas
 implémenter elles-mêmes la fonction.
 
-Voir la documentation à l'adresse suivante : https://doc.rust-lang.org/book/ch10-02-traits.html#default-implementations
+Voir la documentation à l'adresse suivante: https://doc.rust-lang.org/book/ch10-02-traits.html#default-implementations
 """
 
 [[exercises]]
@@ -757,7 +757,7 @@ hint = """
 Au lieu d'utiliser des types concrets comme arguments, vous pouvez utiliser des traits. 
 Essayez de remplacer les ??? par "impl <que'est-ce qui va ici?>
 
-Voir la documentation à l'adresse : https://doc.rust-lang.org/book/ch10-02-traits.html#traits-as-parameters
+Voir la documentation à l'adresse: https://doc.rust-lang.org/book/ch10-02-traits.html#traits-as-parameters
 """
 
 [[exercises]]
@@ -780,7 +780,7 @@ mode = "test"
 hint = """
 Pour trouver la meilleure solution à ce défi, vous allez devoir vous référer à vos
 connaissance des traits, en particulier de la syntaxe liée aux 
-traits - vous pouvez aussi avoir besoin de ceci : `use std::fmt::Display;`."""
+traits - vous pouvez aussi avoir besoin de ceci: `use std::fmt::Display;`."""
 
 # LIFETIMES
 
@@ -789,7 +789,7 @@ name = "lifetimes1"
 path = "exercises/lifetimes/lifetimes1.rs"
 mode = "compile"
 hint = """
-Laissez-vous guider par le compilateur. Jetez également un coup d'œil au livre si vous avez besoin d'aide :
+Laissez-vous guider par le compilateur. Jetez également un coup d'œil au livre si vous avez besoin d'aide:
 https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html"""
 
 [[exercises]]
@@ -799,7 +799,7 @@ mode = "compile"
 hint = """
 Rappelez-vous que la durée de vie générique 'a obtiendra la durée de vie concrète 
 qui est égale à la plus petite des durées de vie de x et de y.
-Vous pouvez emprunter au moins deux chemins pour obtenir le résultat souhaité tout en conservant le bloc intérieur :
+Vous pouvez emprunter au moins deux chemins pour obtenir le résultat souhaité tout en conservant le bloc intérieur:
 1. Déplacer la déclaration de string2 pour qu'elle ait la même durée de vie que string1 (comment result est-il déclaré ?)
 2. Déplacer println! dans le bloc interne"""
 
@@ -854,7 +854,7 @@ mode = "test"
 hint = """
 Nous nous attendons à ce que la méthode `Rectangle::new()` panique pour les valeurs négatives.
 Pour gérer cela, vous devez ajouter un attribut spécial à la fonction de test.
-Vous pouvez vous référer à la documentation :
+Vous pouvez vous référer à la documentation:
 https://doc.rust-lang.org/stable/book/ch11-01-writing-tests.html#checking-for-panics-with-should_panic"""
 
 # STANDARD LIBRARY TYPES
@@ -864,16 +864,17 @@ name = "iterators1"
 path = "exercises/iterators/iterators1.rs"
 mode = "compile"
 hint = """
-Step 1:
-We need to apply something to the collection `my_fav_fruits` before we start to go through
-it. What could that be? Take a look at the struct definition for a vector for inspiration:
+Etape 1:
+Nous devons appliquer quelque chose à la collection `my_fav_fruits` avant de commencer à
+la parcourir. Qu'est-ce que cela pourrait être? 
+Jetez un coup d'œil à la définition de la structure d'un vecteur pour vous en inspirer:
 https://doc.rust-lang.org/std/vec/struct.Vec.html
-Step 2 & step 3:
-Very similar to the lines above and below. You've got this!
-Step 4:
-An iterator goes through all elements in a collection, but what if we've run out of
-elements? What should we expect here? If you're stuck, take a look at
-https://doc.rust-lang.org/std/iter/trait.Iterator.html for some ideas.
+Étape 2 et 3:
+Très similaires aux lignes ci-dessus et ci-dessous. Vous pouvez le faire!
+Étape 4: Un itérateur parcourt tous les éléments d'une collection, 
+mais que se passe-t-il si nous n'avons plus d'éléments? 
+À quoi devons-nous nous attendre ici? Si vous êtes bloqué, jetez un coup d'œil à
+https://doc.rust-lang.org/std/iter/trait.Iterator.html pour avoir quelques idées.
 """
 
 [[exercises]]
@@ -881,68 +882,69 @@ name = "iterators2"
 path = "exercises/iterators/iterators2.rs"
 mode = "test"
 hint = """
-Step 1
-The variable `first` is a `char`. It needs to be capitalized and added to the
-remaining characters in `c` in order to return the correct `String`.
-The remaining characters in `c` can be viewed as a string slice using the
-`as_str` method.
-The documentation for `char` contains many useful methods.
+Étape 1
+La variable `first` est un `char`. Elle doit être mise en majuscule et ajoutée aux
+caractères restants dans `c` afin de retourner la `String` correcte.
+Les caractères restants dans `c` peuvent être vus comme un slice de chaîne de caractères 
+en utilisant la méthode `as_str`.
+La documentation de `char` contient de nombreuses méthodes utiles.
 https://doc.rust-lang.org/std/primitive.char.html
 
-Step 2
-Create an iterator from the slice. Transform the iterated values by applying
-the `capitalize_first` function. Remember to collect the iterator.
+Étape 2
+Créez un itérateur à partir du "slice". Transformez les valeurs itérées en appliquant
+la fonction `capitalize_first`. N'oubliez pas de "collect()" l'itérateur.
 
-Step 3.
-This is surprisingly similar to the previous solution. Collect is very powerful
-and very general. Rust just needs to know the desired type."""
+Etape 3.
+Cette étape est étonnamment similaire à la solution précédente. Collect est très puissant
+et très général. Rust a juste besoin de connaître le type désiré."""
 
 [[exercises]]
 name = "iterators3"
 path = "exercises/iterators/iterators3.rs"
 mode = "test"
 hint = """
-The divide function needs to return the correct error when even division is not
+La fonction "divide" doit retourner l'erreur correcte lorsque la division n'est pas possible
 possible.
 
-The division_results variable needs to be collected into a collection type.
+La variable division_results doit être collectée dans un type de collection.
 
-The result_with_list function needs to return a single Result where the success
-case is a vector of integers and the failure case is a DivisionError.
+La fonction result_with_list doit retourner un seul Result où le cas réussit est un vecteur 
+d'entiers et le cas échoué est une DivisionError.
 
-The list_of_results function needs to return a vector of results.
+La fonction list_of_results doit retourner un vecteur de résultats.
 
-See https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect for how
-the `FromIterator` trait is used in `collect()`. This trait is REALLY powerful! It
-can make the solution to this exercise infinitely easier."""
+Voir https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect pour savoir comment
+le trait `FromIterator` est utilisé dans `collect()`. Ce trait est VRAIMENT puissant! 
+Il peut rendre la solution de cet exercice infiniment plus facile."""
 
 [[exercises]]
 name = "iterators4"
 path = "exercises/iterators/iterators4.rs"
 mode = "test"
 hint = """
-In an imperative language, you might write a for loop that updates
-a mutable variable. Or, you might write code utilizing recursion
-and a match clause. In Rust you can take another functional
-approach, computing the factorial elegantly with ranges and iterators.
+Dans un langage impératif, vous pourriez écrire une boucle "for" qui met à jour
+une variable mutable. Vous pouvez également écrire un code utilisant la récursivité
+et une clause match. En Rust, vous pouvez adopter une autre approche
+fonctionnelle, en calculant la factorielle de manière élégante avec des range et des itérateurs.
 
-Hint 2: Check out the `fold` and `rfold` methods!"""
+Indice 2 : Regardez les méthodes `fold` et `rfold` !"""
 
 [[exercises]]
 name = "iterators5"
 path = "exercises/iterators/iterators5.rs"
 mode = "test"
 hint = """
-The documentation for the std::iter::Iterator trait contains numerous methods
-that would be helpful here.
+La documentation du trait std::iter::Iterator contient de nombreuses méthodes
+qui pourraient être utiles ici.
 
-The collection variable in count_collection_iterator is a slice of HashMaps. It
-needs to be converted into an iterator in order to use the iterator methods.
+La variable collection dans count_collection_iterator est un slice de HashMaps. Elle
+doit être convertie en itérateur afin de pouvoir utiliser les méthodes de l'itérateur.
 
-The fold method can be useful in the count_collection_iterator function.
+La méthode fold peut être utile dans la fonction count_collection_iterator.
 
-For a further challenge, consult the documentation for Iterator to find
-a different method that could make your code more compact than using fold."""
+Pour relever un autre défi, consultez la documentation relative à Iterator 
+pour trouver une méthode différente qui pourrait rendre votre code plus compact 
+qu'avec l'utilisation de fold."""
 
 # SMART POINTERS
 

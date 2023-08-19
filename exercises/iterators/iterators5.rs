@@ -1,15 +1,15 @@
 // iterators5.rs
 //
-// Let's define a simple model to track Rustlings exercise progress. Progress
-// will be modelled using a hash map. The name of the exercise is the key and
-// the progress is the value. Two counting functions were created to count the
-// number of exercises with a given progress. Recreate this counting
-// functionality using iterators. Try not to use imperative loops (for, while).
-// Only the two iterator methods (count_iterator and count_collection_iterator)
-// need to be modified.
+// Définissons un modèle simple pour suivre les progrès de l'exercice de Rustlings. La progression
+// sera modélisé à l'aide d'une table de hachage. Le nom de l'exercice est la clé et
+// la progression est la valeur. Deux fonctions de comptage ont été créées pour compter le
+// nombre d'exercices avec une progression donnée. Recréez cette fonctionnalité de comptage
+// en utilisant des itérateurs. Essayez de ne pas utiliser de boucles impératives (for, while).
+// Seules les deux méthodes sur les itérateurs (count_iterator et count_collection_iterator)
+// doivent être modifiées.
 //
-// Execute `rustlings hint iterators5` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint iterators5` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
@@ -33,8 +33,8 @@ fn count_for(map: &HashMap<String, Progress>, value: Progress) -> usize {
 }
 
 fn count_iterator(map: &HashMap<String, Progress>, value: Progress) -> usize {
-    // map is a hashmap with String keys and Progress values.
-    // map = { "variables1": Complete, "from_str": None, ... }
+    // map est une HashMap avec des clés de type String et des valeurs de type Progress.
+    // map = { "variables1" : Complete, "from_str" : None, ... }
     todo!();
 }
 
@@ -51,9 +51,9 @@ fn count_collection_for(collection: &[HashMap<String, Progress>], value: Progres
 }
 
 fn count_collection_iterator(collection: &[HashMap<String, Progress>], value: Progress) -> usize {
-    // collection is a slice of hashmaps.
-    // collection = [{ "variables1": Complete, "from_str": None, ... },
-    //     { "variables2": Complete, ... }, ... ]
+    // la collection est un slice de hashmaps.
+    // collection = [{ "variables1" : Complete, "from_str" : None, ... },
+    // { "variables2" : Complete, ... }, ... ]
     todo!();
 }
 
