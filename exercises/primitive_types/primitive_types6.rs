@@ -7,7 +7,7 @@
 // Exécutez `rustlings hint primitive_types6` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 #[test]
 fn indexing_tuple() {

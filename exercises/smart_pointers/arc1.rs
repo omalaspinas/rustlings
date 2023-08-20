@@ -22,7 +22,7 @@
 // Exécutez `rustlings hint arc1` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 #![forbid(unused_imports)] // Ne modifiez pas cette ligne (ni la suivante).
 use std::sync::Arc;

@@ -9,7 +9,7 @@
 // Exécutez `rustlings hint iterators1` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     let my_fav_fruits = vec!["banana", "custard apple", "avocado", "peach", "raspberry"];

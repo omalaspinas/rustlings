@@ -7,7 +7,7 @@
 // Exécutez `rustlings hint move_semantics2` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     let vec0 = Vec::new();

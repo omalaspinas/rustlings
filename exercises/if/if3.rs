@@ -3,7 +3,7 @@
 // Exécutez `rustlings hint if3` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 pub fn animal_habitat(animal: &str) -> &'static str {
     let identifier = if animal == "crab" {

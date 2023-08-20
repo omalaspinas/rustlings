@@ -17,7 +17,7 @@
 // Exécutez `rustlings hint quiz3` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 pub struct ReportCard {
     pub grade: f32,

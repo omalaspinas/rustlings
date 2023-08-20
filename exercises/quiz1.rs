@@ -13,7 +13,7 @@
 //
 // Pas d'indice cette fois ;)
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 // Placez votre fonction ici!
 // fn calculate_price_of_apples {

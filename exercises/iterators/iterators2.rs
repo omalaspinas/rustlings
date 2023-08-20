@@ -6,7 +6,7 @@
 // Exécutez `rustlings hint iterators2` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 // Étape 1.
 // Complétez la fonction `capitalize_first`.

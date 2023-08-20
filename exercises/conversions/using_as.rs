@@ -10,7 +10,7 @@
 // Exécutez `rustlings hint using_as` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn average(values: &[f64]) -> f64 {
     let total = values.iter().sum::<f64>();

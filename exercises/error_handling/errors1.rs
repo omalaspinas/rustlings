@@ -8,7 +8,7 @@
 // Exécutez `rustlings hint errors1` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 pub fn generate_nametag_text(name: String) -> Option<String> {
     if name.is_empty() {

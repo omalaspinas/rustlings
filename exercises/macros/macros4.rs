@@ -3,7 +3,7 @@
 // Exécutez `rustlings hint macros4` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 #[rustfmt::skip]
 macro_rules! my_macro {

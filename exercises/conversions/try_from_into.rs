@@ -27,7 +27,7 @@ enum IntoColorError {
     IntConversion,
 }
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 // Votre tâche est de compléter cette implémentation et de renvoyer un résultat Ok de type intérieur
 // Color. Vous devez créer une implémentation pour un tuple de trois

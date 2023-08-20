@@ -8,7 +8,7 @@
 // Exécutez `rustlings hint threads1` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 use std::thread;
 use std::time::{Duration, Instant};

@@ -3,7 +3,7 @@
 // Exécutez `rustlings hint functions5` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     let answer = square(3);

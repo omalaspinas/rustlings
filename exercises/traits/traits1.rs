@@ -7,7 +7,7 @@
 // Exécutez `rustlings hint traits1` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 trait AppendBar {
     fn append_bar(self) -> Self;

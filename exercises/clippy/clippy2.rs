@@ -3,7 +3,7 @@
 // Exécutez `rustlings hint clippy2` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     let mut res = 42;

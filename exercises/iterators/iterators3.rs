@@ -8,7 +8,7 @@
 // Exécutez `rustlings hint iterators3` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 #[derive(Debug, PartialEq, Eq)]
 pub enum DivisionError {

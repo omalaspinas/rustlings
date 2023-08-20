@@ -11,7 +11,7 @@
 // Exécutez `rustlings hint hashmaps1` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 use std::collections::HashMap;
 

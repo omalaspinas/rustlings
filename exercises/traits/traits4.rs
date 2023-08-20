@@ -7,7 +7,7 @@
 // Exécutez `rustlings hint traits4` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 pub trait Licensed {
     fn licensing_info(&self) -> String {

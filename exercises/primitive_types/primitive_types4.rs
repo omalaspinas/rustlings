@@ -5,7 +5,7 @@
 // Exécutez `rustlings hint primitive_types4` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 #[test]
 fn slice_out_of_array() {

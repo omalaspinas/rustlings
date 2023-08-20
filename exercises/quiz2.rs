@@ -23,7 +23,7 @@
 // Exécutez `rustlings hint quiz2` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 pub enum Command {
     Uppercase,

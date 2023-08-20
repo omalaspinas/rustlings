@@ -4,7 +4,7 @@
 // de `watch` pour obtenir une indication.
 
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 // Cette fonction renvoie la quantité de glace restante dans le réfrigérateur.
 // Si on est avant 22h, il reste 5 morceaux. A 22h, quelqu'un les mange

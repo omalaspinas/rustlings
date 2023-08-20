@@ -5,7 +5,7 @@
 // Exécutez `rustlings hint primitive_types5` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     let cat = ("Furry McFurson", 3.5);

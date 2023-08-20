@@ -5,7 +5,7 @@ name = "intro1"
 path = "exercises/intro/intro1.rs"
 mode = "compile"
 hint = """
-Supprimez le commentaire I AM NOT DONE dans le fichier exercises/intro/intro1.rs
+Supprimez le commentaire J'AI PAS FINI dans le fichier exercises/intro/intro1.rs
 pour passer à l'exercice suivant."""
 
 [[exercises]]
@@ -119,7 +119,7 @@ Cette fois, la *déclaration* de la fonction est correcte, mais il y a
 quelque chose qui ne va pas à l'endroit où lors de l'appel de la fonction.
 Pour rappel, vous pouvez librement jouer avec différentes solutions 
 dans Rustlings! Le mode veille ne passera à l'exercice suivant que
-si vous supprimez le commentaire I AM NOT DONE."""
+si vous supprimez le commentaire J'AI PAS FINI."""
 
 [[exercises]]
 name = "functions4"

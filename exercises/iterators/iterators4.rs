@@ -3,7 +3,7 @@
 // Exécutez `rustlings hint iterators4` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 pub fn factorial(num: u64) -> u64 {
     // Complétez cette fonction pour obtenir la factorielle de num

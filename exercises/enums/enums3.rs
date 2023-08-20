@@ -5,7 +5,7 @@
 // Exécutez `rustlings hint enums3` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 enum Message {
     // TODO: implémentez les types de variantes de messages en fonction de leur utilisation ci-dessous

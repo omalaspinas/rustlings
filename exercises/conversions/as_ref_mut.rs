@@ -7,7 +7,7 @@
 // Exécutez `rustlings hint as_ref_mut` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 // Obtient le nombre d'octets (et non de caractères) dans l'argument donné.
 // TODO : Ajoutez le trait AsRef de manière appropriée en tant que contrainte de trait.

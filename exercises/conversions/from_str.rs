@@ -31,7 +31,7 @@ enum ParsePersonError {
     ParseInt(ParseIntError),
 }
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 // Étapes:
 // 1. Si la longueur de la chaîne fournie est égale à 0, une erreur doit être retournée

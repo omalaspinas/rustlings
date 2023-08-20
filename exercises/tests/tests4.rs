@@ -5,7 +5,7 @@
 // Exécutez `rustlings hint tests4` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 struct Rectangle {
     width: i32,

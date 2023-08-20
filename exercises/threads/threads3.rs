@@ -3,7 +3,7 @@
 // Exécutez `rustlings hint threads3` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 use std::sync::mpsc;
 use std::sync::Arc;

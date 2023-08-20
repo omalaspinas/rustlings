@@ -10,7 +10,7 @@
 // Exécutez `rustlings hint lifetimes1` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn longest(x: &str, y: &str) -> &str {
     if x.len() > y.len() {

@@ -156,11 +156,11 @@ fn all_exercises_require_confirmation() {
             s
         };
         source
-            .matches("// I AM NOT DONE")
+            .matches("// J'AI PAS FINI")
             .next()
             .unwrap_or_else(|| {
                 panic!(
-                    "There should be an `I AM NOT DONE` annotation in {:?}",
+                    "There should be an `J'AI PAS FINI` annotation in {:?}",
                     path
                 )
             });
@@ -175,7 +175,7 @@ fn run_compile_exercise_does_not_prompt() {
         .current_dir("tests/fixture/state")
         .assert()
         .code(0)
-        .stdout(predicates::str::contains("I AM NOT DONE").not());
+        .stdout(predicates::str::contains("J'AI PAS FINI").not());
 }
 
 #[test]
@@ -186,7 +186,7 @@ fn run_test_exercise_does_not_prompt() {
         .current_dir("tests/fixture/state")
         .assert()
         .code(0)
-        .stdout(predicates::str::contains("I AM NOT DONE").not());
+        .stdout(predicates::str::contains("J'AI PAS FINI").not());
 }
 
 #[test]

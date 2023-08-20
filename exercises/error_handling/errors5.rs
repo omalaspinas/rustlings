@@ -22,7 +22,7 @@
 // Exécutez `rustlings hint errors5` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 use std::error;
 use std::fmt;

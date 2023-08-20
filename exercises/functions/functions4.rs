@@ -10,7 +10,7 @@
 // Exécutez `rustlings hint functions4` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     let original_price = 51;

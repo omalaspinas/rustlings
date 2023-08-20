@@ -8,7 +8,7 @@
 // Exécutez `rustlings hint modules3` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 // TODO: Complétez cette instruction use
 use ???

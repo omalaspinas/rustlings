@@ -3,7 +3,7 @@
 // Exécutez `rustlings hint if1` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 pub fn bigger(a: i32, b: i32) -> i32 {
     // Complétez cette fonction pour qu'elle renvoie le plus grand nombre !

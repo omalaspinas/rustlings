@@ -3,7 +3,7 @@
 // Exécutez `rustlings hint variables5` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     let number = "T-H-R-E-E"; // don't change this line

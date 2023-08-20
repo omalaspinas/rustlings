@@ -5,7 +5,7 @@
 // Exécutez `rustlings hint clippy3` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 #[allow(unused_variables, unused_assignments)]
 fn main() {

@@ -1,9 +1,9 @@
 // intro1.rs
 //
-// A propos de ce `I AM NOT DONE` :
+// A propos de ce `J'AI PAS FINI` :
 // Nous vous encourageons parfois à continuer à faire des essais pour un exercice donné, même
 // après l'avoir compris. Si tout fonctionne et que vous vous sentez
-// prêt à passer à l'exercice suivant, supprimez le commentaire `I AM NOT DONE` ci-dessous.
+// prêt à passer à l'exercice suivant, supprimez le commentaire `J'AI PAS FINI` ci-dessous.
 //
 // Si vous utilisez `rustlings watch` : Le fichier d'exercice sera
 // rechargé lorsque vous modifierez l'une des lignes ci-dessous !

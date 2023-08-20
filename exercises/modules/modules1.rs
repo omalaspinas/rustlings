@@ -3,7 +3,7 @@
 // Exécutez `rustlings hint modules1` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 mod sausage_factory {
     // Ne laissez personne en dehors de ce module voir ceci !

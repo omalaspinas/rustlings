@@ -6,7 +6,7 @@
 // Exécutez `rustlings hint primitive_types2` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     // Characters (`char`)

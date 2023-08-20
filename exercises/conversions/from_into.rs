@@ -40,7 +40,7 @@ impl Default for Person {
 // Si lors du parsing de l'âge, quelque chose ne va pas, alors retournez la valeur par défaut de Person
 // Sinon, retournez un objet Person instancié avec les résultats.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 impl From<&str> for Person {
     fn from(s: &str) -> Person {}

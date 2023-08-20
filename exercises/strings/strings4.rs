@@ -10,7 +10,7 @@
 // Exécutez `rustlings hint strings4` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn string_slice(arg: &str) {
     println!("{}", arg);

@@ -7,7 +7,7 @@
 // Exécutez `rustlings hint tests3` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 pub fn is_even(num: i32) -> bool {
     num % 2 == 0

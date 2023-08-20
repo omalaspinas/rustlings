@@ -3,7 +3,7 @@
 // Exécutez `rustlings hint strings3` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn trim_me(input: &str) -> String {
     // TODO: Supprimez les espaces aux deux extrémités d'une chaîne de caractères !

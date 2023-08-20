@@ -3,7 +3,7 @@
 // Exécutez `rustlings hint enums2` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 #[derive(Debug)]
 enum Message {

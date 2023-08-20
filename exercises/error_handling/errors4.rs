@@ -3,7 +3,7 @@
 // Exécutez `rustlings hint errors4` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 #[derive(PartialEq, Debug)]
 struct PositiveNonzeroInteger(u64);
