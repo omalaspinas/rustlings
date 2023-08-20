@@ -1,30 +1,30 @@
 // as_ref_mut.rs
 //
-// AsRef and AsMut allow for cheap reference-to-reference conversions. Read more
-// about them at https://doc.rust-lang.org/std/convert/trait.AsRef.html and
-// https://doc.rust-lang.org/std/convert/trait.AsMut.html, respectively.
+// AsRef et AsMut permettent des conversions de référence à référence peu coûteuses. Pour en savoir plus
+// à leur sujet sur https://doc.rust-lang.org/std/convert/trait.AsRef.html et
+// https://doc.rust-lang.org/std/convert/trait.AsMut.html, respectivement.
 //
-// Execute `rustlings hint as_ref_mut` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint as_ref_mut` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 // I AM NOT DONE
 
-// Obtain the number of bytes (not characters) in the given argument.
-// TODO: Add the AsRef trait appropriately as a trait bound.
+// Obtient le nombre d'octets (et non de caractères) dans l'argument donné.
+// TODO : Ajoutez le trait AsRef de manière appropriée en tant que contrainte de trait.
 fn byte_counter<T>(arg: T) -> usize {
     arg.as_ref().as_bytes().len()
 }
 
-// Obtain the number of characters (not bytes) in the given argument.
-// TODO: Add the AsRef trait appropriately as a trait bound.
+// Obtient le nombre de caractères (et non d'octets) dans l'argument donné.
+// TODO : Ajoutez le trait AsRef de manière appropriée en tant que contrainte de trait.
 fn char_counter<T>(arg: T) -> usize {
     arg.as_ref().chars().count()
 }
 
-// Squares a number using as_mut().
-// TODO: Add the appropriate trait bound.
+// Élève un nombre au carré en utilisant as_mut().
+// TODO : Ajouter la contrainte de trait appropriée.
 fn num_sq<T>(arg: &mut T) {
-    // TODO: Implement the function body.
+    // TODO: Implémentez le corps de la fonction.
     ???
 }
 

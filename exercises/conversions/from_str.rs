@@ -1,13 +1,13 @@
 // from_str.rs
 //
-// This is similar to from_into.rs, but this time we'll implement `FromStr` and
-// return errors instead of falling back to a default value. Additionally, upon
-// implementing FromStr, you can use the `parse` method on strings to generate
-// an object of the implementor type. You can read more about it at
+// Ceci est similaire à from_into.rs, mais cette fois nous allons implémenter `FromStr` et
+// renvoyer les erreurs au lieu de revenir à la valeur par défaut. De plus, lors de
+// l'implémentation de FromStr, vous pouvez utiliser la méthode `parse` sur les chaînes de caractères pour générer
+// un objet du type de l'implémenteur. Vous pouvez en savoir plus à ce sujet à l'adresse suivante
 // https://doc.rust-lang.org/std/str/trait.FromStr.html
 //
-// Execute `rustlings hint from_str` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint from_str` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 use std::num::ParseIntError;
 use std::str::FromStr;
@@ -18,41 +18,39 @@ struct Person {
     age: usize,
 }
 
-// We will use this error type for the `FromStr` implementation.
+// Nous utiliserons ce type d'erreur pour l'implémentation de `FromStr`.
 #[derive(Debug, PartialEq)]
 enum ParsePersonError {
-    // Empty input string
+    // Chaîne d'entrée vide
     Empty,
-    // Incorrect number of fields
+    // Nombre incorrect de champs
     BadLen,
-    // Empty name field
+    // Champ de nom vide
     NoName,
-    // Wrapped error from parse::<usize>()
+    // Erreur wrappée de parse::<usize>()
     ParseInt(ParseIntError),
 }
 
 // I AM NOT DONE
 
-// Steps:
-// 1. If the length of the provided string is 0, an error should be returned
-// 2. Split the given string on the commas present in it
-// 3. Only 2 elements should be returned from the split, otherwise return an
-//    error
-// 4. Extract the first element from the split operation and use it as the name
-// 5. Extract the other element from the split operation and parse it into a
-//    `usize` as the age with something like `"4".parse::<usize>()`
-// 6. If while extracting the name and the age something goes wrong, an error
-//    should be returned
-// If everything goes well, then return a Result of a Person object
+// Étapes:
+// 1. Si la longueur de la chaîne fournie est égale à 0, une erreur doit être retournée
+// 2. Diviser la chaîne donnée sur les virgules présentes dans celle-ci
+// 3. Seuls 2 éléments doivent être renvoyés à la suite de la division, sinon une erreur est retournée
+// 4. Le premier élément est extrait de l'opération de division et utilisé comme nom
+// 5. Extraire l'autre élément de l'opération de division et le parser comme un l'âge en `usize`
+//    avec quelque chose comme `"4".parse::<usize>()`
+// 6. Si, lors de l'extraction du nom et de l'âge, quelque chose ne va pas, une erreur
+//    doit être retournée
+//    Si tout se passe bien, il faut renvoyer le résultat d'un objet Personne
 //
-// As an aside: `Box<dyn Error>` implements `From<&'_ str>`. This means that if
-// you want to return a string error message, you can do so via just using
-// return `Err("my error message".into())`.
+// Remarque: `Box<dyn Error>` implémente `From<&'_ str>`. Cela signifie que si
+// vous voulez retourner un message d'erreur sous forme de chaîne de caractères, vous pouvez le faire en utilisant simplement
+// return `Err("mon message d'erreur".into())`.
 
 impl FromStr for Person {
     type Err = ParsePersonError;
-    fn from_str(s: &str) -> Result<Person, Self::Err> {
-    }
+    fn from_str(s: &str) -> Result<Person, Self::Err> {}
 }
 
 fn main() {
