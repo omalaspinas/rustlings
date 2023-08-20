@@ -1,26 +1,29 @@
 // quiz2.rs
 //
-// This is a quiz for the following sections:
+// Ce quiz couvre les sections suivantes:
 // - Strings
 // - Vecs
 // - Move semantics
 // - Modules
 // - Enums
 //
-// Let's build a little machine in the form of a function. As input, we're going
-// to give a list of strings and commands. These commands determine what action
-// is going to be applied to the string. It can either be:
-// - Uppercase the string
-// - Trim the string
-// - Append "bar" to the string a specified amount of times
-// The exact form of this will be:
-// - The input is going to be a Vector of a 2-length tuple,
-//   the first element is the string, the second one is the command.
-// - The output element is going to be a Vector of strings.
+// Construisons une petite machine sous la forme d'une fonction. Comme
+// entrée, nous lui donnerons une liste de chaînes de caractères et de commandes.
+// Ces commandes déterminerons quelle action elle appliquera à la chaîne de caractères.
+// Les actions seront:
+// - Mettre la chaîne de caractères en majuscules.
+// - Enlever les espaces de début et de fin de la chaîne.
+// - Ajouter "bar" à la fin de la chaîne un nombre de fois déterminé.
+// La forme exacte sera:
+// - L'entrée sera un Vec d'un tuple: le 1er élément est la chaîne de caractères, le second la commande.
+// - La sortie sera un Vec de chaînes de caractères.
 //
-// No hints this time!
+// Pas d'indices cette fois !
+//
+// Exécutez `rustlings hint quiz2` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 pub enum Command {
     Uppercase,
@@ -31,12 +34,12 @@ pub enum Command {
 mod my_module {
     use super::Command;
 
-    // TODO: Complete the function signature!
+    // TODO: Complétez la signature de la fonction !
     pub fn transformer(input: ???) -> ??? {
-        // TODO: Complete the output declaration!
+        // TODO: Complétez la déclaration de sortie !
         let mut output: ??? = vec![];
         for (string, command) in input.iter() {
-            // TODO: Complete the function body. You can do it!
+            // TODO: Complétez le corps de la fonction. Vous pouvez le faire !
         }
         output
     }
@@ -44,7 +47,7 @@ mod my_module {
 
 #[cfg(test)]
 mod tests {
-    // TODO: What do we need to import to have `transformer` in scope?
+    // TODO: Que devons-nous importer pour avoir `transformer` dans la portée ?
     use ???;
     use super::Command;
 

@@ -1,16 +1,17 @@
 // rc1.rs
 //
-// In this exercise, we want to express the concept of multiple owners via the
-// Rc<T> type. This is a model of our solar system - there is a Sun type and
-// multiple Planets. The Planets take ownership of the sun, indicating that they
-// revolve around the sun.
+// Dans cet exercice, nous voulons exprimer le concept de propriétaires multiples via le type
+// type Rc<T>. Il s'agit d'un modèle de notre système solaire - il y a un type Soleil et
+// plusieurs planètes. Les planètes sont propriétaires du soleil, ce qui indique qu'elles
+// tournent autour du soleil.
 //
-// Make this code compile by using the proper Rc primitives to express that the
-// sun has multiple owners.
+// Faites compiler ce code en utilisant les primitives Rc appropriées pour exprimer que le
+// que le soleil a plusieurs propriétaires.
 //
-// Execute `rustlings hint rc1` or use the `hint` watch subcommand for a hint.
+// Exécutez `rustlings hint rc1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 use std::rc::Rc;
 
@@ -37,68 +38,68 @@ impl Planet {
 
 fn main() {
     let sun = Rc::new(Sun {});
-    println!("reference count = {}", Rc::strong_count(&sun)); // 1 reference
+    println!("reference count = {}", Rc::strong_count(&sun)); // 1 référence
 
     let mercury = Planet::Mercury(Rc::clone(&sun));
-    println!("reference count = {}", Rc::strong_count(&sun)); // 2 references
+    println!("reference count = {}", Rc::strong_count(&sun)); // 2 références
     mercury.details();
 
     let venus = Planet::Venus(Rc::clone(&sun));
-    println!("reference count = {}", Rc::strong_count(&sun)); // 3 references
+    println!("reference count = {}", Rc::strong_count(&sun)); // 3 références
     venus.details();
 
     let earth = Planet::Earth(Rc::clone(&sun));
-    println!("reference count = {}", Rc::strong_count(&sun)); // 4 references
+    println!("reference count = {}", Rc::strong_count(&sun)); // 4 références
     earth.details();
 
     let mars = Planet::Mars(Rc::clone(&sun));
-    println!("reference count = {}", Rc::strong_count(&sun)); // 5 references
+    println!("reference count = {}", Rc::strong_count(&sun)); // 5 références
     mars.details();
 
     let jupiter = Planet::Jupiter(Rc::clone(&sun));
-    println!("reference count = {}", Rc::strong_count(&sun)); // 6 references
+    println!("reference count = {}", Rc::strong_count(&sun)); // 6 références
     jupiter.details();
 
     // TODO
     let saturn = Planet::Saturn(Rc::new(Sun {}));
-    println!("reference count = {}", Rc::strong_count(&sun)); // 7 references
+    println!("reference count = {}", Rc::strong_count(&sun)); // 7 références
     saturn.details();
 
     // TODO
     let uranus = Planet::Uranus(Rc::new(Sun {}));
-    println!("reference count = {}", Rc::strong_count(&sun)); // 8 references
+    println!("reference count = {}", Rc::strong_count(&sun)); // 8 références
     uranus.details();
 
     // TODO
     let neptune = Planet::Neptune(Rc::new(Sun {}));
-    println!("reference count = {}", Rc::strong_count(&sun)); // 9 references
+    println!("reference count = {}", Rc::strong_count(&sun)); // 9 références
     neptune.details();
 
     assert_eq!(Rc::strong_count(&sun), 9);
 
     drop(neptune);
-    println!("reference count = {}", Rc::strong_count(&sun)); // 8 references
+    println!("reference count = {}", Rc::strong_count(&sun)); // 8 références
 
     drop(uranus);
-    println!("reference count = {}", Rc::strong_count(&sun)); // 7 references
+    println!("reference count = {}", Rc::strong_count(&sun)); // 7 références
 
     drop(saturn);
-    println!("reference count = {}", Rc::strong_count(&sun)); // 6 references
+    println!("reference count = {}", Rc::strong_count(&sun)); // 6 références
 
     drop(jupiter);
-    println!("reference count = {}", Rc::strong_count(&sun)); // 5 references
+    println!("reference count = {}", Rc::strong_count(&sun)); // 5 références
 
     drop(mars);
-    println!("reference count = {}", Rc::strong_count(&sun)); // 4 references
+    println!("reference count = {}", Rc::strong_count(&sun)); // 4 références
 
     // TODO
-    println!("reference count = {}", Rc::strong_count(&sun)); // 3 references
+    println!("reference count = {}", Rc::strong_count(&sun)); // 3 références
 
     // TODO
-    println!("reference count = {}", Rc::strong_count(&sun)); // 2 references
+    println!("reference count = {}", Rc::strong_count(&sun)); // 2 références
 
     // TODO
-    println!("reference count = {}", Rc::strong_count(&sun)); // 1 reference
+    println!("reference count = {}", Rc::strong_count(&sun)); // 1 référence
 
     assert_eq!(Rc::strong_count(&sun), 1);
 }

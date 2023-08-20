@@ -1,16 +1,16 @@
 // modules3.rs
 //
-// You can use the 'use' keyword to bring module paths from modules from
-// anywhere and especially from the Rust standard library into your scope. Bring
-// SystemTime and UNIX_EPOCH from the std::time module. Bonus style points if
-// you can do it with one line!
+// Vous pouvez utiliser le mot-clé "use" pour introduire des modules dans votre 
+// champ d'application provenant de n'importe où et en particulier de la 
+// bibliothèque standard de Rust. Importez SystemTime et UNIX_EPOCH du module std::time. 
+// Points de style bonus si vous pouvez le faire en une seule ligne !
 //
-// Execute `rustlings hint modules3` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint modules3` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
-// TODO: Complete this use statement
+// TODO: Complétez cette instruction use
 use ???
 
 fn main() {

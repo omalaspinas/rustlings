@@ -1,13 +1,13 @@
 // traits5.rs
 //
-// Your task is to replace the '??' sections so the code compiles.
+// Votre tâche consiste à remplacer les sections '??' pour que le code compile.
 //
-// Don't change any line other than the marked one.
+// Ne changez pas d'autres lignes que celles qui sont marquées.
 //
-// Execute `rustlings hint traits5` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint traits5` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 pub trait SomeTrait {
     fn some_function(&self) -> bool {
@@ -29,7 +29,7 @@ impl OtherTrait for SomeStruct {}
 impl SomeTrait for OtherStruct {}
 impl OtherTrait for OtherStruct {}
 
-// YOU MAY ONLY CHANGE THE NEXT LINE
+// VOUS NE POUVEZ MODIFIER QUE LA LIGNE SUIVANTE
 fn some_func(item: ??) -> bool {
     item.some_function() && item.other_function()
 }

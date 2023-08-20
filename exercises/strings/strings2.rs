@@ -1,14 +1,14 @@
 // strings2.rs
 //
-// Make me compile without changing the function signature!
+// Faites-moi compiler sans changer la signature de la fonction !
 //
-// Execute `rustlings hint strings2` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint strings2` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
-    let word = String::from("green"); // Try not changing this line :)
+    let word = String::from("green"); // Essayez de ne pas modifier cette ligne :)
     if is_a_color_word(word) {
         println!("That is a color word I know!");
     } else {

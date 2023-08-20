@@ -1,11 +1,11 @@
 // from_into.rs
 //
-// The From trait is used for value-to-value conversions. If From is implemented
-// correctly for a type, the Into trait should work conversely. You can read
-// more about it at https://doc.rust-lang.org/std/convert/trait.From.html
+// Le trait From est utilisé pour les conversions de valeur à valeur. Si From est implémenté
+// correctement pour un type, le trait Into devrait fonctionner dans l'autre sens. Vous pouvez lire
+// plus d'informations à ce sujet à l'adresse https://doc.rust-lang.org/std/convert/trait.From.html
 //
-// Execute `rustlings hint from_into` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint from_into` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
 #[derive(Debug)]
 struct Person {
@@ -13,8 +13,8 @@ struct Person {
     age: usize,
 }
 
-// We implement the Default trait to use it as a fallback
-// when the provided string is not convertible into a Person object
+// Nous implémentons le trait Default pour l'utiliser comme solution de repli
+// lorsque la chaîne fournie n'est pas convertible en un objet Person
 impl Default for Person {
     fn default() -> Person {
         Person {
@@ -24,33 +24,32 @@ impl Default for Person {
     }
 }
 
-// Your task is to complete this implementation in order for the line `let p =
-// Person::from("Mark,20")` to compile Please note that you'll need to parse the
-// age component into a `usize` with something like `"4".parse::<usize>()`. The
-// outcome of this needs to be handled appropriately.
+// Votre tâche est de compléter cette implémentation pour que la ligne
+// `let p = Person::from("Mark,20")` soit compilée.
+// Notez que vous devrez faire le parsing de age en `usize` avec quelque chose
+// comme `"4".parse::<usize>()`.
+// Le résultat de ceci doit être traité de manière appropriée.
 //
-// Steps:
-// 1. If the length of the provided string is 0, then return the default of
-//    Person.
-// 2. Split the given string on the commas present in it.
-// 3. Extract the first element from the split operation and use it as the name.
-// 4. If the name is empty, then return the default of Person.
-// 5. Extract the other element from the split operation and parse it into a
-//    `usize` as the age.
-// If while parsing the age, something goes wrong, then return the default of
-// Person Otherwise, then return an instantiated Person object with the results
+// Étapes :
+// 1. Si la longueur de la chaîne fournie est égale à 0, alors il faut retourner la valeur par défaut de
+// Person.
+// 2. Diviser la chaîne donnée en fonction des virgules qu'elle contient
+// 3. Extraire le premier élément de l'opération de division et l'utiliser comme nom.
+// 4. Si le nom est vide, la valeur par défaut de Person est retournée.
+// 5. Extraire l'autre élément de l'opération de division, parsez le en `usize`, et utilisez le comme âge.
+// Si lors du parsing de l'âge, quelque chose ne va pas, alors retournez la valeur par défaut de Person
+// Sinon, retournez un objet Person instancié avec les résultats.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 impl From<&str> for Person {
-    fn from(s: &str) -> Person {
-    }
+    fn from(s: &str) -> Person {}
 }
 
 fn main() {
-    // Use the `from` function
+    // Utilisez la fonction `from`
     let p1 = Person::from("Mark,20");
-    // Since From is implemented for Person, we should be able to use Into
+    // Puisque From est implémenté pour Person, nous devrions pouvoir utiliser Into
     let p2: Person = "Gerald,70".into();
     println!("{:?}", p1);
     println!("{:?}", p2);
@@ -61,29 +60,29 @@ mod tests {
     use super::*;
     #[test]
     fn test_default() {
-        // Test that the default person is 30 year old John
+        // Teste que la personne par défaut est John, âgé de 30 ans
         let dp = Person::default();
         assert_eq!(dp.name, "John");
         assert_eq!(dp.age, 30);
     }
     #[test]
     fn test_bad_convert() {
-        // Test that John is returned when bad string is provided
+        // Teste que John est retourné lorsqu'une mauvaise chaîne est fournie
         let p = Person::from("");
         assert_eq!(p.name, "John");
         assert_eq!(p.age, 30);
     }
     #[test]
     fn test_good_convert() {
-        // Test that "Mark,20" works
+        // Teste que "Mark,20" fonctionne
         let p = Person::from("Mark,20");
         assert_eq!(p.name, "Mark");
         assert_eq!(p.age, 20);
     }
     #[test]
     fn test_bad_age() {
-        // Test that "Mark,twenty" will return the default person due to an
-        // error in parsing age
+        // Teste que "Mark,twenty" renvoie la personne par défaut en raison d'une
+        // erreur dans l'analyse de l'âge
         let p = Person::from("Mark,twenty");
         assert_eq!(p.name, "John");
         assert_eq!(p.age, 30);

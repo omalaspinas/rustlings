@@ -1,15 +1,15 @@
 // iterators2.rs
 //
-// In this exercise, you'll learn some of the unique advantages that iterators
-// can offer. Follow the steps to complete the exercise.
+// Dans cet exercice, vous découvrirez certains des avantages que les itérateurs
+// peuvent offrir. Suivez les étapes pour réaliser l'exercice.
 //
-// Execute `rustlings hint iterators2` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint iterators2` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
-// Step 1.
-// Complete the `capitalize_first` function.
+// Étape 1.
+// Complétez la fonction `capitalize_first`.
 // "hello" -> "Hello"
 pub fn capitalize_first(input: &str) -> String {
     let mut c = input.chars();
@@ -19,17 +19,17 @@ pub fn capitalize_first(input: &str) -> String {
     }
 }
 
-// Step 2.
-// Apply the `capitalize_first` function to a slice of string slices.
-// Return a vector of strings.
+// Étape 2.
+// Appliquez la fonction `capitalize_first` à un slice de chaîne de caractères.
+// Retourne un vecteur de chaînes de caractères.
 // ["hello", "world"] -> ["Hello", "World"]
 pub fn capitalize_words_vector(words: &[&str]) -> Vec<String> {
     vec![]
 }
 
-// Step 3.
-// Apply the `capitalize_first` function again to a slice of string slices.
-// Return a single string.
+// Étape 3.
+// Appliquez à nouveau la fonction `capitalize_first` à un slice de chaîne de caractères.
+// Retourne une seule chaîne de caractères.
 // ["hello", " ", "world"] -> "Hello World"
 pub fn capitalize_words_string(words: &[&str]) -> String {
     String::new()

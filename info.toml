@@ -5,15 +5,15 @@ name = "intro1"
 path = "exercises/intro/intro1.rs"
 mode = "compile"
 hint = """
-Remove the I AM NOT DONE comment in the exercises/intro/intro1.rs file
-to move on to the next exercise."""
+Supprimez le commentaire J'AI PAS FINI dans le fichier exercises/intro/intro1.rs
+pour passer à l'exercice suivant."""
 
 [[exercises]]
 name = "intro2"
 path = "exercises/intro/intro2.rs"
 mode = "compile"
 hint = """
-Add an argument after the format string."""
+Ajoutez un argument après la chaîne de format."""
 
 # VARIABLES
 
@@ -22,69 +22,69 @@ name = "variables1"
 path = "exercises/variables/variables1.rs"
 mode = "compile"
 hint = """
-The declaration on line 8 is missing a keyword that is needed in Rust
-to create a new variable binding."""
+Il manque à la déclaration de la ligne 8 un mot-clé qui est nécessaire en Rust
+pour créer une nouvelle liaison de variable."""
 
 [[exercises]]
 name = "variables2"
 path = "exercises/variables/variables2.rs"
 mode = "compile"
 hint = """
-The compiler message is saying that Rust cannot infer the type that the
-variable binding `x` has with what is given here.
-What happens if you annotate line 7 with a type annotation?
-What if you give x a value?
-What if you do both?
-What type should x be, anyway?
-What if x is the same type as 10? What if it's a different type?"""
+Le message du compilateur dit que Rust ne peut pas déduire le type de la variable `x` avec ce qui est donné ici.
+variable `x` avec ce qui est donné ici.
+Que se passe-t-il si vous annotez la ligne 7 avec une annotation de type ?
+Que se passe-t-il si vous donnez une valeur à x ?
+Et si vous faites les deux ?
+Quel type devrait être x ?
+Que se passe-t-il si x est du même type que 10 ? Et s'il est d'un type différent?"""
 
 [[exercises]]
 name = "variables3"
 path = "exercises/variables/variables3.rs"
 mode = "compile"
 hint = """
-Oops! In this exercise, we have a variable binding that we've created on
-line 7, and we're trying to use it on line 8, but we haven't given it a
-value. We can't print out something that isn't there; try giving x a value!
-This is an error that can cause bugs that's very easy to make in any
-programming language -- thankfully the Rust compiler has caught this for us!"""
+Oups ! Dans cet exercice, nous avons une variable binding que nous avons créée à la ligne 7, et nous essayons de l'utiliser à la ligne 8, mais nous ne lui avons pas donné de nom.
+ligne 7, et nous essayons de l'utiliser à la ligne 8, mais nous ne lui avons pas donné de valeur.
+valeur. Nous ne pouvons pas imprimer quelque chose qui n'existe pas ; essayez de donner une valeur à x !
+C'est une erreur qui peut causer des bogues et qui est très facile à commettre dans n'importe quel langage de programmation.
+-- heureusement, le compilateur Rust l'a détectée pour nous !"""
 
 [[exercises]]
 name = "variables4"
 path = "exercises/variables/variables4.rs"
 mode = "compile"
 hint = """
-In Rust, variable bindings are immutable by default. But here we're trying
-to reassign a different value to x! There's a keyword we can use to make
-a variable binding mutable instead."""
+En Rust, les variables sont immutables par défaut. Mais ici, nous essayons
+de réassigner une valeur différente à x ! Il y a un mot-clé que nous pouvons utiliser pour rendre
+une liaison de variable mutable."""
 
 [[exercises]]
 name = "variables5"
 path = "exercises/variables/variables5.rs"
 mode = "compile"
 hint = """
-In variables4 we already learned how to make an immutable variable mutable
-using a special keyword. Unfortunately this doesn't help us much in this exercise
-because we want to assign a different typed value to an existing variable. Sometimes
-you may also like to reuse existing variable names because you are just converting
-values to different types like in this exercise.
-Fortunately Rust has a powerful solution to this problem: 'Shadowing'!
-You can read more about 'Shadowing' in the book's section 'Variables and Mutability':
+Dans variables4, nous avons déjà appris à rendre une variable immutable mutable à l'aide d'un mot-clé spécial.
+Malheureusement, cela ne nous aide pas beaucoup dans cet exercice
+car nous voulons assigner une valeur de type différent à une variable existante. Parfois
+on peut également réutiliser des noms de variables existants parce qu'on ne fait que convertir des
+dans des types différents, comme dans cet exercice.
+Heureusement, Rust dispose d'une solution puissante à ce problème: le " Shadowing " !
+Vous pouvez en savoir plus sur le "Shadowing" dans la section "Variables et mutabilité" du livre:
 https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#shadowing
-Try to solve this exercise afterwards using this technique."""
+Essayez de résoudre cet exercice après avoir utilisé cette technique."""
 
 [[exercises]]
 name = "variables6"
 path = "exercises/variables/variables6.rs"
 mode = "compile"
 hint = """
-We know about variables and mutability, but there is another important type of
-variable available: constants.
-Constants are always immutable and they are declared with keyword 'const' rather
-than keyword 'let'.
-Constants types must also always be annotated.
+Nous connaissons les variables et la mutabilité, mais il existe un autre
+type de variable: les constantes.
+Les constantes sont toujours immutables et sont déclarées avec le mot-clé "const"
+plutôt qu'avec le mot-clé "let".
+Les types des constantes doivent également toujours être annotés.
 
-Read more about constants and the differences between variables and constants under 'Constants' in the book's section 'Variables and Mutability':
+Pour en savoir plus sur les constantes et les différences entre les variables et les constantes, consultez la rubrique "Constantes" dans la section "Variables et mutabilité" du livre:
 https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html#constants
 """
 
@@ -95,52 +95,61 @@ name = "functions1"
 path = "exercises/functions/functions1.rs"
 mode = "compile"
 hint = """
-This main function is calling a function that it expects to exist, but the
-function doesn't exist. It expects this function to have the name `call_me`.
-It expects this function to not take any arguments and not return a value.
-Sounds a lot like `main`, doesn't it?"""
+Cette fonction `main` appelle une fonction dont elle s'attend à ce qu'elle existe, 
+mais cette fonction n'existe pas.
+Elle s'attend à ce que cette fonction porte le nom `call_me`.
+Elle s'attend à ce que cette fonction ne prenne aucun argument et ne retourne 
+aucune valeur.
+Cela ressemble beaucoup à `main`, n'est-ce pas ?"""
 
 [[exercises]]
 name = "functions2"
 path = "exercises/functions/functions2.rs"
 mode = "compile"
 hint = """
-Rust requires that all parts of a function's signature have type annotations,
-but `call_me` is missing the type annotation of `num`."""
+Rust exige que toutes les parties de la signature d'une fonction aient des 
+annotations de type, mais il manque l'annotation de type `num` à `call_me`."""
 
 [[exercises]]
 name = "functions3"
 path = "exercises/functions/functions3.rs"
 mode = "compile"
 hint = """
-This time, the function *declaration* is okay, but there's something wrong
-with the place where we're calling the function.
-As a reminder, you can freely play around with different solutions in Rustlings!
-Watch mode will only jump to the next exercise if you remove the I AM NOT DONE comment."""
+Cette fois, la *déclaration* de la fonction est correcte, mais il y a 
+quelque chose qui ne va pas à l'endroit où lors de l'appel de la fonction.
+Pour rappel, vous pouvez librement jouer avec différentes solutions 
+dans Rustlings! Le mode veille ne passera à l'exercice suivant que
+si vous supprimez le commentaire J'AI PAS FINI."""
 
 [[exercises]]
 name = "functions4"
 path = "exercises/functions/functions4.rs"
 mode = "compile"
 hint = """
-The error message points to line 17 and says it expects a type after the
-`->`. This is where the function's return type should be -- take a look at
-the `is_even` function for an example!
+Le message d'erreur pointe vers la ligne 17 et indique qu'il attend un type 
+après le `->`. C'est là que le type de retour de la fonction devrait être 
+-- regardez la fonction `is_even` pour un exemple !
 
-Also: Did you figure out that, technically, u32 would be the more fitting type
-for the prices here, since they can't be negative? If so, kudos!"""
+De plus, vous avez compris que, techniquement, `u32` serait le type le 
+plus approprié pour les prix, puisqu'ils ne peuvent pas être négatifs ?
+Si c'est le cas, bravo !"""
 
 [[exercises]]
 name = "functions5"
 path = "exercises/functions/functions5.rs"
 mode = "compile"
 hint = """
-This is a really common error that can be fixed by removing one character.
-It happens because Rust distinguishes between expressions and statements: expressions return a value based on their operand(s), and statements simply return a () type which behaves just like `void` in C/C++ language.
-We want to return a value of `i32` type from the `square` function, but it is returning a `()` type...
-They are not the same. There are two solutions:
-1. Add a `return` ahead of `num * num;`
-2. remove `;`, make it to be `num * num`"""
+Il s'agit d'une erreur très courante qui peut être corrigée en supprimant
+un caractère. Elle se produit parce que Rust fait la distinction entre les 
+expressions et les instructions: les expressions retournent une valeur 
+basée sur leur(s) opérande(s), et les instructions retournent simplement 
+un type () qui se comporte exactement comme `void` dans le langage C/C++.
+
+Nous voulons retourner une valeur de type `i32` à partir de la fonction 
+`square`, mais elle retourne un type `()`...
+Ce n'est pas la même chose. Il y a deux solutions:
+1. Ajouter un `return` avant `num * num;`
+2. Supprimer `;`, et faire en sorte que ce soit `num * num`"""
 
 # IF
 
@@ -149,30 +158,32 @@ name = "if1"
 path = "exercises/if/if1.rs"
 mode = "test"
 hint = """
-It's possible to do this in one line if you would like!
-Some similar examples from other languages:
-- In C(++) this would be: `a > b ? a : b`
-- In Python this would be:  `a if a > b else b`
-Remember in Rust that:
-- the `if` condition does not need to be surrounded by parentheses
-- `if`/`else` conditionals are expressions
-- Each condition is followed by a `{}` block."""
+Il est possible de le faire en une seule ligne si vous le souhaitez !
+Quelques exemples similaires dans d'autres langages:
+- En C(++) ce serait: `a > b ? a : b`
+- En Python, ce serait: `a if a > b ? a : b` :  `a if a > b else b`
+Rappelez-vous qu'en Rust:
+- la condition `if` n'a pas besoin d'être entourée de parenthèses
+- Les `if`/`else` sont des expressions conditionnelles
+- Chaque condition est suivie d'un bloc `{}`."""
 
 [[exercises]]
 name = "if2"
 path = "exercises/if/if2.rs"
 mode = "test"
 hint = """
-For that first compiler error, it's important in Rust that each conditional
-block returns the same type! To get the tests passing, you will need a couple
-conditions checking different input values."""
+Pour cette première erreur du compilateur, il est important en Rust que 
+chaque bloc conditionnel renvoie le même type !
+Pour que les tests passent, vous aurez besoin de quelques
+conditions vérifiant différentes valeurs d'entrée."""
 
 [[exercises]]
 name = "if3"
 path = "exercises/if/if3.rs"
 mode = "test"
 hint = """
-In Rust, every arm of an `if` expression has to return the same type of value. Make sure the type is consistent across all arms."""
+En Rust, chaque branche d'une expression `if` doit retourner le même type 
+de valeur. Assurez-vous que le type est cohérent entre tous les bras."""
 
 # QUIZ 1
 
@@ -180,7 +191,7 @@ In Rust, every arm of an `if` expression has to return the same type of value. M
 name = "quiz1"
 path = "exercises/quiz1.rs"
 mode = "test"
-hint = "No hints this time ;)"
+hint = "Pas d'indice cette fois ;)"
 
 # PRIMITIVE TYPES
 
@@ -188,40 +199,40 @@ hint = "No hints this time ;)"
 name = "primitive_types1"
 path = "exercises/primitive_types/primitive_types1.rs"
 mode = "compile"
-hint = "No hints this time ;)"
+hint = "Pas d'indice cette fois ;)"
 
 [[exercises]]
 name = "primitive_types2"
 path = "exercises/primitive_types/primitive_types2.rs"
 mode = "compile"
-hint = "No hints this time ;)"
+hint = "Pas d'indice cette fois ;)"
 
 [[exercises]]
 name = "primitive_types3"
 path = "exercises/primitive_types/primitive_types3.rs"
 mode = "compile"
 hint = """
-There's a shorthand to initialize Arrays with a certain size that does not
-require you to type in 100 items (but you certainly can if you want!).
-For example, you can do:
-let array = ["Are we there yet?"; 10];
+Il existe un raccourci pour initialiser les tableaux avec une certaine taille 
+qui ne nécessite pas de saisir 100 éléments (mais vous pouvez certainement le faire si vous le souhaitez !).
+Par exemple, vous pouvez faire:
+let array = ["Are we there yet ?"; 10] ;
 
-Bonus: what are some other things you could have that would return true
-for `a.len() >= 100`?"""
+Bonus: quelles sont les autres choses que vous pourriez faire et qui 
+retourneraient `true` pour `a.len() >= 100` ?"""
 
 [[exercises]]
 name = "primitive_types4"
 path = "exercises/primitive_types/primitive_types4.rs"
 mode = "test"
 hint = """
-Take a look at the Understanding Ownership -> Slices -> Other Slices section of the book:
+Consultez la section "Understanding Ownership -> Slices -> Other Slices" du livre:
 https://doc.rust-lang.org/book/ch04-03-slices.html
-and use the starting and ending indices of the items in the Array
-that you want to end up in the slice.
+et utilisez les indices de début et de fin des éléments du tableau
+que vous voulez retrouver dans le "slice".
 
-If you're curious why the first argument of `assert_eq!` does not
-have an ampersand for a reference since the second argument is a
-reference, take a look at the coercion chapter of the nomicon:
+Si vous êtes curieux·ses de savoir pourquoi le premier argument de `assert_eq!`
+n'a pas d'esperluette pour une référence alors que le second argument est une 
+référence, jetez un coup d'oeil au chapitre sur la coercion du nomicon:
 https://doc.rust-lang.org/nomicon/coercions.html"""
 
 [[exercises]]
@@ -229,22 +240,22 @@ name = "primitive_types5"
 path = "exercises/primitive_types/primitive_types5.rs"
 mode = "compile"
 hint = """
-Take a look at the Data Types -> The Tuple Type section of the book:
+Consultez la section "Data Types -> The Tuple Type" du livre:
 https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type
-Particularly the part about destructuring (second to last example in the section).
-You'll need to make a pattern to bind `name` and `age` to the appropriate parts
-of the tuple. You can do it!!"""
+En particulier la partie sur la déstructuration (avant-dernier exemple de la section).
+Vous devrez créer un motif pour lier `name` et `age` aux parties appropriées du tuple.
+Vous pouvez le faire !"""
 
 [[exercises]]
 name = "primitive_types6"
 path = "exercises/primitive_types/primitive_types6.rs"
 mode = "test"
 hint = """
-While you could use a destructuring `let` for the tuple here, try
-indexing into it instead, as explained in the last example of the
-Data Types -> The Tuple Type section of the book:
+Bien que vous puissiez utiliser une déstructuration `let` pour le tuple, 
+essayez plutôt de l'indexer, comme expliqué dans le dernier exemple
+de la section "Data Types -> The Tuple Type" du livre:
 https://doc.rust-lang.org/book/ch03-02-data-types.html#the-tuple-type
-Now you have another tool in your toolbox!"""
+Vous avez maintenant un nouvel outil dans votre boîte à outils !"""
 
 # VECS
 
@@ -253,13 +264,13 @@ name = "vecs1"
 path = "exercises/vecs/vecs1.rs"
 mode = "test"
 hint = """
-In Rust, there are two ways to define a Vector.
-1. One way is to use the `Vec::new()` function to create a new vector
-  and fill it with the `push()` method.
-2. The second way, which is simpler is to use the `vec![]` macro and
-  define your elements inside the square brackets.
-Check this chapter: https://doc.rust-lang.org/stable/book/ch08-01-vectors.html
-of the Rust book to learn more.
+En Rust, il y a deux façons de définir un vecteur.
+1. La première consiste à utiliser la fonction `Vec::new()` pour créer un nouveau 
+  vecteur et le remplir avec la méthode `push()`.
+2. La seconde façon, plus simple, est d'utiliser la macro `vec ![]` et de
+  et de définir vos éléments à l'intérieur des crochets.
+Consultez ce chapitre: https://doc.rust-lang.org/stable/book/ch08-01-vectors.html
+du livre Rust pour en savoir plus.
 """
 
 [[exercises]]
@@ -267,15 +278,15 @@ name = "vecs2"
 path = "exercises/vecs/vecs2.rs"
 mode = "test"
 hint = """
-Hint 1: In the code, the variable `element` represents an item from the Vec as it is being iterated.
-Can you try multiplying this?
+Indice 1: Dans le code, la variable `element` représente un élément du Vec lorsqu'on itère dessus.
+Pouvez-vous essayer de la multiplier?
 
-Hint 2: For the first function, there's a way to directly access the numbers stored
-in the Vec, using the * dereference operator. You can both access and write to the
-number that way.
+Indice 2: Pour la première fonction, il existe un moyen d'accéder directement
+aux nombres stockés dans le Vec, en utilisant l'opérateur de déréférencement *. 
+Vous pouvez à la fois accéder et écrire sur le nombre de cette façon.
 
-After you've completed both functions, decide for yourself which approach you like
-better. What do you think is the more commonly used pattern under Rust developers?
+Après avoir exécuté les deux fonctions, décidez vous-même de l'approche que vous préférez.
+Selon vous, quel est le modèle le plus couramment utilisé par les développeurs de Rust?
 """
 
 # MOVE SEMANTICS
@@ -285,32 +296,37 @@ name = "move_semantics1"
 path = "exercises/move_semantics/move_semantics1.rs"
 mode = "compile"
 hint = """
-So you've got the "cannot borrow immutable local variable `vec1` as mutable" error on line 13,
-right? The fix for this is going to be adding one keyword, and the addition is NOT on line 13
-where the error is.
+Vous avez donc l'erreur "cannot borrow immutable local variable `vec1` as mutable" à la ligne 13,
+n'est-ce pas ? La solution va être d'ajouter un mot-clé, et l'ajout ne se fait PAS à la ligne 13
+où se trouve l'erreur.
 
-Also: Try accessing `vec0` after having called `fill_vec()`. See what happens!"""
+De plus, essayez d'accéder à `vec0` après avoir appelé `fill_vec()`. Voyez ce qui se passe !"""
 
 [[exercises]]
 name = "move_semantics2"
 path = "exercises/move_semantics/move_semantics2.rs"
 mode = "compile"
 hint = """
-When running this exercise for the first time, you'll notice an error about
-"borrow of moved value". In Rust, when an argument is passed to a function and
-it's not explicitly returned, you can't use the original variable anymore.
-We call this "moving" a variable. When we pass `vec0` into `fill_vec`, it's being
-"moved" into `vec1`, meaning we can't access `vec0` anymore after the fact.
-Rust provides a couple of different ways to mitigate this issue, feel free to try them all:
-1. You could make another, separate version of the data that's in `vec0` and pass that
-   to `fill_vec` instead.
-2. Make `fill_vec` borrow its argument instead of taking ownership of it,
-   and then copy the data within the function (`vec.clone()`) in order to return an owned
-   `Vec<i32>`.
-3. Or, you could make `fill_vec` *mutably* borrow a reference to its argument (which will need to be
-   mutable), modify it directly, then not return anything. This means that `vec0` will change over the
-   course of the function, and makes `vec1` redundant (make sure to change the parameters of the `println!`
-   statements if you go this route)
+Lorsque vous exécutez cet exercice pour la première fois, vous remarquerez 
+une erreur "borrow of moved value". En Rust, lorsqu'un argument est passé 
+à une fonction et qu'il n'est pas explicitement retourné, vous ne pouvez plus
+utiliser la variable d'origine.
+Nous appelons cela "déplacer" (move) une variable. Lorsque nous passons 
+`vec0` dans `fill_vec`, il est "déplacé" dans `vec1`, ce qui signifie 
+que nous ne pouvons plus accéder à `vec0` après.
+Rust propose plusieurs façons d'atténuer ce problème, n'hésitez pas à les 
+essayer toutes:
+1. Vous pouvez créer une autre version des données contenues dans `vec0` 
+   et la passer à `fill_vec`.
+2. Faire en sorte que `fill_vec` emprunte son argument au lieu d'en prendre 
+   possession, et ensuite copier les données dans la fonction (`vec.clone()`)
+   afin de retourner un `Vec<i32>`.
+3. Ou bien, vous pourriez faire en sorte que `fill_vec` emprunte de façon 
+   *mutable* une référence à son argument (qui devra être mutable), 
+   le modifier, et ne rien retourner. Cela signifie que `vec0` changera 
+   au cours de la fonction, et rend `vec1` redondant (assurez-vous de 
+   changer les paramètres de l'instruction `println!` si vous choisissez 
+   cette solution).
 """
 
 [[exercises]]
@@ -318,34 +334,36 @@ name = "move_semantics3"
 path = "exercises/move_semantics/move_semantics3.rs"
 mode = "compile"
 hint = """
-The difference between this one and the previous ones is that the first line
-of `fn fill_vec` that had `let mut vec = vec;` is no longer there. You can,
-instead of adding that line back, add `mut` in one place that will change
-an existing binding to be a mutable binding instead of an immutable one :)"""
+La différence entre cet exercice et les précédents est que la première ligne
+de `fn fill_vec` qui contenait `let mut vec = vec;` n'est plus là. Vous pouvez,
+au lieu d'ajouter cette ligne, ajouter `mut` à un endroit qui changera 
+un binding existant en un binding mutable au lieu d'un binding immuatble :)"""
 
 [[exercises]]
 name = "move_semantics4"
 path = "exercises/move_semantics/move_semantics4.rs"
 mode = "compile"
 hint = """
-Stop reading whenever you feel like you have enough direction :) Or try
-doing one step and then fixing the compiler errors that result!
-So the end goal is to:
-   - get rid of the first line in main that creates the new vector
-   - so then `vec0` doesn't exist, so we can't pass it to `fill_vec`
-   - `fill_vec` has had its signature changed, which our call should reflect
-   - since we're not creating a new vec in `main` anymore, we need to create
-     a new vec in `fill_vec`, similarly to the way we did in `main`"""
+Arrêtez de lire quand vous sentez que vous avez suffisamment d'indications :) 
+Ou essayez de faire une étape et de corriger les erreurs de compilation 
+qui en résultent !
+L'objectif final est donc de:
+   - se débarrasser de la première ligne du `main` qui crée le nouveau vecteur
+   - comme `vec0` n'existe plus, on ne peut pas le passer à `fill_vec`
+   - la signature de `fill_vec` a changé, ce que notre appel devrait refléter
+   - puisque nous ne créons plus de nouveau vec dans `main`, nous devons créer
+     un nouveau vec dans `fill_vec`, de la même manière que nous l'avons fait 
+     dans `main`"""
 
 [[exercises]]
 name = "move_semantics5"
 path = "exercises/move_semantics/move_semantics5.rs"
 mode = "compile"
 hint = """
-Carefully reason about the range in which each mutable reference is in
-scope. Does it help to update the value of referent (x) immediately after
-the mutable reference is taken? Read more about 'Mutable References'
-in the book's section References and Borrowing':
+Raisonnez soigneusement sur l'étendue de la portée de chaque référence mutable.
+Est-il utile de mettre à jour la valeur du référent (x) immédiatement après 
+que la référence mutable est prise? En savoir plus sur les 
+"références mutables" dans la section "References and Borrowing" du livre:
 https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html#mutable-references.
 """
 
@@ -354,15 +372,17 @@ name = "move_semantics6"
 path = "exercises/move_semantics/move_semantics6.rs"
 mode = "compile"
 hint = """
-To find the answer, you can consult the book section "References and Borrowing":
+Pour trouver la réponse, vous pouvez consulter la section 
+"References and Borrowing" du livre:
 https://doc.rust-lang.org/stable/book/ch04-02-references-and-borrowing.html
-The first problem is that `get_char` is taking ownership of the string.
-So `data` is moved and can't be used for `string_uppercase`
-`data` is moved to `get_char` first, meaning that `string_uppercase` cannot manipulate the data.
-Once you've fixed that, `string_uppercase`'s function signature will also need to be adjusted.
-Can you figure out how?
+Le premier problème est que `get_char` prend la propriété de la chaîne de 
+caractères. Donc `data` est déplacé et ne peut pas être utilisé pour 
+`string_uppercase`. `data` étant déplacé vers `get_char` en premier, 
+cela qui signifie que `string_uppercase` ne peut pas manipuler les données.
+Une fois que vous aurez corrigé cela, la signature de la fonction 
+`string_uppercase` devra également être ajustée. Pouvez-vous trouver comment ?
 
-Another hint: it has to do with the `&` character."""
+Un autre indice: cela a à voir avec le caractère `&`."""
 
 # STRUCTS
 
@@ -371,33 +391,33 @@ name = "structs1"
 path = "exercises/structs/structs1.rs"
 mode = "test"
 hint = """
-Rust has more than one type of struct. Three actually, all variants are used to package related data together.
-There are normal (or classic) structs. These are named collections of related data stored in fields.
-Tuple structs are basically just named tuples.
-Finally, Unit-like structs. These don't have any fields and are useful for generics.
+Rust possède plus d'un type de `struct`. En fait, toutes les variantes sont utilisées pour regrouper des données connexes.
+Il y a les structures normales (ou classiques). Il s'agit de collections nommées de données connexes stockées dans des champs.
+Les structures Tuple sont essentiellement des tuples nommés.
+Enfin, les structs de type Unit. Elles n'ont pas de champs et sont utiles pour les génériques.
 
-In this exercise you need to complete and implement one of each kind.
-Read more about structs in The Book: https://doc.rust-lang.org/book/ch05-01-defining-structs.html"""
+Dans cet exercice, vous devez compléter et implémenter une structure de chaque type.
+Pour en savoir plus sur les structures, consultez le livre: https://doc.rust-lang.org/book/ch05-01-defining-structs.html"""
 
 [[exercises]]
 name = "structs2"
 path = "exercises/structs/structs2.rs"
 mode = "test"
 hint = """
-Creating instances of structs is easy, all you need to do is assign some values to its fields.
-There are however some shortcuts that can be taken when instantiating structs.
-Have a look in The Book, to find out more: https://doc.rust-lang.org/stable/book/ch05-01-defining-structs.html#creating-instances-from-other-instances-with-struct-update-syntax"""
+Il est facile de créer des instances de structures, il suffit d'attribuer des valeurs à leurs champs.
+Il existe cependant des raccourcis qui peuvent être pris lors de l'instanciation des structures.
+Pour en savoir plus, consultez le livre: https://doc.rust-lang.org/stable/book/ch05-01-defining-structs.html#creating-instances-from-other-instances-with-struct-update-syntax"""
 
 [[exercises]]
 name = "structs3"
 path = "exercises/structs/structs3.rs"
 mode = "test"
 hint = """
-For is_international: What makes a package international? Seems related to the places it goes through right?
+Pour is_international: Qu'est-ce qui fait qu'un colis est international? Cela semble lié aux endroits par lesquels il passe, n'est-ce pas?
 
-For get_fees: This method takes an additional argument, is there a field in the Package struct that this relates to?
+Pour get_fees: Cette méthode prend un argument supplémentaire, existe-t-il un champ dans la structure Package auquel elle se rapporte ?
 
-Have a look in The Book, to find out more about method implementations: https://doc.rust-lang.org/book/ch05-03-method-syntax.html"""
+Pour en savoir plus sur les implémentations de méthodes, jetez un coup d'œil au Livre: https://doc.rust-lang.org/book/ch05-03-method-syntax.html"""
 
 # ENUMS
 
@@ -405,25 +425,25 @@ Have a look in The Book, to find out more about method implementations: https://
 name = "enums1"
 path = "exercises/enums/enums1.rs"
 mode = "compile"
-hint = "No hints this time ;)"
+hint = "Pas d'indices cette fois ;)"
 
 [[exercises]]
 name = "enums2"
 path = "exercises/enums/enums2.rs"
 mode = "compile"
 hint = """
-You can create enumerations that have different variants with different types
-such as no data, anonymous structs, a single string, tuples, ...etc"""
+Vous pouvez créer des énumérations qui ont différentes variantes avec différents types
+comme: sans données, les structures anonymes, une chaîne de caractères, les tuples, ...etc."""
 
 [[exercises]]
 name = "enums3"
 path = "exercises/enums/enums3.rs"
 mode = "test"
 hint = """
-As a first step, you can define enums to compile this code without errors.
-and then create a match expression in `process()`.
-Note that you need to deconstruct some message variants
-in the match expression to get value in the variant."""
+Dans un premier temps, vous pouvez définir des enums pour compiler ce code sans erreur,
+puis créer une expression `match` dans `process()`.
+Notez que vous devez déconstruire certaines variantes de message
+dans l'expression match pour obtenir la valeur de la variante."""
 
 # STRINGS
 
@@ -432,40 +452,39 @@ name = "strings1"
 path = "exercises/strings/strings1.rs"
 mode = "compile"
 hint = """
-The `current_favorite_color` function is currently returning a string slice with the `'static`
-lifetime. We know this because the data of the string lives in our code itself -- it doesn't
-come from a file or user input or another program -- so it will live as long as our program
-lives. But it is still a string slice. There's one way to create a `String` by converting a
-string slice covered in the Strings chapter of the book, and another way that uses the `From`
-trait."""
+La fonction `current_favorite_color` retourne actuellement un "slice" de chaîne de caractère avec la durée de vie `'static''. 
+Nous savons cela parce que les données de la chaîne de caractères vivent dans notre code lui-même - elles ne proviennent pas d'un fichier, d'une entrée utilisateur ou d'un autre programme - donc elles vivront aussi longtemps que notre programme.
+Mais il s'agit toujours d'un slice de chaîne de caractères. Il y a une façon de créer une `String` en convertissant un slice de
+chaîne de caractères qui est abordée dans le chapitre sur les chaînes de caractères, et une autre façon qui utilise.
+le trait `From`."""
 
 [[exercises]]
 name = "strings2"
 path = "exercises/strings/strings2.rs"
 mode = "compile"
 hint = """
-Yes, it would be really easy to fix this by just changing the value bound to `word` to be a
-string slice instead of a `String`, wouldn't it?? There is a way to add one character to line
-12, though, that will coerce the `String` into a string slice.
+Oui, il serait vraiment facile de corriger cela en changeant simplement la valeur liée à `word` pour qu'elle soit
+un slice de chaîne de caractères au lieu d'une `String`, n'est-ce pas ? Il y a un moyen d'ajouter un caractère à la ligne
+12, cependant, qu'est-ce qui forcera la `String` à devenir un slice de chaîne.
 
-Side note: If you're interested in learning about how this kind of reference conversion works, you can jump ahead in the book and read this part in the smart pointers chapter: https://doc.rust-lang.org/stable/book/ch15-02-deref.html#implicit-deref-coercions-with-functions-and-methods"""
+Note complémentaire: si vous souhaitez savoir comment fonctionne ce type de conversion de référence, vous pouvez avancer dans le livre et lire cette partie dans le chapitre sur les pointeurs intelligents: https://doc.rust-lang.org/stable/book/ch15-02-deref.html#implicit-deref-coercions-with-functions-and-methods."""
 
 [[exercises]]
 name = "strings3"
 path = "exercises/strings/strings3.rs"
 mode = "test"
 hint = """
-There's tons of useful standard library functions for strings. Let's try and use some of
-them: <https://doc.rust-lang.org/std/string/struct.String.html#method.trim>!
+Il existe des tonnes de fonctions utiles de la bibliothèque standard pour les chaînes de caractères. Essayons d'en utiliser
+quelques-unes d'entre elles: <https://doc.rust-lang.org/std/string/struct.String.html#method.trim> !
 
-For the compose_me method: You can either use the `format!` macro, or convert the string
-slice into an owned string, which you can then freely extend."""
+Pour la méthode compose_me: Vous pouvez soit utiliser la macro `format!`, soit convertir le slice de chaîne
+de caractère en une chaîne possédée (owned), que vous pouvez ensuite étendre librement."""
 
 [[exercises]]
 name = "strings4"
 path = "exercises/strings/strings4.rs"
 mode = "compile"
-hint = "No hints this time ;)"
+hint = "Pas d'indices cette fois ;)"
 
 # MODULES
 
@@ -474,29 +493,31 @@ name = "modules1"
 path = "exercises/modules/modules1.rs"
 mode = "compile"
 hint = """
-Everything is private in Rust by default-- but there's a keyword we can use
-to make something public! The compiler error should point to the thing that
-needs to be public."""
+Tout est privé en Rust par défaut - mais il y a un mot-clé que nous pouvons utiliser
+pour rendre quelque chose public ! L'erreur du compilateur devrait pointer vers la chose qui
+doit être publique."""
 
 [[exercises]]
 name = "modules2"
 path = "exercises/modules/modules2.rs"
 mode = "compile"
 hint = """
-The delicious_snacks module is trying to present an external interface that is
-different than its internal structure (the `fruits` and `veggies` modules and
-associated constants). Complete the `use` statements to fit the uses in main and
-find the one keyword missing for both constants.
-Learn more at https://doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html#re-exporting-names-with-pub-use"""
+Le module delicious_snacks essaye de présenter une interface externe qui est
+différente de sa structure interne (les modules `fruits` et `veggies` et les 
+constantes associées). Complétez les déclarations `use` pour qu'elles 
+correspondent aux utilisations dans `main` et trouvez le mot-clé manquant pour 
+les deux constantes.
+Pour en savoir plus, consultez le site https://doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html#re-exporting-names-with-pub-use"""
 
 [[exercises]]
 name = "modules3"
 path = "exercises/modules/modules3.rs"
 mode = "compile"
 hint = """
-UNIX_EPOCH and SystemTime are declared in the std::time module. Add a use statement
-for these two to bring them into scope. You can use nested paths or the glob
-operator to bring these two in using only one line."""
+UNIX_EPOCH et SystemTime sont déclarés dans le module std::time. Ajoutez une 
+déclaration d'utilisation pour ces deux éléments afin de les inclure dans le 
+champ d'application. Vous pouvez utiliser des chemins imbriqués ou l'opérateur 
+`glob` pour intégrer ces deux éléments en une seule ligne."""
 
 # HASHMAPS
 
@@ -505,10 +526,10 @@ name = "hashmaps1"
 path = "exercises/hashmaps/hashmaps1.rs"
 mode = "test"
 hint = """
-Hint 1: Take a look at the return type of the function to figure out
-  the type for the `basket`.
-Hint 2: Number of fruits should be at least 5. And you have to put
-  at least three different types of fruits.
+Indice 1: Regardez le type de retour de la fonction pour déterminer le type de la
+  variable `basket`.
+Indice 2: Le nombre de fruits doit être d'au moins 5. Et vous devez mettre
+  au moins trois types de fruits différents.
 """
 
 [[exercises]]
@@ -516,8 +537,8 @@ name = "hashmaps2"
 path = "exercises/hashmaps/hashmaps2.rs"
 mode = "test"
 hint = """
-Use the `entry()` and `or_insert()` methods of `HashMap` to achieve this.
-Learn more at https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#only-inserting-a-value-if-the-key-has-no-value
+Utilisez les méthodes `entry()` et `or_insert()` de `HashMap` pour y parvenir.
+Pour en savoir plus, consultez le site https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#only-inserting-a-value-if-the-key-has-no-value
 """
 
 [[exercises]]
@@ -525,10 +546,11 @@ name = "hashmaps3"
 path = "exercises/hashmaps/hashmaps3.rs"
 mode = "test"
 hint = """
-Hint 1: Use the `entry()` and `or_insert()` methods of `HashMap` to insert entries corresponding to each team in the scores table.
-Learn more at https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#only-inserting-a-value-if-the-key-has-no-value
-Hint 2: If there is already an entry for a given key, the value returned by `entry()` can be updated based on the existing value.
-Learn more at https://doc.rust-lang.org/book/ch08-03-hash-maps.html#updating-a-value-based-on-the-old-value
+Indice 1: Utilisez les méthodes `entry()` et `or_insert()` de `HashMap` pour insérer 
+les entrées correspondant à chaque équipe dans le tableau des scores.
+Pour en savoir plus, consultez le site https://doc.rust-lang.org/stable/book/ch08-03-hash-maps.html#only-inserting-a-value-if-the-key-has-no-value
+Indice 2: S'il existe déjà une entrée pour une clé donnée, la valeur retournée par `entry()` peut être mise à jour en fonction de la valeur existante.
+Pour en savoir plus, consultez le site https://doc.rust-lang.org/book/ch08-03-hash-maps.html#updating-a-value-based-on-the-old-value
 """
 
 # QUIZ 2
@@ -537,7 +559,7 @@ Learn more at https://doc.rust-lang.org/book/ch08-03-hash-maps.html#updating-a-v
 name = "quiz2"
 path = "exercises/quiz2.rs"
 mode = "test"
-hint = "No hints this time ;)"
+hint = "Pas d'indices cette fois ;)"
 
 # OPTIONS
 
@@ -546,22 +568,22 @@ name = "options1"
 path = "exercises/options/options1.rs"
 mode = "test"
 hint = """
-Options can have a Some value, with an inner value, or a None value, without an inner value.
-There's multiple ways to get at the inner value, you can use unwrap, or pattern match. Unwrapping
-is the easiest, but how do you do it safely so that it doesn't panic in your face later?"""
+Les options peuvent avoir une valeur "Some", avec une valeur interne, ou une valeur "None", sans valeur interne.
+Il y a plusieurs façons d'obtenir la valeur interne, vous pouvez utiliser unwrap, ou le pattern matching. Unwrap
+est le plus simple, mais comment le faire en toute sécurité pour ne pas avoir de "panic" plus tard ?"""
 
 [[exercises]]
 name = "options2"
 path = "exercises/options/options2.rs"
 mode = "test"
 hint = """
-check out:
+jetez un œil à:
 https://doc.rust-lang.org/rust-by-example/flow_control/if_let.html
 https://doc.rust-lang.org/rust-by-example/flow_control/while_let.html
 
-Remember that Options can be stacked in if let and while let.
-For example: Some(Some(variable)) = variable2
-Also see Option::flatten
+N'oubliez pas que les options peuvent être empilées dans les if let et while let.
+Par exemple: Some(Some(variable)) = variable2
+Voir aussi Option::flatten
 """
 
 [[exercises]]
@@ -569,10 +591,10 @@ name = "options3"
 path = "exercises/options/options3.rs"
 mode = "compile"
 hint = """
-The compiler says a partial move happened in the `match`
-statement. How can this be avoided? The compiler shows the correction
-needed. After making the correction as suggested by the compiler, do
-read: https://doc.rust-lang.org/std/keyword.ref.html"""
+Le compilateur indique qu'un move partiel s'est produit
+dans l'instruction `match`. Comment éviter cela ? Le compilateur montre la correction
+nécessaire. Après avoir effectué la correction suggérée par le compilateur,
+lisez: https://doc.rust-lang.org/std/keyword.ref.html"""
 
 # ERROR HANDLING
 
@@ -581,70 +603,72 @@ name = "errors1"
 path = "exercises/error_handling/errors1.rs"
 mode = "test"
 hint = """
-`Ok` and `Err` are one of the variants of `Result`, so what the tests are saying
-is that `generate_nametag_text` should return a `Result` instead of an
+`Ok` et `Err` sont des variantes de `Result`, donc les tests disent
+que `generate_nametag_text` devrait retourner un `Result` au lieu d'une
 `Option`.
 
-To make this change, you'll need to:
-   - update the return type in the function signature to be a Result<String, String> that
-     could be the variants `Ok(String)` and `Err(String)`
-   - change the body of the function to return `Ok(stuff)` where it currently
-     returns `Some(stuff)`
-   - change the body of the function to return `Err(error message)` where it
-     currently returns `None`"""
+Pour faire ce changement, vous devez:
+   - mettre à jour le type de retour dans la signature de la fonction 
+     pour qu'il soit un Resultat<String, String> qui
+     qui pourrait être les variantes `Ok(String)` et `Err(String)`
+   - modifier le corps de la fonction pour qu'elle retourne `Ok(stuff)` 
+     alors qu'elle retourne actuellement `Some(stuff)`
+   - changer le corps de la fonction pour qu'elle retourne 
+    `Err(message d'erreur)` là où elle retourne renvoie actuellement `None`"""
 
 [[exercises]]
 name = "errors2"
 path = "exercises/error_handling/errors2.rs"
 mode = "test"
 hint = """
-One way to handle this is using a `match` statement on
-`item_quantity.parse::<i32>()` where the cases are `Ok(something)` and
-`Err(something)`. This pattern is very common in Rust, though, so there's
-a `?` operator that does pretty much what you would make that match statement
-do for you! Take a look at this section of the Error Handling chapter:
+Une façon de gérer cela est d'utiliser une expression `match` sur
+`item_quantity.parse::<i32>()` où les variantes sont `Ok(something)` et
+`Err(something)`. Ce schéma est très courant en Rust, donc il existe
+un opérateur `?` qui fait à peu près ce que vous voudriez que l'expression match
+pour vous ! Jetez un coup d'œil à cette section du chapitre sur la gestion des erreurs:
 https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator
-and give it a try!"""
+et essayez-le !"""
 
 [[exercises]]
 name = "errors3"
 path = "exercises/error_handling/errors3.rs"
 mode = "compile"
 hint = """
-If other functions can return a `Result`, why shouldn't `main`? It's a fairly common
-convention to return something like Result<(), ErrorType> from your main function.
-The unit (`()`) type is there because nothing is really needed in terms of positive
-results."""
+Si d'autres fonctions peuvent retourner un `Result`, pourquoi `main` ne le pourrait-il pas ? 
+C'est une convention assez commune de retourner un Result<(), ErrorType> à partir de votre fonction main.
+L'unité (`()`) est là parce que rien n'est vraiment nécessaire en termes de résultats
+positifs."""
 
 [[exercises]]
 name = "errors4"
 path = "exercises/error_handling/errors4.rs"
 mode = "test"
 hint = """
-`PositiveNonzeroInteger::new` is always creating a new instance and returning an `Ok` result.
-It should be doing some checking, returning an `Err` result if those checks fail, and only
-returning an `Ok` result if those checks determine that everything is... okay :)"""
+`PositiveNonzeroInteger::new` crée toujours une nouvelle instance et retourne un résultat `Ok`.
+Il devrait faire des vérifications, retourner un résultat `Err` si ces vérifications échouent, 
+et seulement retourner un `Ok` si ces vérifications déterminent que tout est... ok :)"""
 
 [[exercises]]
 name = "errors5"
 path = "exercises/error_handling/errors5.rs"
 mode = "compile"
 hint = """
-There are two different possible `Result` types produced within `main()`, which are
-propagated using `?` operators. How do we declare a return type from `main()` that allows both?
+Il y a deux types de `Result` possibles produits par `main()`, qui sont propagés
+propagés à l'aide de l'opérateur `?`. Comment déclarer un type de retour de `main()` qui autorise les deux ?
 
-Under the hood, the `?` operator calls `From::from` on the error value to convert it to a boxed
-trait object, a `Box<dyn error::Error>`. This boxed trait object is polymorphic, and since all
-errors implement the `error::Error` trait, we can capture lots of different errors in one "Box"
-object.
 
-Check out this section of the book:
+L'opérateur `?` appelle en fait le trait `From::from` sur la valeur de l'erreur pour la convertir
+en un "boxed trait object", un `Box<dyn error::Error>`. Cet trait object est polymorphe, et puisque toutes les
+erreurs implémentent le trait `error::Error`, nous pouvons capturer beaucoup d'erreurs différentes
+dans un seul objet "Box".
+
+Consultez cette section du livre:
 https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html#a-shortcut-for-propagating-errors-the--operator
 
-Read more about boxing errors:
+En savoir plus sur les erreurs et sur sa mise en ... Box:
 https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/boxing_errors.html
 
-Read more about using the `?` operator with boxed errors:
+En savoir plus sur l'utilisation de l'opérateur `?` avec des "boxed errors":
 https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/reenter_question_mark.html
 """
 
@@ -653,19 +677,19 @@ name = "errors6"
 path = "exercises/error_handling/errors6.rs"
 mode = "test"
 hint = """
-This exercise uses a completed version of `PositiveNonzeroInteger` from
+Cet exercice utilise une version complétée de `PositiveNonzeroInteger` provenant de
 errors4.
 
-Below the line that TODO asks you to change, there is an example of using
-the `map_err()` method on a `Result` to transform one type of error into
-another. Try using something similar on the `Result` from `parse()`. You
-might use the `?` operator to return early from the function, or you might
-use a `match` expression, or maybe there's another way!
+Sous la ligne que TODO vous demande de changer, il y a un exemple d'utilisation de
+la méthode `map_err()` sur un `Result` pour transformer un type d'erreur en
+un autre. Essayez d'utiliser quelque chose de similaire sur le `Result` de `parse()`.
+Vous pouvez utiliser l'opérateur `?` pour retourner de la fonction au début, 
+ou vous pouvez utiliser une expression `match`, ou peut-être qu'il y a un autre moyen !
 
-You can create another function inside `impl ParsePosNonzeroError` to use
-with `map_err()`.
+Vous pouvez créer une autre fonction dans `impl ParsePosNonzeroError` pour l'utiliser
+avec `map_err()`.
 
-Read more about `map_err()` in the `std::result` documentation:
+Pour en savoir plus sur `map_err()`, lisez la documentation de `std::result`:
 https://doc.rust-lang.org/std/result/enum.Result.html#method.map_err"""
 
 # Generics
@@ -696,7 +720,7 @@ name = "traits1"
 path = "exercises/traits/traits1.rs"
 mode = "test"
 hint = """
-A discussion about Traits in Rust can be found at:
+Une discussion sur les Traits en Rust peut être trouvée à l'adresse:
 https://doc.rust-lang.org/book/ch10-02-traits.html
 """
 
@@ -705,23 +729,24 @@ name = "traits2"
 path = "exercises/traits/traits2.rs"
 mode = "test"
 hint = """
-Notice how the trait takes ownership of 'self',and returns `Self`.
-Try mutating the incoming string vector. Have a look at the tests to see
-what the result should look like!
+Remarquez que le trait prend possession de 'self' et renvoie `Self`.
+Essayez de modifier le vecteur de chaîne de caractères en argument. 
+Jetez un coup d'œil aux tests pour voir
+ce à quoi le résultat devrait ressembler !
 
-Vectors provide suitable methods for adding an element at the end. See
-the documentation at: https://doc.rust-lang.org/std/vec/struct.Vec.html"""
+Les vecteurs fournissent des méthodes appropriées pour ajouter un élément à la fin. Voir
+la documentation à l'adresse: https://doc.rust-lang.org/std/vec/struct.Vec.html"""
 
 [[exercises]]
 name = "traits3"
 path = "exercises/traits/traits3.rs"
 mode = "test"
 hint = """
-Traits can have a default implementation for functions. Structs that implement
-the trait can then use the default version of these functions if they choose not
-implement the function themselves.
+Les traits peuvent avoir une implémentation par défaut pour les fonctions. Les structures qui implémentent
+le trait peuvent alors utiliser la version par défaut de ces fonctions si elles choisissent de ne pas
+implémenter elles-mêmes la fonction.
 
-See the documentation at: https://doc.rust-lang.org/book/ch10-02-traits.html#default-implementations
+Voir la documentation à l'adresse suivante: https://doc.rust-lang.org/book/ch10-02-traits.html#default-implementations
 """
 
 [[exercises]]
@@ -729,10 +754,10 @@ name = "traits4"
 path = "exercises/traits/traits4.rs"
 mode = "test"
 hint = """
-Instead of using concrete types as parameters you can use traits. Try replacing the
-'??' with 'impl <what goes here?>'
+Au lieu d'utiliser des types concrets comme arguments, vous pouvez utiliser des traits. 
+Essayez de remplacer les ??? par "impl <que'est-ce qui va ici?>
 
-See the documentation at: https://doc.rust-lang.org/book/ch10-02-traits.html#traits-as-parameters
+Voir la documentation à l'adresse: https://doc.rust-lang.org/book/ch10-02-traits.html#traits-as-parameters
 """
 
 [[exercises]]
@@ -740,10 +765,10 @@ name = "traits5"
 path = "exercises/traits/traits5.rs"
 mode = "compile"
 hint = """
-To ensure a parameter implements multiple traits use the '+ syntax'. Try replacing the
-'??' with 'impl <> + <>'.
+Pour s'assurer qu'un paramètre implémente plusieurs traits, utilisez la "syntaxe +". Essayez de remplacer le `??`
+par "impl <> + <>".
 
-See the documentation at: https://doc.rust-lang.org/book/ch10-02-traits.html#specifying-multiple-trait-bounds-with-the--syntax
+Voir la documentation à l'adresse: https://doc.rust-lang.org/book/ch10-02-traits.html#specifying-multiple-trait-bounds-with-the--syntax
 """
 
 # QUIZ 3
@@ -753,8 +778,9 @@ name = "quiz3"
 path = "exercises/quiz3.rs"
 mode = "test"
 hint = """
-To find the best solution to this challenge you're going to need to think back to your
-knowledge of traits, specifically Trait Bound Syntax -  you may also need this: `use std::fmt::Display;`."""
+Pour trouver la meilleure solution à ce défi, vous allez devoir vous référer à vos
+connaissance des traits, en particulier de la syntaxe liée aux 
+traits - vous pouvez aussi avoir besoin de ceci: `use std::fmt::Display;`."""
 
 # LIFETIMES
 
@@ -763,7 +789,7 @@ name = "lifetimes1"
 path = "exercises/lifetimes/lifetimes1.rs"
 mode = "compile"
 hint = """
-Let the compiler guide you. Also take a look at the book if you need help:
+Laissez-vous guider par le compilateur. Jetez également un coup d'œil au livre si vous avez besoin d'aide:
 https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html"""
 
 [[exercises]]
@@ -771,17 +797,18 @@ name = "lifetimes2"
 path = "exercises/lifetimes/lifetimes2.rs"
 mode = "compile"
 hint = """
-Remember that the generic lifetime 'a will get the concrete lifetime that is equal to the smaller of the lifetimes of x and y.
-You can take at least two paths to achieve the desired result while keeping the inner block:
-1. Move the string2 declaration to make it live as long as string1 (how is result declared?)
-2. Move println! into the inner block"""
+Rappelez-vous que la durée de vie générique 'a obtiendra la durée de vie concrète 
+qui est égale à la plus petite des durées de vie de x et de y.
+Vous pouvez emprunter au moins deux chemins pour obtenir le résultat souhaité tout en conservant le bloc intérieur:
+1. Déplacer la déclaration de string2 pour qu'elle ait la même durée de vie que string1 (comment result est-il déclaré ?)
+2. Déplacer println! dans le bloc interne"""
 
 [[exercises]]
 name = "lifetimes3"
 path = "exercises/lifetimes/lifetimes3.rs"
 mode = "compile"
 hint = """
-If you use a lifetime annotation in a struct's fields, where else does it need to be added?"""
+Si vous utilisez une annotation de durée de vie dans les champs d'une structure, où doit-elle être ajoutée ?"""
 
 # TESTS
 
@@ -790,41 +817,45 @@ name = "tests1"
 path = "exercises/tests/tests1.rs"
 mode = "test"
 hint = """
-You don't even need to write any code to test -- you can just test values and run that, even
-though you wouldn't do that in real life :) `assert!` is a macro that needs an argument.
-Depending on the value of the argument, `assert!` will do nothing (in which case the test will
-pass) or `assert!` will panic (in which case the test will fail). So try giving different values
-to `assert!` and see which ones compile, which ones pass, and which ones fail :)"""
+Vous n'avez même pas besoin d'écrire du code pour faire des tests 
+- vous pouvez simplement tester des valeurs exécuter et exécuter le code,
+même si vous ne le feriez prrobablement pas dans la vraie vie :) 
+`assert!` est une macro qui a besoin d'un argument.
+En fonction de la valeur de l'argument, `assert!` ne fera rien (dans ce cas, 
+le test passera) ou `assert!` paniquera (auquel cas le test échouera). 
+Essayez donc de donner différentes valeurs
+à `assert!` et voyez lesquelles compilent, lesquelles passent, et lesquelles échouent :)"""
 
 [[exercises]]
 name = "tests2"
 path = "exercises/tests/tests2.rs"
 mode = "test"
 hint = """
-Like the previous exercise, you don't need to write any code to get this test to compile and
-run. `assert_eq!` is a macro that takes two arguments and compares them. Try giving it two
-values that are equal! Try giving it two arguments that are different! Try giving it two values
-that are of different types! Try switching which argument comes first and which comes second!"""
+Comme pour l'exercice précédent, vous n'avez pas besoin d'écrire de code pour compiler et exécuter ce test. 
+`assert_eq!` est une macro qui prend deux arguments et les compare. Essayez de lui donner deux valeurs
+qui sont égales ! Essayez de lui donner deux arguments différents ! Essayez de lui donner deux valeurs
+qui sont de types différents ! Essayez d'intervertir l'argument qui vient en premier et celui qui vient en second !"""
 
 [[exercises]]
 name = "tests3"
 path = "exercises/tests/tests3.rs"
 mode = "test"
 hint = """
-You can call a function right where you're passing arguments to `assert!` -- so you could do
-something like `assert!(having_fun())`. If you want to check that you indeed get false, you
-can negate the result of what you're doing using `!`, like `assert!(!having_fun())`."""
+Vous pouvez appeler une fonction à l'endroit même où vous passez des arguments à `assert!` 
+-- vous pouvez donc faire quelque chose comme `assert!(having_fun())`. 
+Si vous voulez vérifier que vous obtenez bien `false`, vous pouvez 
+prendre la négative du résultat de ce que vous avez fait en utilisant `!`, 
+comme dans `assert!(!having_fun())`."""
 
 [[exercises]]
 name = "tests4"
 path = "exercises/tests/tests4.rs"
 mode = "test"
 hint = """
-We expect method `Rectangle::new()` to panic for negative values.
-To handle that you need to add a special attribute to the test function.
-You can refer to the docs:
+Nous nous attendons à ce que la méthode `Rectangle::new()` panique pour les valeurs négatives.
+Pour gérer cela, vous devez ajouter un attribut spécial à la fonction de test.
+Vous pouvez vous référer à la documentation:
 https://doc.rust-lang.org/stable/book/ch11-01-writing-tests.html#checking-for-panics-with-should_panic"""
-
 
 # STANDARD LIBRARY TYPES
 
@@ -833,16 +864,17 @@ name = "iterators1"
 path = "exercises/iterators/iterators1.rs"
 mode = "compile"
 hint = """
-Step 1:
-We need to apply something to the collection `my_fav_fruits` before we start to go through
-it. What could that be? Take a look at the struct definition for a vector for inspiration:
+Etape 1:
+Nous devons appliquer quelque chose à la collection `my_fav_fruits` avant de commencer à
+la parcourir. Qu'est-ce que cela pourrait être? 
+Jetez un coup d'œil à la définition de la structure d'un vecteur pour vous en inspirer:
 https://doc.rust-lang.org/std/vec/struct.Vec.html
-Step 2 & step 3:
-Very similar to the lines above and below. You've got this!
-Step 4:
-An iterator goes through all elements in a collection, but what if we've run out of
-elements? What should we expect here? If you're stuck, take a look at
-https://doc.rust-lang.org/std/iter/trait.Iterator.html for some ideas.
+Étape 2 et 3:
+Très similaires aux lignes ci-dessus et ci-dessous. Vous pouvez le faire!
+Étape 4: Un itérateur parcourt tous les éléments d'une collection, 
+mais que se passe-t-il si nous n'avons plus d'éléments? 
+À quoi devons-nous nous attendre ici? Si vous êtes bloqué, jetez un coup d'œil à
+https://doc.rust-lang.org/std/iter/trait.Iterator.html pour avoir quelques idées.
 """
 
 [[exercises]]
@@ -850,68 +882,69 @@ name = "iterators2"
 path = "exercises/iterators/iterators2.rs"
 mode = "test"
 hint = """
-Step 1
-The variable `first` is a `char`. It needs to be capitalized and added to the
-remaining characters in `c` in order to return the correct `String`.
-The remaining characters in `c` can be viewed as a string slice using the
-`as_str` method.
-The documentation for `char` contains many useful methods.
+Étape 1
+La variable `first` est un `char`. Elle doit être mise en majuscule et ajoutée aux
+caractères restants dans `c` afin de retourner la `String` correcte.
+Les caractères restants dans `c` peuvent être vus comme un slice de chaîne de caractères 
+en utilisant la méthode `as_str`.
+La documentation de `char` contient de nombreuses méthodes utiles.
 https://doc.rust-lang.org/std/primitive.char.html
 
-Step 2
-Create an iterator from the slice. Transform the iterated values by applying
-the `capitalize_first` function. Remember to collect the iterator.
+Étape 2
+Créez un itérateur à partir du "slice". Transformez les valeurs itérées en appliquant
+la fonction `capitalize_first`. N'oubliez pas de "collect()" l'itérateur.
 
-Step 3.
-This is surprisingly similar to the previous solution. Collect is very powerful
-and very general. Rust just needs to know the desired type."""
+Etape 3.
+Cette étape est étonnamment similaire à la solution précédente. Collect est très puissant
+et très général. Rust a juste besoin de connaître le type désiré."""
 
 [[exercises]]
 name = "iterators3"
 path = "exercises/iterators/iterators3.rs"
 mode = "test"
 hint = """
-The divide function needs to return the correct error when even division is not
+La fonction "divide" doit retourner l'erreur correcte lorsque la division n'est pas possible
 possible.
 
-The division_results variable needs to be collected into a collection type.
+La variable division_results doit être collectée dans un type de collection.
 
-The result_with_list function needs to return a single Result where the success
-case is a vector of integers and the failure case is a DivisionError.
+La fonction result_with_list doit retourner un seul Result où le cas réussit est un vecteur 
+d'entiers et le cas échoué est une DivisionError.
 
-The list_of_results function needs to return a vector of results.
+La fonction list_of_results doit retourner un vecteur de résultats.
 
-See https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect for how
-the `FromIterator` trait is used in `collect()`. This trait is REALLY powerful! It
-can make the solution to this exercise infinitely easier."""
+Voir https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect pour savoir comment
+le trait `FromIterator` est utilisé dans `collect()`. Ce trait est VRAIMENT puissant! 
+Il peut rendre la solution de cet exercice infiniment plus facile."""
 
 [[exercises]]
 name = "iterators4"
 path = "exercises/iterators/iterators4.rs"
 mode = "test"
 hint = """
-In an imperative language, you might write a for loop that updates
-a mutable variable. Or, you might write code utilizing recursion
-and a match clause. In Rust you can take another functional
-approach, computing the factorial elegantly with ranges and iterators.
+Dans un langage impératif, vous pourriez écrire une boucle "for" qui met à jour
+une variable mutable. Vous pouvez également écrire un code utilisant la récursivité
+et une clause match. En Rust, vous pouvez adopter une autre approche
+fonctionnelle, en calculant la factorielle de manière élégante avec des range et des itérateurs.
 
-Hint 2: Check out the `fold` and `rfold` methods!"""
+Indice 2 : Regardez les méthodes `fold` et `rfold` !"""
 
 [[exercises]]
 name = "iterators5"
 path = "exercises/iterators/iterators5.rs"
 mode = "test"
 hint = """
-The documentation for the std::iter::Iterator trait contains numerous methods
-that would be helpful here.
+La documentation du trait std::iter::Iterator contient de nombreuses méthodes
+qui pourraient être utiles ici.
 
-The collection variable in count_collection_iterator is a slice of HashMaps. It
-needs to be converted into an iterator in order to use the iterator methods.
+La variable collection dans count_collection_iterator est un slice de HashMaps. Elle
+doit être convertie en itérateur afin de pouvoir utiliser les méthodes de l'itérateur.
 
-The fold method can be useful in the count_collection_iterator function.
+La méthode fold peut être utile dans la fonction count_collection_iterator.
 
-For a further challenge, consult the documentation for Iterator to find
-a different method that could make your code more compact than using fold."""
+Pour relever un autre défi, consultez la documentation relative à Iterator 
+pour trouver une méthode différente qui pourrait rendre votre code plus compact 
+qu'avec l'utilisation de fold."""
 
 # SMART POINTERS
 
@@ -920,17 +953,17 @@ name = "box1"
 path = "exercises/smart_pointers/box1.rs"
 mode = "test"
 hint = """
-Step 1
-The compiler's message should help: since we cannot store the value of the actual type
-when working with recursive types, we need to store a reference (pointer) to its value.
-We should, therefore, place our `List` inside a `Box`. More details in the book here:
+Étape 1
+Le message du compilateur devrait vous aider: puisque nous ne pouvons pas stocker la valeur du type
+lorsqu'on travaille avec des types récursifs, nous devons stocker une référence (pointeur) à sa valeur.
+Nous devons donc placer notre `List` à l'intérieur d'un `Box`. Plus de détails dans le livre ici :
 https://doc.rust-lang.org/book/ch15-01-box.html#enabling-recursive-types-with-boxes
 
-Step 2
-Creating an empty list should be fairly straightforward (hint: peek at the assertions).
-For a non-empty list keep in mind that we want to use our Cons "list builder".
-Although the current list is one of integers (i32), feel free to change the definition
-and try other types!
+Étape 2
+Créer une liste vide devrait être assez simple (indice: regardez les assertions).
+Pour une liste non vide, gardez à l'esprit que nous voulons utiliser notre Cons "constructeur de liste".
+Bien que la liste actuelle soit une liste d'entiers (i32), n'hésitez pas à modifier la définition
+et d'essayer d'autres types !
 """
 
 [[exercises]]
@@ -938,13 +971,13 @@ name = "rc1"
 path = "exercises/smart_pointers/rc1.rs"
 mode = "compile"
 hint = """
-This is a straightforward exercise to use the Rc<T> type. Each Planet has
-ownership of the Sun, and uses Rc::clone() to increment the reference count of the Sun.
-After using drop() to move the Planets out of scope individually, the reference count goes down.
-In the end the sun only has one reference again, to itself. See more at:
+Il s'agit d'un exercice d'utilisation du type Rc<T>. 
+Chaque Planète est propriétaire du Soleil et utilise Rc::clone() pour augmenter le nombre de références du Soleil.
+Après avoir utilisé drop() pour sortir les planètes de la portée individuellement, le nombre de références diminue.
+Au final, le soleil n'a plus qu'une seule référence, à lui-même. Pour en savoir plus, consultez le site suivant
 https://doc.rust-lang.org/book/ch15-04-rc.html
 
-* Unfortunately Pluto is no longer considered a planet :(
+* Malheureusement, Pluton n'est plus considéré comme une planète :(
 """
 
 [[exercises]]
@@ -952,15 +985,15 @@ name = "arc1"
 path = "exercises/smart_pointers/arc1.rs"
 mode = "compile"
 hint = """
-Make `shared_numbers` be an `Arc` from the numbers vector. Then, in order
-to avoid creating a copy of `numbers`, you'll need to create `child_numbers`
-inside the loop but still in the main thread.
+Faites en sorte que `shared_numbers` soit un `Arc` du vecteur de nombres. 
+Ensuite, pour éviter de créer une copie de `numbers`, vous devrez créer `child_numbers`
+à l'intérieur de la boucle, mais toujours dans le thread principal.
 
-`child_numbers` should be a clone of the Arc of the numbers instead of a
-thread-local copy of the numbers.
+`child_numbers` devrait être un clone de l'Arc des nombres au lieu d'une
+copie locale des nombres dans le thread.
 
-This is a simple exercise if you understand the underlying concepts, but if this
-is too much of a struggle, consider reading through all of Chapter 16 in the book:
+C'est un exercice simple si vous comprenez les concepts sous-jacents
+si c'est trop difficile, envisagez de lire tout le chapitre 16 du livre :
 https://doc.rust-lang.org/stable/book/ch16-00-concurrency.html
 """
 
@@ -969,10 +1002,10 @@ name = "cow1"
 path = "exercises/smart_pointers/cow1.rs"
 mode = "test"
 hint = """
-If Cow already owns the data it doesn't need to clone it when to_mut() is called.
+Si Cow possède les données, il n'a pas besoin de les cloner lorsque to_mut() est appelé.
 
-Check out https://doc.rust-lang.org/std/borrow/enum.Cow.html for documentation
-on the `Cow` type.
+Consultez https://doc.rust-lang.org/std/borrow/enum.Cow.html pour de la documentation sur le type `Cow`
+sur le type `Cow`.
 """
 
 # THREADS
@@ -982,14 +1015,14 @@ name = "threads1"
 path = "exercises/threads/threads1.rs"
 mode = "compile"
 hint = """
-`JoinHandle` is a struct that is returned from a spawned thread:
+`JoinHandle` est une structure qui est retournée par un thread créé :
 https://doc.rust-lang.org/std/thread/fn.spawn.html
 
-A challenge with multi-threaded applications is that the main thread can
-finish before the spawned threads are completed.
+L'un des défis des applications multithreadées est que le thread principal peut 
+se terminer avant que les threads créés ne soient terminés
 https://doc.rust-lang.org/book/ch16-01-threads.html#waiting-for-all-threads-to-finish-using-join-handles
 
-Use the JoinHandles to wait for each thread to finish and collect their results.
+Utilisez les JoinHandles pour attendre la fin de chaque thread et collecter leurs résultats.
 https://doc.rust-lang.org/std/thread/struct.JoinHandle.html
 """
 
@@ -998,42 +1031,40 @@ name = "threads2"
 path = "exercises/threads/threads2.rs"
 mode = "compile"
 hint = """
-`Arc` is an Atomic Reference Counted pointer that allows safe, shared access
-to **immutable** data. But we want to *change* the number of `jobs_completed`
-so we'll need to also use another type that will only allow one thread to
-mutate the data at a time. Take a look at this section of the book:
+`Arc` (Atomic Reference Counted) est un pointeur qui permet un accès sûr et partagé à des données **immutables**
+à des données **immutables**. Mais nous voulons *changer* le nombre de `jobs_completed`,
+nous devrons donc utiliser un autre type qui n'autorisera qu'un seul thread à la fois
+à modifier les données. Jetez un coup d'œil à cette section du livre :
 https://doc.rust-lang.org/book/ch16-03-shared-state.html#atomic-reference-counting-with-arct
-and keep reading if you'd like more hints :)
+et continuez à lire si vous voulez plus de conseils :)
 
+Avez-vous maintenant un `Arc` `Mutex` `JobStatus` au début de main? Comme par exemple :
+`let status = Arc::new(Mutex::new(JobStatus { jobs_completed : 0 }));`
+Comme le code de l'exemple dans le livre qui se trouve après le texte
+qui dit "We can use Arc<T> to fix this.". Si ce n'est pas le cas, essayez!
+Si c'est le cas et que vous voulez d'autres conseils, continuez à lire!
 
-Do you now have an `Arc` `Mutex` `JobStatus` at the beginning of main? Like:
-`let status = Arc::new(Mutex::new(JobStatus { jobs_completed: 0 }));`
-Similar to the code in the example in the book that happens after the text
-that says "We can use Arc<T> to fix this.". If not, give that a try! If you
-do and would like more hints, keep reading!!
+Assurez-vous qu'aucun de vos threads ne retient le verrou du mutex
+pendant qu'ils dorment, car cela empêchera l'autre thread
+d'obtenir le verrou. Les verrous sont automatiquement libérés
+lorsqu'ils sortent de la portée.
 
-
-Make sure neither of your threads are holding onto the lock of the mutex
-while they are sleeping, since this will prevent the other thread from
-being allowed to get the lock. Locks are automatically released when
-they go out of scope.
-
-If you've learned from the sample solutions, I encourage you to come
-back to this exercise and try it again in a few days to reinforce
-what you've learned :)"""
+Si vous avez appris des exemples de solutions, je vous encourage à revenir 
+sur cet exercice et à le refaire dans quelques jours pour le renforcer
+ce que vous avez appris :)"""
 
 [[exercises]]
 name = "threads3"
 path = "exercises/threads/threads3.rs"
 mode = "compile"
 hint = """
-An alternate way to handle concurrency between threads is to use
-a mpsc (multiple producer, single consumer) channel to communicate.
-With both a sending end and a receiving end, it's possible to
-send values in one thread and receive them in another.
-Multiple producers are possible by using clone() to create a duplicate
-of the original sending end.
-See https://doc.rust-lang.org/book/ch16-02-message-passing.html for more info.
+Une autre façon de gérer la concurrence entre les threads est d'utiliser un canal mpsc 
+(multiple producer, single consumer) pour communiquer.
+Avec un émetteur et un receveur, il est possible d'envoyer des valeurs dans un 
+thread et de les recevoir dans un autre.
+Les producteurs multiples sont possibles en utilisant clone() pour créer un duplicata
+de l'émetteur original.
+Voir https://doc.rust-lang.org/book/ch16-02-message-passing.html pour plus d'informations.
 """
 
 # MACROS
@@ -1043,8 +1074,8 @@ name = "macros1"
 path = "exercises/macros/macros1.rs"
 mode = "compile"
 hint = """
-When you call a macro, you need to add something special compared to a
-regular function call. If you're stuck, take a look at what's inside
+Lorsque vous appelez une macro, vous devez ajouter quelque chose de spécial par rapport à
+l'appel d'une fonction normale. Si vous êtes bloqué, regardez ce qu'il y a à l'intérieur de
 `my_macro`."""
 
 [[exercises]]
@@ -1052,36 +1083,38 @@ name = "macros2"
 path = "exercises/macros/macros2.rs"
 mode = "compile"
 hint = """
-Macros don't quite play by the same rules as the rest of Rust, in terms of
-what's available where.
+Les macros ne suivent pas tout à fait les mêmes règles que le reste de Rust, en termes de
+ce qui est disponible et où ça l'est.
 
-Unlike other things in Rust, the order of "where you define a macro" versus
-"where you use it" actually matters."""
+Contrairement à d'autres choses en Rust, l'ordre "où vous définissez une macro" par rapport 
+à "où vous l'utilisez" a de l'importance."""
 
 [[exercises]]
 name = "macros3"
 path = "exercises/macros/macros3.rs"
 mode = "compile"
 hint = """
-In order to use a macro outside of its module, you need to do something
-special to the module to lift the macro out into its parent.
+Pour pouvoir utiliser une macro en dehors de son module, 
+il faut faire quelque chose de spécial au module pour faire sortir 
+la macro dans son parent.
 
-The same trick also works on "extern crate" statements for crates that have
-exported macros, if you've seen any of those around."""
+La même astuce fonctionne également avec les déclarations "extern crate" 
+pour les crates qui ont des macros exportées, si vous en avez déjà vu."""
 
 [[exercises]]
 name = "macros4"
 path = "exercises/macros/macros4.rs"
 mode = "compile"
 hint = """
-You only need to add a single character to make this compile.
-The way macros are written, it wants to see something between each
-"macro arm", so it can separate them.
+Il suffit d'ajouter un seul caractère pour que cela compile.
+De la manière dont les macros sont écrites, le compilateur veut 
+voir quelque chose entre chaque "bras de macro", afin de pouvoir les distinguer.
 
-That's all the macro exercises we have in here, but it's barely even
-scratching the surface of what you can do with Rust's macros. For a more
-thorough introduction, you can have a read through the little book of Rust
-macros: https://veykril.github.io/tlborm/"""
+C'est tout ce que nous avons à faire avec les macros, 
+mais cela ne fait qu'effleurer la surface de ce que vous pouvez 
+faire avec les macros de Rust. Pour une
+une introduction plus complète, vous pouvez lire le petit livre des macros de Rust
+macros : https://veykril.github.io/tlborm/"""
 
 #  CLIPPY
 
@@ -1090,28 +1123,28 @@ name = "clippy1"
 path = "exercises/clippy/clippy1.rs"
 mode = "clippy"
 hint = """
-Rust stores the highest precision version of any long or infinite precision
-mathematical constants in the Rust standard library.
+Rust stocke la version la plus précise des constantes mathématiques de précision longue ou infinie
+dans sa librairie standard.
 https://doc.rust-lang.org/stable/std/f32/consts/index.html
 
-We may be tempted to use our own approximations for certain mathematical constants,
-but clippy recognizes those imprecise mathematical constants as a source of
-potential error.
-See the suggestions of the clippy warning in compile output and use the
-appropriate replacement constant from std::f32::consts..."""
+Nous pouvons être tentés d'utiliser nos propres approximations pour certaines constantes mathématiques,
+mais Clippy reconnaît ces constantes mathématiques imprécises comme une source
+d'erreur potentielle.
+Voir les suggestions de l'avertissement de clippy dans la sortie de compilation et utiliser la
+constante de remplacement appropriée de std::f32::consts..."""
 
 [[exercises]]
 name = "clippy2"
 path = "exercises/clippy/clippy2.rs"
 mode = "clippy"
 hint = """
-`for` loops over Option values are more clearly expressed as an `if let`"""
+les boucles `for` sur les valeurs d'Option sont plus clairement exprimées avec un `if let`"""
 
 [[exercises]]
 name = "clippy3"
 path = "exercises/clippy/clippy3.rs"
 mode = "clippy"
-hint = "No hints this time!"
+hint = "Pas d'indices cette fois!"
 
 # TYPE CONVERSIONS
 
@@ -1120,34 +1153,34 @@ name = "using_as"
 path = "exercises/conversions/using_as.rs"
 mode = "test"
 hint = """
-Use the `as` operator to cast one of the operands in the last line of the
-`average` function into the expected return type."""
+Utilisez l'opérateur `as` pour transformer l'un des opérandes de la dernière ligne 
+de la fonction `average` dans le type de retour attendu."""
 
 [[exercises]]
 name = "from_into"
 path = "exercises/conversions/from_into.rs"
 mode = "test"
 hint = """
-Follow the steps provided right before the `From` implementation"""
+Suivez les étapes fournies juste avant l'implémentation de `From`"""
 
 [[exercises]]
 name = "from_str"
 path = "exercises/conversions/from_str.rs"
 mode = "test"
 hint = """
-The implementation of FromStr should return an Ok with a Person object,
-or an Err with an error if the string is not valid.
+L'implémentation de FromStr doit retourner un Ok avec un objet Person,
+ou un Err avec une erreur si la chaîne de caractères n'est pas valide.
 
-This is almost like the `from_into` exercise, but returning errors instead
-of falling back to a default value.
+C'est presque comme l'exercice `from_into`, mais en retournant les erreurs 
+au lieu de d'une valeur par défaut.
 
-Look at the test cases to see which error variants to return.
+Regardez les tests pour voir quelles variantes d'erreur retourner.
 
-Another hint: You can use the `map_err` method of `Result` with a function
-or a closure to wrap the error from `parse::<usize>`.
+Autre astuce : vous pouvez utiliser la méthode `map_err` de `Result` avec une fonction
+ou une fermeture pour wrapper l'erreur de `parse::<usize>`.
 
-Yet another hint: If you would like to propagate errors by using the `?`
-operator in your solution, you might want to look at
+Encore une autre astuce: si vous voulez propager les erreurs en utilisant l'opérateur `?` 
+dans votre solution, vous pouvez consulter le site suivant
 https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/reenter_question_mark.html
 """
 
@@ -1156,26 +1189,26 @@ name = "try_from_into"
 path = "exercises/conversions/try_from_into.rs"
 mode = "test"
 hint = """
-Follow the steps provided right before the `TryFrom` implementation.
-You can also use the example at https://doc.rust-lang.org/std/convert/trait.TryFrom.html
+Suivez les étapes fournies juste avant l'implémentation de `TryFrom`.
+Vous pouvez également utiliser l'exemple à l'adresse https://doc.rust-lang.org/std/convert/trait.TryFrom.html
 
-Is there an implementation of `TryFrom` in the standard library that
-can both do the required integer conversion and check the range of the input?
+Existe-t-il une implémentation de `TryFrom` dans la bibliothèque standard qui
+qui peut à la fois faire la conversion d'entiers requise et vérifier la plage de l'entrée?
 
-Another hint: Look at the test cases to see which error variants to return.
+Un autre indice: regardez les tests pour voir quelles variantes d'erreur retourner.
 
-Yet another hint: You can use the `map_err` or `or` methods of `Result` to
-convert errors.
+Encore un autre indice: vous pouvez utiliser les méthodes `map_err` ou `or` de `Result` pour
+convertir les erreurs.
 
-Yet another hint: If you would like to propagate errors by using the `?`
-operator in your solution, you might want to look at
+Encore un autre indice: si vous voulez propager les erreurs en utilisant l'opérateur `?` 
+dans votre solution, vous pouvez consulter le site suivant
 https://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/reenter_question_mark.html
 
-Challenge: Can you make the `TryFrom` implementations generic over many integer types?"""
+Défi : Pouvez-vous rendre les implémentations `TryFrom` génériques pour de nombreux types d'entiers ?"""
 
 [[exercises]]
 name = "as_ref_mut"
 path = "exercises/conversions/as_ref_mut.rs"
 mode = "test"
 hint = """
-Add AsRef<str> or AsMut<u32> as a trait bound to the functions."""
+Ajouter AsRef<str> ou AsMut<u32> comme contrainte de trait aux fonctions."""

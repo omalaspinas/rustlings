@@ -1,11 +1,11 @@
 // primitive_types4.rs
 //
-// Get a slice out of Array a where the ??? is so that the test passes.
+// Obtenir un "slice" du tableau a à l'endroit où se trouve le ??? pour que le test passe.
 //
-// Execute `rustlings hint primitive_types4` or use the `hint` watch subcommand
-// for a hint.
+// Exécutez `rustlings hint primitive_types4` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 #[test]
 fn slice_out_of_array() {

@@ -1,17 +1,17 @@
 // structs1.rs
 //
-// Address all the TODOs to make the tests pass!
+// Adresser tous les TODO pour que les tests passent !
 //
-// Execute `rustlings hint structs1` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint structs1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 struct ColorClassicStruct {
-    // TODO: Something goes here
+    // TODO: Quelque va ici
 }
 
-struct ColorTupleStruct(/* TODO: Something goes here */);
+struct ColorTupleStruct(/* TODO: Quelque va ici */);
 
 #[derive(Debug)]
 struct UnitLikeStruct;
@@ -22,7 +22,7 @@ mod tests {
 
     #[test]
     fn classic_c_structs() {
-        // TODO: Instantiate a classic c struct!
+        // TODO: Instanciez une structure c classique!
         // let green =
 
         assert_eq!(green.red, 0);
@@ -32,7 +32,7 @@ mod tests {
 
     #[test]
     fn tuple_structs() {
-        // TODO: Instantiate a tuple struct!
+        // TODO: Instanciez une structure de tuple!
         // let green =
 
         assert_eq!(green.0, 0);
@@ -42,7 +42,7 @@ mod tests {
 
     #[test]
     fn unit_structs() {
-        // TODO: Instantiate a unit-like struct!
+        // TODO: Instanciez une structure de type unité!
         // let unit_like_struct =
         let message = format!("{:?}s are fun!", unit_like_struct);
 

@@ -1,13 +1,13 @@
 // threads2.rs
 //
-// Building on the last exercise, we want all of the threads to complete their
-// work but this time the spawned threads need to be in charge of updating a
-// shared value: JobStatus.jobs_completed
+// En nous basant sur le dernier exercice, nous voulons que tous les threads
+// terminent leur travail mais cette fois, les threads créés doivent être
+// en charge de la mise à jour d'une valeur partagée : JobStatus.jobs_completed
 //
-// Execute `rustlings hint threads2` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint threads2` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 use std::sync::Arc;
 use std::thread;
@@ -24,16 +24,16 @@ fn main() {
         let status_shared = Arc::clone(&status);
         let handle = thread::spawn(move || {
             thread::sleep(Duration::from_millis(250));
-            // TODO: You must take an action before you update a shared value
+            // TODO: Vous devez entreprendre une action avant de mettre à jour une valeur partagée
             status_shared.jobs_completed += 1;
         });
         handles.push(handle);
     }
     for handle in handles {
         handle.join().unwrap();
-        // TODO: Print the value of the JobStatus.jobs_completed. Did you notice
-        // anything interesting in the output? Do you have to 'join' on all the
-        // handles?
+        // TODO: Affichez la valeur de JobStatus.jobs_completed. Avez-vous remarqué
+        // quelque chose d'intéressant dans la sortie? Devez-vous faire une jointure sur
+        // tous les handle?
         println!("jobs completed {}", ???);
     }
 }

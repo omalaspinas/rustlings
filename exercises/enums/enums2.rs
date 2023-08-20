@@ -1,13 +1,13 @@
 // enums2.rs
 //
-// Execute `rustlings hint enums2` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint enums2` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 #[derive(Debug)]
 enum Message {
-    // TODO: define the different variants used below
+    // TODO: définir les différentes variantes utilisées ci-dessous
 }
 
 impl Message {

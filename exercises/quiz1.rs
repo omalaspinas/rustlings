@@ -1,21 +1,21 @@
 // quiz1.rs
 //
-// This is a quiz for the following sections:
+// Il s'agit d'un quiz pour les sections suivantes:
 // - Variables
-// - Functions
+// - Fonctions
 // - If
 //
-// Mary is buying apples. The price of an apple is calculated as follows:
-// - An apple costs 2 rustbucks.
-// - If Mary buys more than 40 apples, each apple only costs 1 rustbuck!
-// Write a function that calculates the price of an order of apples given the
-// quantity bought.
+// Marie achète des pommes. Le prix d'une pomme est calculé comme suit :
+// - Une pomme coûte 2 rustbucks.
+// - Si Marie achète plus de 40 pommes, chaque pomme ne coûte que 1 rustbuck !
+// Écrivez une fonction qui calcule le prix d'une commande de pommes en fonction de
+// la quantité achetée.
 //
-// No hints this time ;)
+// Pas d'indice cette fois ;)
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
-// Put your function here!
+// Placez votre fonction ici!
 // fn calculate_price_of_apples {
 
 // Don't modify this function!

@@ -1,9 +1,9 @@
 // macros4.rs
 //
-// Execute `rustlings hint macros4` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint macros4` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 #[rustfmt::skip]
 macro_rules! my_macro {

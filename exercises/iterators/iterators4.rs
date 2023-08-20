@@ -1,20 +1,19 @@
 // iterators4.rs
 //
-// Execute `rustlings hint iterators4` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint iterators4` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 pub fn factorial(num: u64) -> u64 {
-    // Complete this function to return the factorial of num
-    // Do not use:
+    // Complétez cette fonction pour obtenir la factorielle de num
+    // N'utilisez pas :
     // - return
-    // Try not to use:
-    // - imperative style loops (for, while)
-    // - additional variables
-    // For an extra challenge, don't use:
-    // - recursion
-    // Execute `rustlings hint iterators4` for hints.
+    // Essayez de ne pas utiliser:
+    // - des boucles de style impératif (for, while)
+    // - des variables supplémentaires
+    // Pour un défi supplémentaire, n'utilisez pas:
+    // - la recursion
 }
 
 #[cfg(test)]

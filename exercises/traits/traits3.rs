@@ -1,14 +1,14 @@
 // traits3.rs
 //
-// Your task is to implement the Licensed trait for both structures and have
-// them return the same information without writing the same function twice.
+// Votre tâche est d'implémenter le trait Licensed pour les deux structures et de faire en sorte
+// qu'elles renvoient les mêmes informations sans écrire deux fois la même fonction.
 //
-// Consider what you can add to the Licensed trait.
+// Réfléchissez à ce que vous pouvez ajouter au trait Licensed.
 //
-// Execute `rustlings hint traits3` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint traits3` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 pub trait Licensed {
     fn licensing_info(&self) -> String;
@@ -22,8 +22,8 @@ struct OtherSoftware {
     version_number: String,
 }
 
-impl Licensed for SomeSoftware {} // Don't edit this line
-impl Licensed for OtherSoftware {} // Don't edit this line
+impl Licensed for SomeSoftware {} // Ne pas modifier cette ligne
+impl Licensed for OtherSoftware {} // Ne pas modifier cette ligne
 
 #[cfg(test)]
 mod tests {

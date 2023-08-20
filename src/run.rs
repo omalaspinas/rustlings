@@ -35,7 +35,7 @@ pub fn reset(exercise: &Exercise) -> Result<(), ()> {
 // This is strictly for non-test binaries, so output is displayed
 fn compile_and_run(exercise: &Exercise) -> Result<(), ()> {
     let progress_bar = ProgressBar::new_spinner();
-    progress_bar.set_message(format!("Compiling {exercise}..."));
+    progress_bar.set_message(format!("Compilation de {exercise}..."));
     progress_bar.enable_steady_tick(100);
 
     let compilation_result = exercise.compile();
@@ -44,7 +44,7 @@ fn compile_and_run(exercise: &Exercise) -> Result<(), ()> {
         Err(output) => {
             progress_bar.finish_and_clear();
             warn!(
-                "Compilation of {} failed!, Compiler error message:\n",
+                "La compilation de {} a échoué!, Message d'erreur du compilateur:\n",
                 exercise
             );
             println!("{}", output.stderr);

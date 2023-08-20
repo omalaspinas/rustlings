@@ -1,9 +1,9 @@
 // errors4.rs
 //
-// Execute `rustlings hint errors4` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint errors4` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 #[derive(PartialEq, Debug)]
 struct PositiveNonzeroInteger(u64);
@@ -16,7 +16,7 @@ enum CreationError {
 
 impl PositiveNonzeroInteger {
     fn new(value: i64) -> Result<PositiveNonzeroInteger, CreationError> {
-        // Hmm... Why is this always returning an Ok value?
+        // Hmm... Pourquoi cela renvoie-t-il toujours une valeur Ok ?
         Ok(PositiveNonzeroInteger(value as u64))
     }
 }

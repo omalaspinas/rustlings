@@ -1,8 +1,8 @@
-# Structs
+# Structures
 
-Rust has three struct types: a classic C struct, a tuple struct, and a unit struct.
+Rust dispose de trois types de structures : les structures C classiques, les structures tuple et les structures unit.
 
-## Further information
+## Plus d'informations
 
 - [Structures](https://doc.rust-lang.org/book/ch05-01-defining-structs.html)
-- [Method Syntax](https://doc.rust-lang.org/book/ch05-03-method-syntax.html)
+- [Syntaxe de la méthode](https://doc.rust-lang.org/book/ch05-03-method-syntax.html)

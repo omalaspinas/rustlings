@@ -9,7 +9,7 @@ use std::process::{self, Command};
 
 const RUSTC_COLOR_ARGS: &[&str] = &["--color", "always"];
 const RUSTC_EDITION_ARGS: &[&str] = &["--edition", "2021"];
-const I_AM_DONE_REGEX: &str = r"(?m)^\s*///?\s*I\s+AM\s+NOT\s+DONE";
+const I_AM_DONE_REGEX: &str = r"(?m)^\s*///?\s*J'AI\s+PAS\s+FINI";
 const CONTEXT: usize = 2;
 const CLIPPY_CARGO_TOML_PATH: &str = "./exercises/clippy/Cargo.toml";
 
@@ -243,7 +243,7 @@ path = "{}.rs""#,
 
     // Check that the exercise looks to be solved using self.state()
     // This is not the best way to check since
-    // the user can just remove the "I AM NOT DONE" string from the file
+    // the user can just remove the "J'AI PAS FINI" string from the file
     // without actually having solved anything.
     // The only other way to truly check this would to compile and run
     // the exercise; which would be both costly and counterintuitive
@@ -304,7 +304,7 @@ mod test {
                 important: false,
             },
             ContextLine {
-                line: "// I AM NOT DONE".to_string(),
+                line: "// J'AI PAS FINI".to_string(),
                 number: 3,
                 important: true,
             },

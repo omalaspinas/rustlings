@@ -1,12 +1,13 @@
 // move_semantics3.rs
 //
-// Make me compile without adding new lines-- just changing existing lines! (no
-// lines with multiple semicolons necessary!)
+// Faites-moi compiler sans ajouter de nouvelles lignes - juste en changeant
+// les lignes existantes ! (les lignes avec plusieurs points-virgules
+// ne sont pas nécessaires).
 //
-// Execute `rustlings hint move_semantics3` or use the `hint` watch subcommand
-// for a hint.
+// Exécutez `rustlings hint move_semantics3` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     let vec0 = Vec::new();

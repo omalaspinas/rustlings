@@ -1,12 +1,12 @@
 // generics2.rs
 //
-// This powerful wrapper provides the ability to store a positive integer value.
-// Rewrite it using generics so that it supports wrapping ANY type.
+// Ce puissant wrapper permet de stocker une valeur entière positive.
+// Réécrivez-le en utilisant les génériques pour qu'il puisse wrapper n'importe quel type.
 //
-// Execute `rustlings hint generics2` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint generics2` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 struct Wrapper {
     value: u32,

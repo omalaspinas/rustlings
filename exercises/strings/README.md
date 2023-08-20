@@ -1,9 +1,8 @@
-# Strings
+# Chaînes de caractères
 
-Rust has two string types, a string slice (`&str`) and an owned string (`String`).
-We're not going to dictate when you should use which one, but we'll show you how
-to identify and create them, as well as use them.
+Rust possède deux types de chaînes de caractères, un slice de chaîne (`&str`) et une chaîne possédée ou owned (`String`).
+Nous n'allons pas vous dicter quand vous devez utiliser l'un ou l'autre, mais nous allons vous montrer comment les identifier, les créer et les utiliser.
 
-## Further information
+## Plus d'informations
 
-- [Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
+- [Chaînes de caractères](https://doc.rust-lang.org/book/ch08-02-strings.html)

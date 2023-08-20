@@ -1,13 +1,14 @@
 // structs3.rs
 //
-// Structs contain data, but can also have logic. In this exercise we have
-// defined the Package struct and we want to test some logic attached to it.
-// Make the code compile and the tests pass!
+// Les structures contiennent des données, mais peuvent aussi avoir une logique. 
+// Dans cet exercice, nous avons  défini la structure Package et nous voulons 
+// tester la logique qui lui est attachée.
+// Le code se compile et les tests sont réussis !
 //
-// Execute `rustlings hint structs3` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint structs3` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 #[derive(Debug)]
 struct Package {

@@ -1,11 +1,11 @@
 // primitive_types5.rs
 //
-// Destructure the `cat` tuple so that the println will work.
+// Déstructurez le tuple `cat` pour que le println fonctionne.
 //
-// Execute `rustlings hint primitive_types5` or use the `hint` watch subcommand
-// for a hint.
+// Exécutez `rustlings hint primitive_types5` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     let cat = ("Furry McFurson", 3.5);

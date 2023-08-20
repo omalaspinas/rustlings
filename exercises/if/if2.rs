@@ -1,11 +1,12 @@
 // if2.rs
 //
-// Step 1: Make me compile!
-// Step 2: Get the bar_for_fuzz and default_to_baz tests passing!
+// Etape 1 : Faites-moi compiler !
+// Etape 2 : Faire passer les tests bar_for_fuzz et default_to_baz !
 //
-// Execute `rustlings hint if2` or use the `hint` watch subcommand for a hint.
+// Exécutez `rustlings hint if2` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 pub fn foo_if_fizz(fizzish: &str) -> &str {
     if fizzish == "fizz" {
@@ -15,7 +16,7 @@ pub fn foo_if_fizz(fizzish: &str) -> &str {
     }
 }
 
-// No test changes needed!
+// Aucune modification des tests n'est nécessaire !
 #[cfg(test)]
 mod tests {
     use super::*;

@@ -1,13 +1,13 @@
 // errors3.rs
 //
-// This is a program that is trying to use a completed version of the
-// `total_cost` function from the previous exercise. It's not working though!
-// Why not? What should we do to fix it?
+// Ce programme tente d'utiliser une version complétée de la
+// fonction `total_cost` de l'exercice précédent. Mais ça ne marche pas !
+// Pourquoi ? Que devons-nous faire pour résoudre ce problème ?
 //
-// Execute `rustlings hint errors3` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint errors3` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 use std::num::ParseIntError;
 

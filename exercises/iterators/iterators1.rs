@@ -1,15 +1,15 @@
 // iterators1.rs
 //
-// When performing operations on elements within a collection, iterators are
-// essential. This module helps you get familiar with the structure of using an
-// iterator and how to go through elements within an iterable collection.
+// Lorsqu'on effectue des opérations sur des éléments d'une collection, les itérateurs sont
+// essentiels. Ce module vous aide à vous familiariser avec l'utilisation d'un
+// itérateur et la manière de parcourir les éléments d'une collection itérable.
 //
-// Make me compile by filling in the `???`s
+// Faites-moi compiler en remplissant les `???`
 //
-// Execute `rustlings hint iterators1` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint iterators1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     let my_fav_fruits = vec!["banana", "custard apple", "avocado", "peach", "raspberry"];

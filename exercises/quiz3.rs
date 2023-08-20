@@ -1,22 +1,23 @@
 // quiz3.rs
 //
-// This quiz tests:
-// - Generics
-// - Traits
+// Ce quiz teste :
+// - Les génériques
+// - Les traits
 //
-// An imaginary magical school has a new report card generation system written
-// in Rust! Currently the system only supports creating report cards where the
-// student's grade is represented numerically (e.g. 1.0 -> 5.5). However, the
-// school also issues alphabetical grades (A+ -> F-) and needs to be able to
-// print both types of report card!
+// Une école de magie imaginaire a un nouveau système de génération de bulletin écrit
+// en Rust ! Actuellement, le système ne permet de créer que des bulletins où la note
+// de l'élève est représentée numériquement (par exemple, 1.0 -> 5.5)
+// Cependant, l'école délivre également des notes alphabétiques (A+ -> F-)
+// et doit être capable d'imprimer les deux types de bulletins !
 //
-// Make the necessary code changes in the struct ReportCard and the impl block
-// to support alphabetical report cards. Change the Grade in the second test to
-// "A+" to show that your changes allow alphabetical grades.
+// Apportez les modifications de code nécessaires à la structure ReportCard et au bloc impl
+// pour prendre en charge les bulletins alphabétiques. Remplacez la "grade" dans le second test par
+// "A+" pour montrer que vos modifications autorisent les notes alphabétiques.
 //
-// Execute `rustlings hint quiz3` or use the `hint` watch subcommand for a hint.
+// Exécutez `rustlings hint quiz3` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 pub struct ReportCard {
     pub grade: f32,
@@ -26,8 +27,10 @@ pub struct ReportCard {
 
 impl ReportCard {
     pub fn print(&self) -> String {
-        format!("{} ({}) - achieved a grade of {}",
-            &self.student_name, &self.student_age, &self.grade)
+        format!(
+            "{} ({}) - achieved a grade of {}",
+            &self.student_name, &self.student_age, &self.grade
+        )
     }
 }
 
@@ -50,7 +53,7 @@ mod tests {
 
     #[test]
     fn generate_alphabetic_report_card() {
-        // TODO: Make sure to change the grade here after you finish the exercise.
+        // TODO: Veillez à modifier la note ici après avoir terminé l'exercice.
         let report_card = ReportCard {
             grade: 2.1,
             student_name: "Gary Plotter".to_string(),

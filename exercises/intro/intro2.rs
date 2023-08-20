@@ -1,11 +1,11 @@
 // intro2.rs
 //
-// Make the code print a greeting to the world.
+// Faites en sorte que le code imprime un message de bienvenue au monde entier.
 //
-// Execute `rustlings hint intro2` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint intro2` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     println!("Hello {}!");

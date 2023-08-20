@@ -1,34 +1,34 @@
 // errors5.rs
 //
-// This program uses an altered version of the code from errors4.
+// Ce programme utilise une version modifiée du code de errors4.
 //
-// This exercise uses some concepts that we won't get to until later in the
-// course, like `Box` and the `From` trait. It's not important to understand
-// them in detail right now, but you can read ahead if you like. For now, think
-// of the `Box<dyn ???>` type as an "I want anything that does ???" type, which,
-// given Rust's usual standards for runtime safety, should strike you as
-// somewhat lenient!
+// Cet exercice utilise des concepts que nous n'aborderons que plus tard dans le
+// cours, comme `Box` et le trait `From`. Il n'est pas important de les comprendre
+// en détail pour l'instant, mais vous pouvez lire cela en avance si vous le souhaitez. 
+// Pour l'instant, pensez au type `Box<dyn ???>` comme un type "Je veux tout ce qui fait ???", ce qui,
+// compte tenu des standards habituels de Rust en matière de sécurité d'exécution, devrait vous sembler
+// un peu indulgent !
 //
-// In short, this particular use case for boxes is for when you want to own a
-// value and you care only that it is a type which implements a particular
-// trait. To do so, The Box is declared as of type Box<dyn Trait> where Trait is
-// the trait the compiler looks for on any value used in that context. For this
-// exercise, that context is the potential errors which can be returned in a
+// En bref, ce cas d'utilisation particulier pour les Box est pour quand vous voulez posséder une
+// valeur et que vous vous souciez seulement qu'elle soit d'un type qui implémente un trait
+// particulier. Pour ce faire, la Box est déclarée comme étant de type Box<dyn Trait> où Trait est
+// le trait que le compilateur recherche sur toute valeur utilisée dans ce contexte. Pour cet exercice
+// ce contexte est celui des erreurs potentielles qui peuvent être renvoyées dans un
 // Result.
 //
-// What can we use to describe both errors? In other words, is there a trait
-// which both errors implement?
+// Que pouvons-nous utiliser pour décrire ces deux erreurs ? En d'autres termes, existe-t-il un trait
+// que les deux erreurs mettent en œuvre ?
 //
-// Execute `rustlings hint errors5` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint errors5` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 use std::error;
 use std::fmt;
 use std::num::ParseIntError;
 
-// TODO: update the return type of `main()` to make this compile.
+// TODO: mettre à jour le type de retour de `main()` pour que cela compile.
 fn main() -> Result<(), Box<dyn ???>> {
     let pretend_user_input = "42";
     let x: i64 = pretend_user_input.parse()?;
@@ -36,7 +36,7 @@ fn main() -> Result<(), Box<dyn ???>> {
     Ok(())
 }
 
-// Don't change anything below this line.
+// Ne modifiez rien en dessous de cette ligne.
 
 #[derive(PartialEq, Debug)]
 struct PositiveNonzeroInteger(u64);

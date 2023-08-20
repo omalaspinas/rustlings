@@ -1,15 +1,15 @@
 // clippy1.rs
 //
-// The Clippy tool is a collection of lints to analyze your code so you can
-// catch common mistakes and improve your Rust code.
+// L'outil Clippy est une collection de lints pour analyser votre code afin que vous puissiez
+// détecter les erreurs communes et améliorer votre code Rust
 //
-// For these exercises the code will fail to compile when there are clippy
-// warnings check clippy's suggestions from the output to solve the exercise.
+// Pour ces exercices, le code ne se compilera pas quand il y a des avertissements de Clippy
+// Vérifiez les suggestions de Clippy à partir pour résoudre l'exercice.
 //
-// Execute `rustlings hint clippy1` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint clippy1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 use std::f32;
 

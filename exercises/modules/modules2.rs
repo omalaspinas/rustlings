@@ -1,16 +1,16 @@
 // modules2.rs
 //
-// You can bring module paths into scopes and provide new names for them with
-// the 'use' and 'as' keywords. Fix these 'use' statements to make the code
-// compile.
+// Vous pouvez intégrer les chemins d'accès aux modules dans les portées et 
+// leur donner de nouveaux noms à l'aide des mots-clés "use" et "as".
+// Corrigez ces déclarations "use" pour que le code compile.
 //
-// Execute `rustlings hint modules2` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint modules2` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 mod delicious_snacks {
-    // TODO: Fix these use statements
+    // TODO: Corriger ces instructions use
     use self::fruits::PEAR as ???
     use self::veggies::CUCUMBER as ???
 

@@ -1,9 +1,9 @@
 // variables4.rs
 //
-// Execute `rustlings hint variables4` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint variables4` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     let x = 3;

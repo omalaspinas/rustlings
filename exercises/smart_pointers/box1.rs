@@ -1,24 +1,26 @@
 // box1.rs
 //
-// At compile time, Rust needs to know how much space a type takes up. This
-// becomes problematic for recursive types, where a value can have as part of
-// itself another value of the same type. To get around the issue, we can use a
-// `Box` - a smart pointer used to store data on the heap, which also allows us
-// to wrap a recursive type.
+// Au moment de la compilation, Rust a besoin de connaître la place occupée par un type. Cela
+// devient problématique pour les types récursifs, où une valeur peut avoir comme partie
+// une autre valeur du même type. Pour contourner le problème, nous pouvons utiliser un
+// `Box` - un pointeur intelligent utilisé pour stocker des données sur le tas, qui nous permet également
+// d'envelopper un type récursif.
 //
-// The recursive type we're implementing in this exercise is the `cons list` - a
-// data structure frequently found in functional programming languages. Each
-// item in a cons list contains two elements: the value of the current item and
-// the next item. The last item is a value called `Nil`.
+// Le type récursif que nous implémentons dans cet exercice est la ``liste de cons`` - une
+// structure de données fréquemment utilisée dans les langages de programmation fonctionnels. Chaque
+// élément d'une liste cons contient deux éléments : la valeur de l'élément courant et
+// l'élément suivant. Le dernier élément est une valeur appelée `Nil`.
 //
-// Step 1: use a `Box` in the enum definition to make the code compile
-// Step 2: create both empty and non-empty cons lists by replacing `todo!()`
+// Étape 1 : utiliser un `Box` dans la définition de l'enum pour compiler le code
+// Etape 2 : créer des listes de cons vides et non vides en remplaçant `todo!()` par
+// des listes de cons vides et non vides
 //
-// Note: the tests should not be changed
+// Note : les tests ne doivent pas être modifiés
 //
-// Execute `rustlings hint box1` or use the `hint` watch subcommand for a hint.
+// Exécutez `rustlings hint box1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 #[derive(PartialEq, Debug)]
 pub enum List {

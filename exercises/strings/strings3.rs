@@ -1,22 +1,22 @@
 // strings3.rs
 //
-// Execute `rustlings hint strings3` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint strings3` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn trim_me(input: &str) -> String {
-    // TODO: Remove whitespace from both ends of a string!
+    // TODO: Supprimez les espaces aux deux extrémités d'une chaîne de caractères !
     ???
 }
 
 fn compose_me(input: &str) -> String {
-    // TODO: Add " world!" to the string! There's multiple ways to do this!
+    // TODO: Ajoutez " world !" à la chaîne de caractères! Il y a plusieurs façons de le faire!
     ???
 }
 
 fn replace_me(input: &str) -> String {
-    // TODO: Replace "cars" in the string with "balloons"!
+    // TODO: Remplacez "cars" par "balloons" dans la chaîne de caractères !
     ???
 }
 

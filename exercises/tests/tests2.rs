@@ -1,12 +1,12 @@
 // tests2.rs
 //
-// This test has a problem with it -- make the test compile! Make the test pass!
-// Make the test fail!
+// Ce test présente un problème -- Compilez le test ! Faites passer le test !
+// Faites échouer le test !
 //
-// Execute `rustlings hint tests2` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint tests2` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 #[cfg(test)]
 mod tests {

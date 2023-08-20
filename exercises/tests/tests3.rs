@@ -1,13 +1,13 @@
 // tests3.rs
 //
-// This test isn't testing our function -- make it do that in such a way that
-// the test passes. Then write a second test that tests whether we get the
-// result we expect to get when we call `is_even(5)`.
+// Ce test ne teste pas notre fonction -- faites en sorte qu'il le fasse de manière à ce que
+// le test passe. Ensuite, écrivez un second test qui teste si nous obtenons le
+// résultat que nous attendons lorsque nous appelons `is_even(5)` (est_pair).
 //
-// Execute `rustlings hint tests3` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint tests3` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 pub fn is_even(num: i32) -> bool {
     num % 2 == 0

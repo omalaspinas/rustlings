@@ -1,10 +1,10 @@
 # Move Semantics
 
-These exercises are adapted from [pnkfelix](https://github.com/pnkfelix)'s [Rust Tutorial](https://pnkfelix.github.io/rust-examples-icfp2014/) -- Thank you Felix!!!
+Ces exercices sont adaptés de [pnkfelix](https://github.com/pnkfelix)'s [Rust Tutorial](https://pnkfelix.github.io/rust-examples-icfp2014/) -- Merci Felix !!!
 
-## Further information
+## Plus d'informations
 
-For this section, the book links are especially important.
+Pour cette section, les liens vers les livres sont particulièrement importants.
 
-- [Ownership](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
-- [Reference and borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)
+- [Propriété](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)
+- [Référence et emprunt](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)

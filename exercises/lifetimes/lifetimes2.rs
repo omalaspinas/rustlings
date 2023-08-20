@@ -1,12 +1,12 @@
 // lifetimes2.rs
 //
-// So if the compiler is just validating the references passed to the annotated
-// parameters and the return type, what do we need to change?
+// Donc, si le compilateur ne fait que valider les références passées aux
+// paramètres annotés et au type de retour, que devons-nous changer ?
 //
-// Execute `rustlings hint lifetimes2` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint lifetimes2` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn longest<'a>(x: &'a str, y: &'a str) -> &'a str {
     if x.len() > y.len() {

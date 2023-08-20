@@ -1,9 +1,9 @@
 // functions1.rs
 //
-// Execute `rustlings hint functions1` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint functions1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     call_me();

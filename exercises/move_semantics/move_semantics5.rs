@@ -1,12 +1,12 @@
 // move_semantics5.rs
 //
-// Make me compile only by reordering the lines in `main()`, but without adding,
-// changing or removing any of them.
+// Faites-moi compiler seulement en réordonnant les lignes dans `main()`,
+// mais sans ajouter, modifier ou supprimer aucune d'entre elles.
 //
-// Execute `rustlings hint move_semantics5` or use the `hint` watch subcommand
-// for a hint.
+// Exécutez `rustlings hint move_semantics5` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     let mut x = 100;
