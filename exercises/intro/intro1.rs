@@ -13,6 +13,8 @@
 //
 // Exécutez `rustlings hint intro1` ou utilisez la sous-commande `hint` watch pour un
 // pour un indice.
+//
+// J'AI PAS FINI
 
 fn main() {
     println!("Bonjour et");
