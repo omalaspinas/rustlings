@@ -2,4 +2,6 @@
 
 // J'AI PAS FINI
 
-fn main() {}
+fn main() {
+
+}
