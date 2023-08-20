@@ -1,12 +1,12 @@
 // generics1.rs
 //
-// This shopping list program isn't compiling! Use your knowledge of generics to
-// fix it.
+// Ce programme de liste de courses ne compile pas ! Utilisez votre connaissance des génériques pour
+// pour le réparer.
 //
-// Execute `rustlings hint generics1` or use the `hint` watch subcommand for a
-// hint.
+// Exécutez `rustlings hint generics1` ou utilisez la sous-commande `hint`
+// de `watch` pour obtenir une indication.
 
-// I AM NOT DONE
+// J'AI PAS FINI
 
 fn main() {
     let mut shopping_list: Vec<?> = Vec::new();
