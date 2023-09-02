@@ -3,7 +3,7 @@
 // Cette fonction refuse de générer le texte à imprimer sur un badge si vous lui passez une
 // une chaîne vide. Ce serait plus sympa si elle expliquait quel est le problème,
 // au lieu de retourner parfois `None`. Heureusement, Rust a une construction similaire
-// à `Result` qui peut être utilisée pour exprimer des conditions d'erreur. Utilisons-la!
+// à `Option` qui peut être utilisée pour exprimer des conditions d'erreur. Utilisons-la!
 //
 // Exécutez `rustlings hint errors1` ou utilisez la sous-commande `hint`
 // de `watch` pour obtenir une indication.

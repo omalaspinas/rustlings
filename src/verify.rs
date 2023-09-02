@@ -1,7 +1,7 @@
 use crate::exercise::{CompiledExercise, Exercise, Mode, State};
 use console::style;
 use indicatif::{ProgressBar, ProgressStyle};
-use std::env;
+use std::{env, time::Duration};
 
 // Verify that the provided container of Exercise objects
 // can be compiled and run without any failures.
@@ -20,6 +20,7 @@ pub fn verify<'a>(
     bar.set_style(
         ProgressStyle::default_bar()
             .template("Progression: [{bar:60.green/red}] {pos}/{len} {msg}")
+            .expect("Le template de progressbar devrait être valide!")
             .progress_chars("#>-"),
     );
     bar.set_position(num_done as u64);
@@ -56,7 +57,7 @@ pub fn test(exercise: &Exercise, verbose: bool) -> Result<(), ()> {
 fn compile_only(exercise: &Exercise, success_hints: bool) -> Result<bool, ()> {
     let progress_bar = ProgressBar::new_spinner();
     progress_bar.set_message(format!("Compilation de {exercise}..."));
-    progress_bar.enable_steady_tick(100);
+    progress_bar.enable_steady_tick(Duration::from_millis(100));
 
     let _ = compile(exercise, &progress_bar)?;
     progress_bar.finish_and_clear();
@@ -68,7 +69,7 @@ fn compile_only(exercise: &Exercise, success_hints: bool) -> Result<bool, ()> {
 fn compile_and_run_interactively(exercise: &Exercise, success_hints: bool) -> Result<bool, ()> {
     let progress_bar = ProgressBar::new_spinner();
     progress_bar.set_message(format!("Compilation de {exercise}..."));
-    progress_bar.enable_steady_tick(100);
+    progress_bar.enable_steady_tick(Duration::from_millis(100));
 
     let compilation = compile(exercise, &progress_bar)?;
 
@@ -103,7 +104,7 @@ fn compile_and_test(
 ) -> Result<bool, ()> {
     let progress_bar = ProgressBar::new_spinner();
     progress_bar.set_message(format!("Test de {exercise}..."));
-    progress_bar.enable_steady_tick(100);
+    progress_bar.enable_steady_tick(Duration::from_millis(100));
 
     let compilation = compile(exercise, &progress_bar)?;
     let result = compilation.run();
@@ -133,9 +134,9 @@ fn compile_and_test(
 
 // Compile the given Exercise and return an object with information
 // about the state of the compilation
-fn compile<'a, 'b>(
+fn compile<'a>(
     exercise: &'a Exercise,
-    progress_bar: &'b ProgressBar,
+    progress_bar: &ProgressBar,
 ) -> Result<CompiledExercise<'a>, ()> {
     let compilation_result = exercise.compile();
 

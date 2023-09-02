@@ -110,7 +110,7 @@ struct ListArgs {
     /// show only the names of the exercises
     names: bool,
     #[argh(option, short = 'f')]
-    /// provide a string to match exercise names
+    /// provide a string to match exercise namescommande
     /// comma separated patterns are acceptable
     filter: Option<String>,
     #[argh(switch, short = 'u')]
@@ -135,7 +135,7 @@ fn main() {
 
     if !Path::new("info.toml").exists() {
         println!(
-            "{} must be run from the rustlings directory",
+            "{} doit être exécuté à partir du répertoire rustlings",
             std::env::current_exe().unwrap().to_str().unwrap()
         );
         println!("Try `cd rustlings/`!");
@@ -143,9 +143,9 @@ fn main() {
     }
 
     if !rustc_exists() {
-        println!("We cannot find `rustc`.");
-        println!("Try running `rustc --version` to diagnose your problem.");
-        println!("For instructions on how to install Rust, check the README.");
+        println!("Nous ne trouvons pas `rustc`.");
+        println!("Essayez de lancer `rustc --version` pour diagnostiquer votre problème.");
+        println!("Pour savoir comment installer Rust, consultez le README.");
         std::process::exit(1);
     }
 
@@ -169,12 +169,12 @@ fn main() {
                 let filter_cond = filters
                     .split(',')
                     .filter(|f| !f.trim().is_empty())
-                    .any(|f| e.name.contains(&f) || fname.contains(&f));
+                    .any(|f| e.name.contains(f) || fname.contains(f));
                 let status = if e.looks_done() {
                     exercises_done += 1;
-                    "Done"
+                    "Terminé"
                 } else {
-                    "Pending"
+                    "En attente"
                 };
                 let solve_cond = {
                     (e.looks_done() && subargs.solved)
@@ -206,7 +206,7 @@ fn main() {
             });
             let percentage_progress = exercises_done as f32 / exercises.len() as f32 * 100.0;
             println!(
-                "Progress: You completed {} / {} exercises ({:.1} %).",
+                "Progression : Vous avez effectué {} / {} exercices ({:.1} %).",
                 exercises_done,
                 exercises.len(),
                 percentage_progress
@@ -239,42 +239,44 @@ fn main() {
 
         Subcommands::Lsp(_subargs) => {
             let mut project = RustAnalyzerProject::new();
-            project
-                .get_sysroot_src()
-                .expect("Couldn't find toolchain path, do you have `rustc` installed?");
+            project.get_sysroot_src().expect(
+                "Impossible de trouver le path de la toolchain, avez-vous installé `rustc` ?",
+            );
             project
                 .exercises_to_json()
-                .expect("Couldn't parse rustlings exercises files");
+                .expect("Impossible d'analyser les fichiers d'exercices de rustlings");
 
             if project.crates.is_empty() {
-                println!("Failed find any exercises, make sure you're in the `rustlings` folder");
+                println!("Impossible de trouver des exercices, vérifiez que vous êtes bien dans le dossier `rustlings`");
             } else if project.write_to_disk().is_err() {
-                println!("Failed to write rust-project.json to disk for rust-analyzer");
+                println!(
+                    "Échec de l'écriture de rust-project.json sur le disque pour rust-analyzer"
+                );
             } else {
-                println!("Successfully generated rust-project.json");
-                println!("rust-analyzer will now parse exercises, restart your language server or editor")
+                println!("Génération réussie de rust-project.json");
+                println!("rust-analyzer va maintenant analyser les exercices, redémarrez votre serveur de langue ou votre éditeur")
             }
         }
 
         Subcommands::Watch(_subargs) => match watch(&exercises, verbose, _subargs.success_hints) {
             Err(e) => {
                 println!(
-                    "Error: Could not watch your progress. Error message was {:?}.",
+                    "Erreur : Impossible de suivre votre progression. Le message d'erreur était {:?}.",
                     e
                 );
-                println!("Most likely you've run out of disk space or your 'inotify limit' has been reached.");
+                println!("Il est probable que vous n'ayez plus d'espace disque ou que la limite de votre 'inotify' ait été atteinte.");
                 std::process::exit(1);
             }
             Ok(WatchStatus::Finished) => {
                 println!(
-                    "{emoji} All exercises completed! {emoji}",
+                    "{emoji} Tous les exercices sont terminés ! {emoji}",
                     emoji = Emoji("🎉", "★")
                 );
                 println!("\n{FENISH_LINE}\n");
             }
             Ok(WatchStatus::Unfinished) => {
-                println!("We hope you're enjoying learning about Rust!");
-                println!("If you want to continue working on the exercises at a later point, you can simply run `rustlings watch` again");
+                println!("Nous espérons que vous prenez plaisir à découvrir le Rust !");
+                println!("Si vous voulez continuer à travailler sur les exercices plus tard, vous pouvez simplement exécuter `rustlings watch` à nouveau");
             }
         },
     }
@@ -285,7 +287,7 @@ fn spawn_watch_shell(
     should_quit: Arc<AtomicBool>,
 ) {
     let failed_exercise_hint = Arc::clone(failed_exercise_hint);
-    println!("Welcome to watch mode! You can type 'help' to get an overview of the commands you can use here.");
+    println!("Bienvenue dans le mode 'watch' ! Vous pouvez taper 'help' pour obtenir une vue d'ensemble des commandes que vous pouvez utiliser.");
     thread::spawn(move || loop {
         let mut input = String::new();
         match io::stdin().read_line(&mut input) {
@@ -299,29 +301,29 @@ fn spawn_watch_shell(
                     println!("\x1B[2J\x1B[1;1H");
                 } else if input.eq("quit") {
                     should_quit.store(true, Ordering::SeqCst);
-                    println!("Bye!");
+                    println!("Au revoir !");
                 } else if input.eq("help") {
-                    println!("Commands available to you in watch mode:");
-                    println!("  hint   - prints the current exercise's hint");
-                    println!("  clear  - clears the screen");
-                    println!("  quit   - quits watch mode");
-                    println!("  !<cmd> - executes a command, like `!rustc --explain E0381`");
-                    println!("  help   - displays this help message");
+                    println!("Commandes disponibles en mode 'watch':");
+                    println!("  hint   - affiche l'indice de l'exercice en cours");
+                    println!("  clear  - efface l'écran");
+                    println!("  quit   - quitte le mode veille");
+                    println!("  !<cmd> - exécute une commande, comme `!rustc --explain E0381`");
+                    println!("  help   - affiche ce message d'aide");
                     println!();
-                    println!("Watch mode automatically re-evaluates the current exercise");
-                    println!("when you edit a file's contents.")
+                    println!("Le mode veille réévalue automatiquement l'exercice en cours");
+                    println!("lorsque vous modifiez le contenu d'un fichier.")
                 } else if let Some(cmd) = input.strip_prefix('!') {
                     let parts: Vec<&str> = cmd.split_whitespace().collect();
                     if parts.is_empty() {
-                        println!("no command provided");
+                        println!("aucune commande n'est fournie");
                     } else if let Err(e) = Command::new(parts[0]).args(&parts[1..]).status() {
-                        println!("failed to execute command `{}`: {}", cmd, e);
+                        println!("échec de l'exécution de la commande `{}`: {}", cmd, e);
                     }
                 } else {
-                    println!("unknown command: {input}");
+                    println!("commande inconnue: {input}");
                 }
             }
-            Err(error) => println!("error reading command: {error}"),
+            Err(error) => println!("erreur de lecture de la commande : {error}"),
         }
     });
 }
@@ -332,8 +334,8 @@ fn find_exercise<'a>(name: &str, exercises: &'a [Exercise]) -> &'a Exercise {
             .iter()
             .find(|e| !e.looks_done())
             .unwrap_or_else(|| {
-                println!("🎉 Congratulations! You have done all the exercises!");
-                println!("🔚 There are no more exercises to do next!");
+                println!("🎉 Félicitations ! Vous avez fait tous les exercices !");
+                println!("🔚 Il n'y a plus d'exercices à faire ensuite !");
                 std::process::exit(1)
             })
     } else {
@@ -341,7 +343,7 @@ fn find_exercise<'a>(name: &str, exercises: &'a [Exercise]) -> &'a Exercise {
             .iter()
             .find(|e| e.name == name)
             .unwrap_or_else(|| {
-                println!("No exercise found for '{name}'!");
+                println!("Aucun exercice n'a été trouvé pour '{name}'!");
                 std::process::exit(1)
             })
     }
@@ -418,7 +420,7 @@ fn watch(
             Err(RecvTimeoutError::Timeout) => {
                 // the timeout expired, just check the `should_quit` variable below then loop again
             }
-            Err(e) => println!("watch error: {e:?}"),
+            Err(e) => println!("erreur de 'watch': {e:?}"),
         }
         // Check if we need to exit
         if should_quit.load(Ordering::SeqCst) {
@@ -429,7 +431,7 @@ fn watch(
 
 fn rustc_exists() -> bool {
     Command::new("rustc")
-        .args(&["--version"])
+        .args(["--version"])
         .stdout(Stdio::null())
         .spawn()
         .and_then(|mut child| child.wait())
@@ -437,36 +439,36 @@ fn rustc_exists() -> bool {
         .unwrap_or(false)
 }
 
-const DEFAULT_OUT: &str = r#"Thanks for installing Rustlings!
+const DEFAULT_OUT: &str = r#"Merci d'avoir installé Rustlings !
 
-Is this your first time? Don't worry, Rustlings was made for beginners! We are
-going to teach you a lot of things about Rust, but before we can get
-started, here's a couple of notes about how Rustlings operates:
+C'est votre première fois ? Ne vous inquiétez pas, Rustlings a été conçu pour les débutants ! Nous allons
+allons vous apprendre beaucoup de choses sur Rust, 
+mais avant de commencer, voici quelques remarques sur le fonctionnement de Rustlings :
 
-1. The central concept behind Rustlings is that you solve exercises. These
-   exercises usually have some sort of syntax error in them, which will cause
-   them to fail compilation or testing. Sometimes there's a logic error instead
-   of a syntax error. No matter what error, it's your job to find it and fix it!
-   You'll know when you fixed it because then, the exercise will compile and
-   Rustlings will be able to move on to the next exercise.
-2. If you run Rustlings in watch mode (which we recommend), it'll automatically
-   start with the first exercise. Don't get confused by an error message popping
-   up as soon as you run Rustlings! This is part of the exercise that you're
-   supposed to solve, so open the exercise file in an editor and start your
-   detective work!
-3. If you're stuck on an exercise, there is a helpful hint you can view by typing
-   'hint' (in watch mode), or running `rustlings hint exercise_name`.
-4. If an exercise doesn't make sense to you, feel free to open an issue on GitHub!
-   (https://github.com/rust-lang/rustlings/issues/new). We look at every issue,
-   and sometimes, other learners do too so you can help each other out!
-5. If you want to use `rust-analyzer` with exercises, which provides features like
-   autocompletion, run the command `rustlings lsp`.
+1. Le concept central de Rustlings est que vous résolvez des exercices. Ces
+   exercices contiennent généralement une erreur de syntaxe, ce qui les fait
+   de les faire échouer à la compilation ou au test. Parfois, il y a une erreur de logique
+   au lieu d'une erreur de syntaxe. Quelle que soit l'erreur, c'est à vous de la trouver et de la corriger !
+   Vous saurez que vous l'avez corrigée car l'exercice compilera et
+   Rustlings pourra passer à l'exercice suivant.
+2. Si vous lancez Rustlings en mode "watch" (ce que nous recommandons), il commencera automatiquement
+   automatiquement par le premier exercice. Ne vous laissez pas déconcerter par un message 
+   d'erreur qui apparaît dès que vous lancez Rustlings ! Il s'agit d'une partie de l'exercice que vous devez résoudre
+   alors ouvrez le fichier de l'exercice dans un éditeur et commencez votre travail de détective !
+   travail de détective !
+3. Si vous êtes bloqués sur un exercice, il y a un indice que vous pouvez consulter en tapant
+   'hint' (en mode veille), ou en exécutant `rustlings hint nom_de_l_exercice`.
+4. Si un exercice n'a pas de sens pour vous, n'hésitez pas à ouvrir une issue sur GitHub !
+   (https://github.com/rust-lang/rustlings/issues/new). Nous examinons chaque issue,
+   et parfois, d'autres apprenants le font aussi, donc vous pouvez vous aider mutuellement !
+5. Si vous voulez utiliser `rust-analyzer` avec les exercices, qui fournit des fonctionnalités comme
+   l'autocomplétion, lancez la commande `rustlings lsp`.
 
-Got all that? Great! To get started, run `rustlings watch` in order to get the first
-exercise. Make sure to have your editor open!"#;
+Vous avez compris tout cela ? C'est parfait ! Pour commencer, lancez la commande `rustlings watch` afin d'obtenir le premier exercice
+exercice. Assurez-vous que votre éditeur est ouvert !"#;
 
-const FENISH_LINE: &str = r#"+----------------------------------------------------+
-|          You made it to the Fe-nish line!          |
+const FENISH_LINE: &str = r"+----------------------------------------------------+
+|        Vous avez atteint la ligne d'arrivée!       |
 +--------------------------  ------------------------+
                           \\/
      ▒▒          ▒▒▒▒▒▒▒▒      ▒▒▒▒▒▒▒▒          ▒▒
@@ -485,17 +487,17 @@ const FENISH_LINE: &str = r#"+--------------------------------------------------
        ▒▒  ▒▒    ▒▒                  ▒▒    ▒▒  ▒▒
            ▒▒  ▒▒                      ▒▒  ▒▒
 
-We hope you enjoyed learning about the various aspects of Rust!
-If you noticed any issues, please don't hesitate to report them to our repo.
-You can also contribute your own exercises to help the greater community!
+Nous espérons que vous avez apprécié l'apprentissage des différents aspects de Rust !
+Si vous avez remarqué des problèmes, n'hésitez pas à les signaler dans notre repo.
+Vous pouvez également contribuer à nos exercices pour aider la communauté !
 
-Before reporting an issue or contributing, please read our guidelines:
-https://github.com/rust-lang/rustlings/blob/main/CONTRIBUTING.md"#;
+Avant de signaler un problème ou de contribuer, veuillez lire nos directives :
+https://github.com/rust-lang/rustlings/blob/main/CONTRIBUTING.md";
 
-const WELCOME: &str = r#"       welcome to...
+const WELCOME: &str = r"       bienvenue à...
                  _   _ _
   _ __ _   _ ___| |_| (_)_ __   __ _ ___
  | '__| | | / __| __| | | '_ \ / _` / __|
  | |  | |_| \__ \ |_| | | | | | (_| \__ \
  |_|   \__,_|___/\__|_|_|_| |_|\__, |___/
-                               |___/"#;
+                               |___/";

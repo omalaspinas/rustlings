@@ -51,7 +51,7 @@ mod tests {
         let results = "".to_string()
             + "England,France,4,2\n"
             + "France,Italy,3,1\n"
-            + "Poland,Spain,2,0\n"
+            + "Poland,Espagne,2,0\n"
             + "Germany,England,2,1\n";
         results
     }
@@ -64,7 +64,7 @@ mod tests {
         keys.sort();
         assert_eq!(
             keys,
-            vec!["England", "France", "Germany", "Italy", "Poland", "Spain"]
+            vec!["England", "France", "Germany", "Italy", "Poland", "Espagne"]
         );
     }
 
@@ -79,7 +79,7 @@ mod tests {
     #[test]
     fn validate_team_score_2() {
         let scores = build_scores_table(get_results());
-        let team = scores.get("Spain").unwrap();
+        let team = scores.get("Espagne").unwrap();
         assert_eq!(team.goals_scored, 0);
         assert_eq!(team.goals_conceded, 2);
     }
