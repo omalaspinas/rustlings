@@ -1,5 +1,5 @@
 #[test]
 fn passing() {
-    println!("THIS TEST TOO SHALL PASS");
+    println!("CE TEST DEVRAIT PASSER AUSSI");
     assert!(true);
 }

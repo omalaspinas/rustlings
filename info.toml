@@ -22,30 +22,31 @@ name = "variables1"
 path = "exercises/variables/variables1.rs"
 mode = "compile"
 hint = """
-Il manque à la déclaration de la ligne 8 un mot-clé qui est nécessaire en Rust
-pour créer une nouvelle liaison de variable."""
+Dans la déclaration de la première ligne de la fonction main, il manque un mot-clé
+qui est nécessaire en Rust pour créer une nouvelle variable."""
 
 [[exercises]]
 name = "variables2"
 path = "exercises/variables/variables2.rs"
 mode = "compile"
 hint = """
-Le message du compilateur dit que Rust ne peut pas déduire le type de la variable `x` avec ce qui est donné ici.
-variable `x` avec ce qui est donné ici.
-Que se passe-t-il si vous annotez la ligne 7 avec une annotation de type ?
-Que se passe-t-il si vous donnez une valeur à x ?
+Le message du compilateur dit que Rust ne peut pas déduire le type de la
+variable `x` avec les informations fournies ici.
+Que se passe-t-il si vous annotez la première ligne de la fonction principale avec un type ?
+Que se passe-t-il si vous donnez une valeur à `x` ?
 Et si vous faites les deux ?
-Quel type devrait être x ?
-Que se passe-t-il si x est du même type que 10 ? Et s'il est d'un type différent?"""
+Quel doit être le type de `x` ?
+Que se passe-t-il si `x` est du même type que 10 ? Et s'il est d'un type différent ?"""
 
 [[exercises]]
 name = "variables3"
 path = "exercises/variables/variables3.rs"
 mode = "compile"
 hint = """
-Oups ! Dans cet exercice, nous avons une variable binding que nous avons créée à la ligne 7, et nous essayons de l'utiliser à la ligne 8, mais nous ne lui avons pas donné de nom.
-ligne 7, et nous essayons de l'utiliser à la ligne 8, mais nous ne lui avons pas donné de valeur.
-valeur. Nous ne pouvons pas imprimer quelque chose qui n'existe pas ; essayez de donner une valeur à x !
+Oups ! Dans cet exercice, nous avons une variable que nous avons créée à la première ligne
+de la fonction main, et nous essayons de l'utiliser à la ligne d'après, 
+mais nous ne lui avons pas donné de de valeur.
+Nous ne pouvons pas afficher quelque chose qui n'existe pas; essayez de donner une valeur à x!
 C'est une erreur qui peut causer des bogues et qui est très facile à commettre dans n'importe quel langage de programmation.
 -- heureusement, le compilateur Rust l'a détectée pour nous !"""
 
@@ -126,7 +127,7 @@ name = "functions4"
 path = "exercises/functions/functions4.rs"
 mode = "compile"
 hint = """
-Le message d'erreur pointe vers la ligne 17 et indique qu'il attend un type 
+Le message d'erreur pointe vers la fonction `sale_price` et indique qu'il attend un type 
 après le `->`. C'est là que le type de retour de la fonction devrait être 
 -- regardez la fonction `is_even` pour un exemple !
 
@@ -296,9 +297,10 @@ name = "move_semantics1"
 path = "exercises/move_semantics/move_semantics1.rs"
 mode = "compile"
 hint = """
-Vous avez donc l'erreur "cannot borrow immutable local variable `vec1` as mutable" à la ligne 13,
-n'est-ce pas ? La solution va être d'ajouter un mot-clé, et l'ajout ne se fait PAS à la ligne 13
-où se trouve l'erreur.
+Vous avez l'erreur "cannot borrow immutable local variable `vec1` as mutable" à la ligne
+où vous essayez de `push` un élément dans le vecteur n'est-ce pas ? 
+La solution va être d'ajouter un mot-clé, et l'ajout ne se fait PAS à la ligne
+à la line où le `push` se fait (l'endroit où l'erreur se trouve).
 
 De plus, essayez d'accéder à `vec0` après avoir appelé `fill_vec()`. Voyez ce qui se passe !"""
 
@@ -465,7 +467,8 @@ mode = "compile"
 hint = """
 Oui, il serait vraiment facile de corriger cela en changeant simplement la valeur liée à `word` pour qu'elle soit
 un slice de chaîne de caractères au lieu d'une `String`, n'est-ce pas ? Il y a un moyen d'ajouter un caractère à la ligne
-12, cependant, qu'est-ce qui forcera la `String` à devenir un slice de chaîne.
+où on appelle la fonction `is_a_color_word`, cependant, qu'est-ce qui forcera la `String` à devenir un slice de chaîne
+de caractères?
 
 Note complémentaire: si vous souhaitez savoir comment fonctionne ce type de conversion de référence, vous pouvez avancer dans le livre et lire cette partie dans le chapitre sur les pointeurs intelligents: https://doc.rust-lang.org/stable/book/ch15-02-deref.html#implicit-deref-coercions-with-functions-and-methods."""
 
