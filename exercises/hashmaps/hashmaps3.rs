@@ -64,7 +64,7 @@ mod tests {
         keys.sort();
         assert_eq!(
             keys,
-            vec!["England", "France", "Germany", "Italy", "Poland", "Espagne"]
+            vec!["England", "Espagne", "France", "Germany", "Italy", "Poland"]
         );
     }
 
