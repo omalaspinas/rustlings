@@ -11,7 +11,7 @@ fn trim_me(input: &str) -> String {
 }
 
 fn compose_me(input: &str) -> String {
-    // TODO: Ajoutez " world !" à la chaîne de caractères! Il y a plusieurs façons de le faire!
+    // TODO: Ajoutez " world!" à la chaîne de caractères! Il y a plusieurs façons de le faire!
     ???
 }
 
